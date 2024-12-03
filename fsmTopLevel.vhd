@@ -7,6 +7,7 @@ ENTITY fsmTopLevel IS
         i_msc_val, i_ssc_val: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
         i_sscs: IN STD_LOGIC;
         o_mstl, o_sstl: OUT STD_LOGIC_VECTOR (2 DOWNTO 0);
+        o_state: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
         o_bcd1, o_bcd2: OUT STD_LOGIC_VECTOR (6 DOWNTO 0));    
 END fsmTopLevel;
 
@@ -22,6 +23,7 @@ ARCHITECTURE rtl of fsmTopLevel is
             clk, greset: IN STD_LOGIC;
             mst, sst, sscs, msc, ssc: IN STD_LOGIC; 
             mstl, sstl: OUT STD_LOGIC_VECTOR(2 downto 0);
+            state: OUT STD_LOGIC_VECTOR(1 downto 0);
             reset_timer: OUT STD_LOGIC
             );
     END COMPONENT;
@@ -74,6 +76,7 @@ BEGIN
             ssc => int_ssc,
             mstl => o_mstl,
             sstl => o_sstl,
+            state => o_state,
             reset_timer => int_fsm_reset
             );
 

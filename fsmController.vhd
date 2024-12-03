@@ -6,6 +6,7 @@ ENTITY fsmController is
         clk, greset: IN STD_LOGIC;
         mst, sst, sscs, msc, ssc: IN STD_LOGIC; 
         mstl, sstl: OUT STD_LOGIC_VECTOR(2 downto 0);
+        state: OUT STD_LOGIC_VECTOR(1 downto 0);
         reset_timer: OUT STD_LOGIC
         );
 END fsmController;
@@ -98,5 +99,6 @@ BEGIN
     -- Output Drivers
     mstl <= output_mux_mstl;
     sstl <= output_mux_sstl;
-
+    state(0) <= y0;
+    state(1) <= y1;
 END structural;
