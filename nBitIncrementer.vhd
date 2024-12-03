@@ -8,7 +8,8 @@ ENTITY nBitIncrementer IS
 END nBitIncrementer ;
 
 ARCHITECTURE rtl OF nBitIncrementer is
-    SIGNAL adder_out, int_reg_out: STD_LOGIC_VECTOR(2 downto 0);
+    SIGNAL adder_out, int_reg_out: STD_LOGIC_VECTOR(n-1 downto 0);
+	 SIGNAL int_Bi: STD_LOGIC_VECTOR(n-1 downto 0);
     SIGNAL int_clear: STD_LOGIC;
 
     COMPONENT nBitAdderSubtractor
@@ -32,13 +33,15 @@ ARCHITECTURE rtl OF nBitIncrementer is
 BEGIN 
     adder: nBitAdderSubtractor
         GENERIC MAP (n => n)
-        PORT MAP (i_Ai => int_reg_out, i_Bi => "001", operationFlag => '0', o_CarryOut => open, o_Sum => adder_out);
+        PORT MAP (i_Ai => int_reg_out, i_Bi => int_Bi, operationFlag => '0', o_CarryOut => open, o_Sum => adder_out);
 
     reg: nBitRegister
         GENERIC MAP (n => n)
         PORT MAP (i_resetBar => int_clear, i_load => increment, i_clock => clk, i_Value => adder_out, o_Value => int_reg_out);
 
-    int_clear <= not reset;
+    
+	 int_Bi <= (n-1 downto 1 => '0') & '1';
+	 int_clear <= not reset;
 
     -- Output Driver
     y <= int_reg_out;
