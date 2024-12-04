@@ -9,7 +9,7 @@ ENTITY nBitShiftRegister IS
         serial_in: IN STD_LOGIC;
         parallel_in: IN	STD_LOGIC_VECTOR(n-1 downto 0);
         parallel_out: OUT STD_LOGIC_VECTOR(n-1 downto 0);
-		  serial_out: OUT STD_LOGIC);
+        serial_out: OUT STD_LOGIC);
 END nBitShiftRegister;
 
 ARCHITECTURE rtl OF nBitShiftRegister IS

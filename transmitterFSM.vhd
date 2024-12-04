@@ -14,7 +14,7 @@ end transmitterFSM;
 architecture rtl of transmitterFSM is
 
     -- Internal Signals
-    signal int_reset, int_not_reset : STD_LOGIC;
+    signal int_not_reset : STD_LOGIC;
     signal i_y0, i_y1 : STD_LOGIC;
     signal o_y0, o_y1, o_not_y0, o_not_y1 : STD_LOGIC;
     signal A, C, w, not_w : STD_LOGIC;
@@ -32,7 +32,6 @@ architecture rtl of transmitterFSM is
 
 begin
 
-    int_reset <= reset;
 	int_not_reset <= not reset;
 
     y0: enARdFF_2
