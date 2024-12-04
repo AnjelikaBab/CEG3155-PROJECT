@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CEG3155_PROJECT
-Wed Dec 04 12:12:33 2024
+Wed Dec 04 13:27:20 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,11 +13,57 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "enARdFF_2:y0"
- 10. Port Connectivity Checks: "enARdFF_2:y1"
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: nBitShiftRegister:RSR
+ 11. Parameter Settings for User Entity Instance: nBitRegister:RDR
+ 12. Parameter Settings for User Entity Instance: nBitTargetIncrementer:rsrShiftIncrementer
+ 13. Parameter Settings for User Entity Instance: nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer
+ 14. Parameter Settings for User Entity Instance: nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder
+ 15. Parameter Settings for User Entity Instance: nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg
+ 16. Parameter Settings for User Entity Instance: nBitTargetIncrementer:rsrShiftIncrementer|nbitcomparator:comparator
+ 17. Parameter Settings for User Entity Instance: nBitTargetIncrementer:samplingIncrementer
+ 18. Parameter Settings for User Entity Instance: nBitTargetIncrementer:samplingIncrementer|nBitIncrementer:incrementer
+ 19. Parameter Settings for User Entity Instance: nBitTargetIncrementer:samplingIncrementer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder
+ 20. Parameter Settings for User Entity Instance: nBitTargetIncrementer:samplingIncrementer|nBitIncrementer:incrementer|nBitRegister:reg
+ 21. Parameter Settings for User Entity Instance: nBitTargetIncrementer:samplingIncrementer|nbitcomparator:comparator
+ 22. Port Connectivity Checks: "nBitTargetIncrementer:samplingIncrementer"
+ 23. Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nbitcomparator:comparator|oneBitComparator:comparatorMSB"
+ 24. Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nbitcomparator:comparator"
+ 25. Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b"
+ 26. Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b"
+ 27. Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b"
+ 28. Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder"
+ 29. Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer"
+ 30. Port Connectivity Checks: "receiverFSM:fsm|enARdFF_2:y0"
+ 31. Port Connectivity Checks: "receiverFSM:fsm|enARdFF_2:y1"
+ 32. Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:7:b"
+ 33. Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:6:b"
+ 34. Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:5:b"
+ 35. Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:4:b"
+ 36. Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:3:b"
+ 37. Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:2:b"
+ 38. Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:1:b"
+ 39. Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:0:b"
+ 40. Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:6:mux_n"
+ 41. Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:5:mux_n"
+ 42. Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:4:mux_n"
+ 43. Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:3:mux_n"
+ 44. Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:2:mux_n"
+ 45. Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:1:mux_n"
+ 46. Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:mux_msb"
+ 47. Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:mux_0"
+ 48. Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:7:bit_n"
+ 49. Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:6:bit_n"
+ 50. Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:5:bit_n"
+ 51. Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:4:bit_n"
+ 52. Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:3:bit_n"
+ 53. Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:2:bit_n"
+ 54. Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:1:bit_n"
+ 55. Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:0:bit_n"
+ 56. Port Connectivity Checks: "nBitShiftRegister:RSR"
+ 57. Elapsed Time Per Partition
+ 58. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +89,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 04 12:12:33 2024           ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 04 13:27:20 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CEG3155_PROJECT                                 ;
-; Top-level Entity Name              ; receiverFSM                                     ;
+; Top-level Entity Name              ; receiverTopLevel                                ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 4                                               ;
-;     Total combinational functions  ; 4                                               ;
-;     Dedicated logic registers      ; 2                                               ;
-; Total registers                    ; 2                                               ;
-; Total pins                         ; 9                                               ;
+; Total logic elements               ; 33                                              ;
+;     Total combinational functions  ; 17                                              ;
+;     Dedicated logic registers      ; 24                                              ;
+; Total registers                    ; 24                                              ;
+; Total pins                         ; 13                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -66,7 +112,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; receiverFSM        ; CEG3155_PROJECT    ;
+; Top-level entity name                                                      ; receiverTopLevel   ; CEG3155_PROJECT    ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,56 +204,111 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                  ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                           ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------+---------+
-; receiverFSM.vhd                  ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd ;         ;
-; enardFF_2.vhd                    ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd   ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
+; receiverTopLevel.vhd             ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverTopLevel.vhd      ;         ;
+; receiverFSM.vhd                  ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd           ;         ;
+; nBitTargetIncrementer.vhd        ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitTargetIncrementer.vhd ;         ;
+; rdrfLatch.vhd                    ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/rdrfLatch.vhd             ;         ;
+; oneBitComparator.vhd             ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd      ;         ;
+; oneBitAdderSubtractor.vhd        ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd ;         ;
+; nBitShiftRegister.vhd            ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd     ;         ;
+; nbitregister.vhd                 ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd          ;         ;
+; nBitIncrementer.vhd              ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd       ;         ;
+; nbitcomparator.vhd               ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd        ;         ;
+; nBitAdderSubtractor.vhd          ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd   ;         ;
+; mux41.vhd                        ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd                 ;         ;
+; mux21.vhd                        ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd                 ;         ;
+; enardFF_2.vhd                    ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd             ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-; Estimated Total logic elements              ; 4                  ;
-;                                             ;                    ;
-; Total combinational functions               ; 4                  ;
-; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 2                  ;
-;     -- 3 input functions                    ; 0                  ;
-;     -- <=2 input functions                  ; 2                  ;
-;                                             ;                    ;
-; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 4                  ;
-;     -- arithmetic mode                      ; 0                  ;
-;                                             ;                    ;
-; Total registers                             ; 2                  ;
-;     -- Dedicated logic registers            ; 2                  ;
-;     -- I/O registers                        ; 0                  ;
-;                                             ;                    ;
-; I/O pins                                    ; 9                  ;
-; Embedded Multiplier 9-bit elements          ; 0                  ;
-; Maximum fan-out node                        ; enARdFF_2:y1|int_q ;
-; Maximum fan-out                             ; 4                  ;
-; Total fan-out                               ; 31                 ;
-; Average fan-out                             ; 1.29               ;
-+---------------------------------------------+--------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 33        ;
+;                                             ;           ;
+; Total combinational functions               ; 17        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 8         ;
+;     -- 3 input functions                    ; 4         ;
+;     -- <=2 input functions                  ; 5         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 17        ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 24        ;
+;     -- Dedicated logic registers            ; 24        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 13        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 24        ;
+; Total fan-out                               ; 164       ;
+; Average fan-out                             ; 2.45      ;
++---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                               ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------+
-; |receiverFSM               ; 4 (4)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |receiverFSM              ; work         ;
-;    |enARdFF_2:y0|          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverFSM|enARdFF_2:y0 ; work         ;
-;    |enARdFF_2:y1|          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverFSM|enARdFF_2:y1 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                            ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                ; Library Name ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |receiverTopLevel                              ; 17 (1)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |receiverTopLevel                                                                                                                  ; work         ;
+;    |nBitRegister:RDR|                          ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitRegister:RDR                                                                                                 ; work         ;
+;       |enARdFF_2:\reg_n_bits:0:b|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitRegister:RDR|enARdFF_2:\reg_n_bits:0:b                                                                       ; work         ;
+;       |enARdFF_2:\reg_n_bits:1:b|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitRegister:RDR|enARdFF_2:\reg_n_bits:1:b                                                                       ; work         ;
+;       |enARdFF_2:\reg_n_bits:2:b|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitRegister:RDR|enARdFF_2:\reg_n_bits:2:b                                                                       ; work         ;
+;       |enARdFF_2:\reg_n_bits:3:b|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitRegister:RDR|enARdFF_2:\reg_n_bits:3:b                                                                       ; work         ;
+;       |enARdFF_2:\reg_n_bits:4:b|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitRegister:RDR|enARdFF_2:\reg_n_bits:4:b                                                                       ; work         ;
+;       |enARdFF_2:\reg_n_bits:5:b|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitRegister:RDR|enARdFF_2:\reg_n_bits:5:b                                                                       ; work         ;
+;       |enARdFF_2:\reg_n_bits:6:b|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitRegister:RDR|enARdFF_2:\reg_n_bits:6:b                                                                       ; work         ;
+;       |enARdFF_2:\reg_n_bits:7:b|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitRegister:RDR|enARdFF_2:\reg_n_bits:7:b                                                                       ; work         ;
+;    |nBitShiftRegister:RSR|                     ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitShiftRegister:RSR                                                                                            ; work         ;
+;       |enARdFF_2:\regloop:0:bit_n|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitShiftRegister:RSR|enARdFF_2:\regloop:0:bit_n                                                                 ; work         ;
+;       |enARdFF_2:\regloop:1:bit_n|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitShiftRegister:RSR|enARdFF_2:\regloop:1:bit_n                                                                 ; work         ;
+;       |enARdFF_2:\regloop:2:bit_n|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitShiftRegister:RSR|enARdFF_2:\regloop:2:bit_n                                                                 ; work         ;
+;       |enARdFF_2:\regloop:3:bit_n|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitShiftRegister:RSR|enARdFF_2:\regloop:3:bit_n                                                                 ; work         ;
+;       |enARdFF_2:\regloop:4:bit_n|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitShiftRegister:RSR|enARdFF_2:\regloop:4:bit_n                                                                 ; work         ;
+;       |enARdFF_2:\regloop:5:bit_n|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitShiftRegister:RSR|enARdFF_2:\regloop:5:bit_n                                                                 ; work         ;
+;       |enARdFF_2:\regloop:6:bit_n|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitShiftRegister:RSR|enARdFF_2:\regloop:6:bit_n                                                                 ; work         ;
+;       |enARdFF_2:\regloop:7:bit_n|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitShiftRegister:RSR|enARdFF_2:\regloop:7:bit_n                                                                 ; work         ;
+;    |nBitTargetIncrementer:rsrShiftIncrementer| ; 4 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:rsrShiftIncrementer                                                                        ; work         ;
+;       |nBitIncrementer:incrementer|            ; 4 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer                                            ; work         ;
+;          |nBitRegister:reg|                    ; 4 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg                           ; work         ;
+;             |enARdFF_2:\reg_n_bits:0:b|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:1:b|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:2:b|        ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b ; work         ;
+;    |nBitTargetIncrementer:samplingIncrementer| ; 4 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:samplingIncrementer                                                                        ; work         ;
+;       |nBitIncrementer:incrementer|            ; 4 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:samplingIncrementer|nBitIncrementer:incrementer                                            ; work         ;
+;          |nBitRegister:reg|                    ; 4 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:samplingIncrementer|nBitIncrementer:incrementer|nBitRegister:reg                           ; work         ;
+;             |enARdFF_2:\reg_n_bits:0:b|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:samplingIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:1:b|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:samplingIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:2:b|        ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|nBitTargetIncrementer:samplingIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b ; work         ;
+;    |rdrfLatch:rdrf_latch|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|rdrfLatch:rdrf_latch                                                                                             ; work         ;
+;    |receiverFSM:fsm|                           ; 5 (4)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|receiverFSM:fsm                                                                                                  ; work         ;
+;       |enARdFF_2:y0|                           ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|receiverFSM:fsm|enARdFF_2:y0                                                                                     ; work         ;
+;       |enARdFF_2:y1|                           ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |receiverTopLevel|receiverFSM:fsm|enARdFF_2:y1                                                                                     ; work         ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; rdrfLatch:rdrf_latch|int_q                         ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -215,32 +316,460 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2     ;
+; Total registers                              ; 24    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 2     ;
+; Number of registers using Asynchronous Clear ; 24    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 17    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------+
-; Port Connectivity Checks: "enARdFF_2:y0"   ;
-+----------+-------+----------+--------------+
-; Port     ; Type  ; Severity ; Details      ;
-+----------+-------+----------+--------------+
-; i_enable ; Input ; Info     ; Stuck at VCC ;
-+----------+-------+----------+--------------+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitShiftRegister:RSR ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; n              ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------+
-; Port Connectivity Checks: "enARdFF_2:y1"   ;
-+----------+-------+----------+--------------+
-; Port     ; Type  ; Severity ; Details      ;
-+----------+-------+----------+--------------+
-; i_enable ; Input ; Info     ; Stuck at VCC ;
-+----------+-------+----------+--------------+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitRegister:RDR ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; n              ; 8     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTargetIncrementer:rsrShiftIncrementer ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                                                                      ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTargetIncrementer:rsrShiftIncrementer|nbitcomparator:comparator ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTargetIncrementer:samplingIncrementer ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTargetIncrementer:samplingIncrementer|nBitIncrementer:incrementer ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTargetIncrementer:samplingIncrementer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                                                                      ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTargetIncrementer:samplingIncrementer|nBitIncrementer:incrementer|nBitRegister:reg ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTargetIncrementer:samplingIncrementer|nbitcomparator:comparator ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTargetIncrementer:samplingIncrementer"                                                         ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_targetcount[1..0] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; i_targetcount[2]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_count             ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nbitcomparator:comparator|oneBitComparator:comparatorMSB" ;
++--------------+-------+----------+----------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                      ;
++--------------+-------+----------+----------------------------------------------------------------------------------------------+
+; i_gtprevious ; Input ; Info     ; Stuck at GND                                                                                 ;
+; i_ltprevious ; Input ; Info     ; Stuck at GND                                                                                 ;
++--------------+-------+----------+----------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nbitcomparator:comparator"                  ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_agtb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_altb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b" ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                         ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                             ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b" ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                         ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                             ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b" ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                         ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                             ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder" ;
++---------------+--------+----------+-----------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                                 ;
++---------------+--------+----------+-----------------------------------------------------------------------------------------+
+; i_bi[2..1]    ; Input  ; Info     ; Stuck at GND                                                                            ;
+; i_bi[0]       ; Input  ; Info     ; Stuck at VCC                                                                            ;
+; operationflag ; Input  ; Info     ; Stuck at GND                                                                            ;
+; o_carryout    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.     ;
++---------------+--------+----------+-----------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTargetIncrementer:rsrShiftIncrementer"                                                   ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_targetcount ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_count       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "receiverFSM:fsm|enARdFF_2:y0" ;
++----------+-------+----------+----------------------------+
+; Port     ; Type  ; Severity ; Details                    ;
++----------+-------+----------+----------------------------+
+; i_enable ; Input ; Info     ; Stuck at VCC               ;
++----------+-------+----------+----------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "receiverFSM:fsm|enARdFF_2:y1" ;
++----------+-------+----------+----------------------------+
+; Port     ; Type  ; Severity ; Details                    ;
++----------+-------+----------+----------------------------+
+; i_enable ; Input ; Info     ; Stuck at VCC               ;
++----------+-------+----------+----------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:7:b"                                           ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:6:b"                                           ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:5:b"                                           ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:4:b"                                           ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:3:b"                                           ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:2:b"                                           ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:1:b"                                           ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitRegister:RDR|enARdFF_2:\reg_n_bits:0:b"                                           ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:6:mux_n" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:5:mux_n" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:4:mux_n" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:3:mux_n" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:2:mux_n" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:\muxloop:1:mux_n" ;
++------+-------+----------+------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                        ;
++------+-------+----------+------------------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                                   ;
++------+-------+----------+------------------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:mux_msb" ;
++------+-------+----------+---------------------------------------+
+; Port ; Type  ; Severity ; Details                               ;
++------+-------+----------+---------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                          ;
++------+-------+----------+---------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|mux41:mux_0" ;
++------+-------+----------+-------------------------------------+
+; Port ; Type  ; Severity ; Details                             ;
++------+-------+----------+-------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                        ;
++------+-------+----------+-------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:7:bit_n"                                     ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:6:bit_n"                                     ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:5:bit_n"                                     ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:4:bit_n"                                     ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:3:bit_n"                                     ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:2:bit_n"                                     ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:1:bit_n"                                     ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR|enARdFF_2:\regloop:0:bit_n"                                     ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitShiftRegister:RSR"                                                                      ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_load       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_shift_left ; Input  ; Info     ; Stuck at GND                                                                        ;
+; parallel_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; serial_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -258,9 +787,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Dec 04 12:12:32 2024
+    Info: Processing started: Wed Dec 04 13:27:18 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CEG3155_PROJECT -c CEG3155_PROJECT
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file receivertoplevel.vhd
+    Info (12022): Found design unit 1: receiverTopLevel-rtl
+    Info (12023): Found entity 1: receiverTopLevel
 Info (12021): Found 2 design units, including 1 entities, in source file receiverfsm.vhd
     Info (12022): Found design unit 1: receiverFSM-rtl
     Info (12023): Found entity 1: receiverFSM
@@ -334,19 +866,36 @@ Info (12021): Found 2 design units, including 1 entities, in source file debounc
 Info (12021): Found 2 design units, including 1 entities, in source file bcd_7seg.vhd
     Info (12022): Found design unit 1: dec_7seg-rtl
     Info (12023): Found entity 1: dec_7seg
-Info (12127): Elaborating entity "receiverFSM" for the top level hierarchy
-Info (12128): Elaborating entity "enARdFF_2" for hierarchy "enARdFF_2:y1"
+Info (12127): Elaborating entity "receiverTopLevel" for the top level hierarchy
+Info (12128): Elaborating entity "nBitShiftRegister" for hierarchy "nBitShiftRegister:RSR"
+Info (12128): Elaborating entity "enARdFF_2" for hierarchy "nBitShiftRegister:RSR|enARdFF_2:\regloop:0:bit_n"
+Info (12128): Elaborating entity "mux41" for hierarchy "nBitShiftRegister:RSR|mux41:mux_0"
+Info (12128): Elaborating entity "mux21" for hierarchy "nBitShiftRegister:RSR|mux41:mux_0|mux21:mux1"
+Info (12128): Elaborating entity "nBitRegister" for hierarchy "nBitRegister:RDR"
+Warning (10036): Verilog HDL or VHDL warning at nbitregister.vhd(14): object "int_notValue" assigned a value but never read
+Info (12128): Elaborating entity "receiverFSM" for hierarchy "receiverFSM:fsm"
+Info (12128): Elaborating entity "nBitTargetIncrementer" for hierarchy "nBitTargetIncrementer:rsrShiftIncrementer"
+Info (12128): Elaborating entity "nBitIncrementer" for hierarchy "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer"
+Info (12128): Elaborating entity "nBitAdderSubtractor" for hierarchy "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder"
+Info (12128): Elaborating entity "oneBitAdderSubtractor" for hierarchy "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:add_0"
+Info (12128): Elaborating entity "nBitRegister" for hierarchy "nBitTargetIncrementer:rsrShiftIncrementer|nBitIncrementer:incrementer|nBitRegister:reg"
+Warning (10036): Verilog HDL or VHDL warning at nbitregister.vhd(14): object "int_notValue" assigned a value but never read
+Info (12128): Elaborating entity "nbitcomparator" for hierarchy "nBitTargetIncrementer:rsrShiftIncrementer|nbitcomparator:comparator"
+Info (12128): Elaborating entity "oneBitComparator" for hierarchy "nBitTargetIncrementer:rsrShiftIncrementer|nbitcomparator:comparator|oneBitComparator:comparatorMSB"
+Info (12128): Elaborating entity "rdrfLatch" for hierarchy "rdrfLatch:rdrf_latch"
+Warning (10631): VHDL Process Statement warning at rdrfLatch.vhd(15): inferring latch(es) for signal or variable "int_q", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "int_q" at rdrfLatch.vhd(15)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 13 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 4 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4643 megabytes
-    Info: Processing ended: Wed Dec 04 12:12:33 2024
-    Info: Elapsed time: 00:00:01
+Info (21057): Implemented 46 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 33 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4631 megabytes
+    Info: Processing ended: Wed Dec 04 13:27:20 2024
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -125,7 +125,7 @@ begin
             o_count => open
         );
 
-    rdrf_latch: rdrfLatch
+    rdrf: rdrfLatch
         PORT MAP(
             i_clear => clrRDRF,
             i_set => int_setRDRF,
