@@ -3,7 +3,7 @@ $comment
 		vcd file CEG3155_PROJECT.msim.vcd -direction
 $end
 $date
-	Wed Dec 04 16:48:05 2024
+	Wed Dec 04 18:27:45 2024
 $end
 $version
 	ModelSim Version 10.1d

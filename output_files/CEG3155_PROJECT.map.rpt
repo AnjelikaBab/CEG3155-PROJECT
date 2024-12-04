@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CEG3155_PROJECT
-Wed Dec 04 16:47:31 2024
+Wed Dec 04 18:52:13 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,37 +13,52 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: nBitIncrementer:count1
- 10. Parameter Settings for User Entity Instance: nBitIncrementer:count1|nBitAdderSubtractor:adder
- 11. Parameter Settings for User Entity Instance: nBitIncrementer:count1|nBitRegister:reg
- 12. Parameter Settings for User Entity Instance: nbitcomparator:comp41
- 13. Parameter Settings for User Entity Instance: nBitIncrementer:count2
- 14. Parameter Settings for User Entity Instance: nBitIncrementer:count2|nBitAdderSubtractor:adder
- 15. Parameter Settings for User Entity Instance: nBitIncrementer:count2|nBitRegister:reg
- 16. Parameter Settings for User Entity Instance: nBitIncrementer:count3
- 17. Parameter Settings for User Entity Instance: nBitIncrementer:count3|nBitAdderSubtractor:adder
- 18. Parameter Settings for User Entity Instance: nBitIncrementer:count3|nBitRegister:reg
- 19. Port Connectivity Checks: "nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b"
- 20. Port Connectivity Checks: "nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b"
- 21. Port Connectivity Checks: "nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b"
- 22. Port Connectivity Checks: "nBitIncrementer:count3|nBitAdderSubtractor:adder"
- 23. Port Connectivity Checks: "nBitIncrementer:count3"
- 24. Port Connectivity Checks: "nBitIncrementer:count2"
- 25. Port Connectivity Checks: "nbitcomparator:comp41|oneBitComparator:comparatorMSB"
- 26. Port Connectivity Checks: "nbitcomparator:comp41"
- 27. Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:7:b"
- 28. Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:6:b"
- 29. Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:5:b"
- 30. Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:4:b"
- 31. Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b"
- 32. Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b"
- 33. Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b"
- 34. Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b"
- 35. Port Connectivity Checks: "nBitIncrementer:count1|nBitAdderSubtractor:adder"
- 36. Port Connectivity Checks: "nBitIncrementer:count1"
- 37. Elapsed Time Per Partition
- 38. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: fsmController:fsmController1|nbitmux41:mstl_mux
+ 11. Parameter Settings for User Entity Instance: fsmController:fsmController1|nbitmux41:sstl_mux
+ 12. Parameter Settings for User Entity Instance: nBitTimer:mstTimer
+ 13. Parameter Settings for User Entity Instance: nBitTimer:mstTimer|nBitIncrementer:incrementer
+ 14. Parameter Settings for User Entity Instance: nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder
+ 15. Parameter Settings for User Entity Instance: nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg
+ 16. Parameter Settings for User Entity Instance: nBitTimer:mstTimer|nbitcomparator:comparator
+ 17. Parameter Settings for User Entity Instance: nBitTimer:sstTimer
+ 18. Parameter Settings for User Entity Instance: nBitTimer:sstTimer|nBitIncrementer:incrementer
+ 19. Parameter Settings for User Entity Instance: nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder
+ 20. Parameter Settings for User Entity Instance: nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitRegister:reg
+ 21. Parameter Settings for User Entity Instance: nBitTimer:sstTimer|nbitcomparator:comparator
+ 22. Parameter Settings for User Entity Instance: nBitTimer:mscTimer
+ 23. Parameter Settings for User Entity Instance: nBitTimer:mscTimer|nBitIncrementer:incrementer
+ 24. Parameter Settings for User Entity Instance: nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder
+ 25. Parameter Settings for User Entity Instance: nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg
+ 26. Parameter Settings for User Entity Instance: nBitTimer:mscTimer|nbitcomparator:comparator
+ 27. Parameter Settings for User Entity Instance: nBitTimer:sscTimer
+ 28. Parameter Settings for User Entity Instance: nBitTimer:sscTimer|nBitIncrementer:incrementer
+ 29. Parameter Settings for User Entity Instance: nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder
+ 30. Parameter Settings for User Entity Instance: nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg
+ 31. Parameter Settings for User Entity Instance: nBitTimer:sscTimer|nbitcomparator:comparator
+ 32. Parameter Settings for User Entity Instance: nbitmux41:msColorMux
+ 33. Parameter Settings for User Entity Instance: nbitmux41:ssColorMux
+ 34. Port Connectivity Checks: "nbitmux41:ssColorMux"
+ 35. Port Connectivity Checks: "nbitmux41:msColorMux"
+ 36. Port Connectivity Checks: "debouncer_2:sscsDebouncer|enARdFF_2:second"
+ 37. Port Connectivity Checks: "debouncer_2:sscsDebouncer|enARdFF_2:first"
+ 38. Port Connectivity Checks: "nBitTimer:sstTimer"
+ 39. Port Connectivity Checks: "nBitTimer:mstTimer|nbitcomparator:comparator|oneBitComparator:comparatorMSB"
+ 40. Port Connectivity Checks: "nBitTimer:mstTimer|nbitcomparator:comparator"
+ 41. Port Connectivity Checks: "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b"
+ 42. Port Connectivity Checks: "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b"
+ 43. Port Connectivity Checks: "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b"
+ 44. Port Connectivity Checks: "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b"
+ 45. Port Connectivity Checks: "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder"
+ 46. Port Connectivity Checks: "nBitTimer:mstTimer"
+ 47. Port Connectivity Checks: "fsmController:fsmController1|nbitmux41:sstl_mux"
+ 48. Port Connectivity Checks: "fsmController:fsmController1|nbitmux41:mstl_mux"
+ 49. Port Connectivity Checks: "fsmController:fsmController1|enARdFF_2:reset_latch"
+ 50. Port Connectivity Checks: "fsmController:fsmController1|enARdFF_2:enardFF_y1"
+ 51. Port Connectivity Checks: "fsmController:fsmController1|enARdFF_2:enardFF_y0"
+ 52. Elapsed Time Per Partition
+ 53. Analysis & Synthesis Messages
 
 
 
@@ -69,16 +84,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 04 16:47:31 2024           ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 04 18:52:13 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CEG3155_PROJECT                                 ;
-; Top-level Entity Name              ; baudRateGenerator                               ;
+; Top-level Entity Name              ; fsmTopLevel                                     ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 41                                              ;
-;     Total combinational functions  ; 41                                              ;
-;     Dedicated logic registers      ; 19                                              ;
-; Total registers                    ; 19                                              ;
-; Total pins                         ; 7                                               ;
+; Total logic elements               ; 47                                              ;
+;     Total combinational functions  ; 47                                              ;
+;     Dedicated logic registers      ; 17                                              ;
+; Total registers                    ; 17                                              ;
+; Total pins                         ; 48                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -92,7 +107,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; baudRateGenerator  ; CEG3155_PROJECT    ;
+; Top-level entity name                                                      ; fsmTopLevel        ; CEG3155_PROJECT    ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -189,97 +204,113 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                     ; Library ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
-; baudRateGenerator.vhd            ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/baudRateGenerator.vhd     ;         ;
-; mux81.vhd                        ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd                 ;         ;
 ; oneBitComparator.vhd             ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd      ;         ;
 ; oneBitAdderSubtractor.vhd        ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd ;         ;
+; nBitTimer.vhd                    ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitTimer.vhd             ;         ;
 ; nbitregister.vhd                 ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd          ;         ;
+; nbitmux41.vhd                    ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitmux41.vhd             ;         ;
 ; nBitIncrementer.vhd              ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd       ;         ;
 ; nbitcomparator.vhd               ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd        ;         ;
 ; nBitAdderSubtractor.vhd          ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd   ;         ;
 ; mux41.vhd                        ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd                 ;         ;
 ; mux21.vhd                        ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd                 ;         ;
+; fsmTopLevel.vhd                  ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/fsmTopLevel.vhd           ;         ;
+; fsmController.vhd                ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/fsmController.vhd         ;         ;
 ; enardFF_2.vhd                    ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd             ;         ;
+; debouncer_2.vhd                  ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/debouncer_2.vhd           ;         ;
+; bcd_7seg.vhd                     ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/bcd_7seg.vhd              ;         ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 41          ;
-;                                             ;             ;
-; Total combinational functions               ; 41          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 13          ;
-;     -- 3 input functions                    ; 14          ;
-;     -- <=2 input functions                  ; 14          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 41          ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 19          ;
-;     -- Dedicated logic registers            ; 19          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 7           ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-; Maximum fan-out node                        ; reset~input ;
-; Maximum fan-out                             ; 12          ;
-; Total fan-out                               ; 185         ;
-; Average fan-out                             ; 2.50        ;
-+---------------------------------------------+-------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 47         ;
+;                                             ;            ;
+; Total combinational functions               ; 47         ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 28         ;
+;     -- 3 input functions                    ; 8          ;
+;     -- <=2 input functions                  ; 11         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 47         ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 17         ;
+;     -- Dedicated logic registers            ; 17         ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 48         ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+; Maximum fan-out node                        ; gclk~input ;
+; Maximum fan-out                             ; 17         ;
+; Total fan-out                               ; 288        ;
+; Average fan-out                             ; 1.80       ;
++---------------------------------------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                              ;
-+---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Library Name ;
-+---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
-; |baudRateGenerator                                      ; 41 (1)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |baudRateGenerator                                                                                          ; work         ;
-;    |mux81:baudMux|                                      ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|mux81:baudMux                                                                            ; work         ;
-;       |mux21:muxfinal|                                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|mux81:baudMux|mux21:muxfinal                                                             ; work         ;
-;       |mux41:mux1|                                      ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|mux81:baudMux|mux41:mux1                                                                 ; work         ;
-;          |mux21:muxfinal|                               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|mux81:baudMux|mux41:mux1|mux21:muxfinal                                                  ; work         ;
-;       |mux41:mux2|                                      ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|mux81:baudMux|mux41:mux2                                                                 ; work         ;
-;          |mux21:muxfinal|                               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|mux81:baudMux|mux41:mux2|mux21:muxfinal                                                  ; work         ;
-;    |nBitIncrementer:count1|                             ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1                                                                   ; work         ;
-;       |nBitAdderSubtractor:adder|                       ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1|nBitAdderSubtractor:adder                                         ; work         ;
-;          |oneBitAdderSubtractor:\loop_add:3:addrn|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:3:addrn ; work         ;
-;       |nBitRegister:reg|                                ; 9 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1|nBitRegister:reg                                                  ; work         ;
-;          |enARdFF_2:\reg_n_bits:0:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:1:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:2:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:3:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:4:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:4:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:5:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:5:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:6:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:6:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:7:b|                    ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:7:b                        ; work         ;
-;    |nBitIncrementer:count2|                             ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2                                                                   ; work         ;
-;       |nBitAdderSubtractor:adder|                       ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2|nBitAdderSubtractor:adder                                         ; work         ;
-;          |oneBitAdderSubtractor:\loop_add:3:addrn|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:3:addrn ; work         ;
-;       |nBitRegister:reg|                                ; 9 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2|nBitRegister:reg                                                  ; work         ;
-;          |enARdFF_2:\reg_n_bits:0:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:1:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:2:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:3:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:4:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2|nBitRegister:reg|enARdFF_2:\reg_n_bits:4:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:5:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2|nBitRegister:reg|enARdFF_2:\reg_n_bits:5:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:6:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2|nBitRegister:reg|enARdFF_2:\reg_n_bits:6:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:7:b|                    ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count2|nBitRegister:reg|enARdFF_2:\reg_n_bits:7:b                        ; work         ;
-;    |nBitIncrementer:count3|                             ; 3 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count3                                                                   ; work         ;
-;       |nBitRegister:reg|                                ; 3 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count3|nBitRegister:reg                                                  ; work         ;
-;          |enARdFF_2:\reg_n_bits:0:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:1:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b                        ; work         ;
-;          |enARdFF_2:\reg_n_bits:2:b|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b                        ; work         ;
-;    |nbitcomparator:comp41|                              ; 10 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nbitcomparator:comp41                                                                    ; work         ;
-;       |oneBitComparator:\comparatorLoop:0:comparator_n| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nbitcomparator:comp41|oneBitComparator:\comparatorLoop:0:comparator_n                    ; work         ;
-;       |oneBitComparator:\comparatorLoop:3:comparator_n| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nbitcomparator:comp41|oneBitComparator:\comparatorLoop:3:comparator_n                    ; work         ;
-;       |oneBitComparator:\comparatorLoop:4:comparator_n| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |baudRateGenerator|nbitcomparator:comp41|oneBitComparator:\comparatorLoop:4:comparator_n                    ; work         ;
-+---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Library Name ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------+
+; |fsmTopLevel                            ; 47 (1)            ; 17 (0)       ; 0           ; 0            ; 0       ; 0         ; 48   ; 0            ; |fsmTopLevel                                                                                           ; work         ;
+;    |debouncer_2:sscsDebouncer|          ; 2 (2)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|debouncer_2:sscsDebouncer                                                                 ; work         ;
+;       |enARdFF_2:first|                 ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|debouncer_2:sscsDebouncer|enARdFF_2:first                                                 ; work         ;
+;       |enARdFF_2:second|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|debouncer_2:sscsDebouncer|enARdFF_2:second                                                ; work         ;
+;    |dec_7seg:mscBcd|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|dec_7seg:mscBcd                                                                           ; work         ;
+;    |dec_7seg:sscBcd|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|dec_7seg:sscBcd                                                                           ; work         ;
+;    |fsmController:fsmController1|       ; 7 (6)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|fsmController:fsmController1                                                              ; work         ;
+;       |enARdFF_2:enardFF_y0|            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|fsmController:fsmController1|enARdFF_2:enardFF_y0                                         ; work         ;
+;       |enARdFF_2:enardFF_y1|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|fsmController:fsmController1|enARdFF_2:enardFF_y1                                         ; work         ;
+;       |enARdFF_2:reset_latch|           ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|fsmController:fsmController1|enARdFF_2:reset_latch                                        ; work         ;
+;    |nBitTimer:mscTimer|                 ; 7 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mscTimer                                                                        ; work         ;
+;       |nBitIncrementer:incrementer|     ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer                                            ; work         ;
+;          |nBitRegister:reg|             ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg                           ; work         ;
+;             |enARdFF_2:\reg_n_bits:0:b| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:1:b| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:2:b| ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:3:b| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b ; work         ;
+;       |nbitcomparator:comparator|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mscTimer|nbitcomparator:comparator                                              ; work         ;
+;    |nBitTimer:mstTimer|                 ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mstTimer                                                                        ; work         ;
+;       |nBitIncrementer:incrementer|     ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer                                            ; work         ;
+;          |nBitRegister:reg|             ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg                           ; work         ;
+;             |enARdFF_2:\reg_n_bits:0:b| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:1:b| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:2:b| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:3:b| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b ; work         ;
+;    |nBitTimer:sscTimer|                 ; 7 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:sscTimer                                                                        ; work         ;
+;       |nBitIncrementer:incrementer|     ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer                                            ; work         ;
+;          |nBitRegister:reg|             ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg                           ; work         ;
+;             |enARdFF_2:\reg_n_bits:0:b| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:1:b| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:2:b| ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b ; work         ;
+;             |enARdFF_2:\reg_n_bits:3:b| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b ; work         ;
+;       |nbitcomparator:comparator|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nBitTimer:sscTimer|nbitcomparator:comparator                                              ; work         ;
+;    |nbitmux41:msColorMux|               ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nbitmux41:msColorMux                                                                      ; work         ;
+;       |mux41:\muxloop:1:mux_n|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nbitmux41:msColorMux|mux41:\muxloop:1:mux_n                                               ; work         ;
+;          |mux21:muxfinal|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nbitmux41:msColorMux|mux41:\muxloop:1:mux_n|mux21:muxfinal                                ; work         ;
+;    |nbitmux41:ssColorMux|               ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nbitmux41:ssColorMux                                                                      ; work         ;
+;       |mux41:\muxloop:2:mux_n|          ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nbitmux41:ssColorMux|mux41:\muxloop:2:mux_n                                               ; work         ;
+;          |mux21:muxfinal|               ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fsmTopLevel|nbitmux41:ssColorMux|mux41:\muxloop:2:mux_n|mux21:muxfinal                                ; work         ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                            ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                   ; Reason for Removal                                                                                          ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
+; nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b|int_q ; Merged with nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b|int_q ;
+; nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q ; Merged with nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q ;
+; nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b|int_q ; Merged with nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b|int_q ;
+; nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b|int_q ; Merged with nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b|int_q ;
+; Total Number of Removed Registers = 4                                                           ;                                                                                                             ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -287,289 +318,479 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 19    ;
+; Total registers                              ; 17    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 19    ;
+; Number of registers using Asynchronous Clear ; 17    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: nBitIncrementer:count1 ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; n              ; 8     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fsmController:fsmController1|nbitmux41:mstl_mux ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: nBitIncrementer:count1|nBitAdderSubtractor:adder ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; n              ; 8     ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fsmController:fsmController1|nbitmux41:sstl_mux ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; n              ; 3     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: nBitIncrementer:count1|nBitRegister:reg ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; n              ; 8     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:mstTimer ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; n              ; 4     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: nbitcomparator:comp41 ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; n              ; 8     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:mstTimer|nBitIncrementer:incrementer ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: nBitIncrementer:count2 ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; n              ; 8     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: nBitIncrementer:count2|nBitAdderSubtractor:adder ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; n              ; 8     ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: nBitIncrementer:count2|nBitRegister:reg ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; n              ; 8     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:mstTimer|nbitcomparator:comparator ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: nBitIncrementer:count3 ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; n              ; 3     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:sstTimer ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; n              ; 4     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: nBitIncrementer:count3|nBitAdderSubtractor:adder ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; n              ; 3     ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:sstTimer|nBitIncrementer:incrementer ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: nBitIncrementer:count3|nBitRegister:reg ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; n              ; 3     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitRegister:reg ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:sstTimer|nbitcomparator:comparator ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:mscTimer ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; n              ; 4     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:mscTimer|nBitIncrementer:incrementer ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:mscTimer|nbitcomparator:comparator ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:sscTimer ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; n              ; 4     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:sscTimer|nBitIncrementer:incrementer ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nBitTimer:sscTimer|nbitcomparator:comparator ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nbitmux41:msColorMux ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 8     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: nbitmux41:ssColorMux ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 8     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "nbitmux41:ssColorMux" ;
++----------+-------+----------+--------------------+
+; Port     ; Type  ; Severity ; Details            ;
++----------+-------+----------+--------------------+
+; x0[6..4] ; Input ; Info     ; Stuck at VCC       ;
+; x0[3..2] ; Input ; Info     ; Stuck at GND       ;
+; x0[7]    ; Input ; Info     ; Stuck at GND       ;
+; x0[1]    ; Input ; Info     ; Stuck at VCC       ;
+; x0[0]    ; Input ; Info     ; Stuck at GND       ;
+; x1[6..4] ; Input ; Info     ; Stuck at VCC       ;
+; x1[3..2] ; Input ; Info     ; Stuck at GND       ;
+; x1[7]    ; Input ; Info     ; Stuck at GND       ;
+; x1[1]    ; Input ; Info     ; Stuck at VCC       ;
+; x1[0]    ; Input ; Info     ; Stuck at GND       ;
+; x2[6..5] ; Input ; Info     ; Stuck at VCC       ;
+; x2[2..0] ; Input ; Info     ; Stuck at VCC       ;
+; x2[4..3] ; Input ; Info     ; Stuck at GND       ;
+; x2[7]    ; Input ; Info     ; Stuck at GND       ;
+; x3[6..3] ; Input ; Info     ; Stuck at VCC       ;
+; x3[2..1] ; Input ; Info     ; Stuck at GND       ;
+; x3[7]    ; Input ; Info     ; Stuck at GND       ;
+; x3[0]    ; Input ; Info     ; Stuck at VCC       ;
++----------+-------+----------+--------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "nbitmux41:msColorMux" ;
++----------+-------+----------+--------------------+
+; Port     ; Type  ; Severity ; Details            ;
++----------+-------+----------+--------------------+
+; x0[6..5] ; Input ; Info     ; Stuck at VCC       ;
+; x0[2..0] ; Input ; Info     ; Stuck at VCC       ;
+; x0[4..3] ; Input ; Info     ; Stuck at GND       ;
+; x0[7]    ; Input ; Info     ; Stuck at GND       ;
+; x1[6..3] ; Input ; Info     ; Stuck at VCC       ;
+; x1[2..1] ; Input ; Info     ; Stuck at GND       ;
+; x1[7]    ; Input ; Info     ; Stuck at GND       ;
+; x1[0]    ; Input ; Info     ; Stuck at VCC       ;
+; x2[6..4] ; Input ; Info     ; Stuck at VCC       ;
+; x2[3..2] ; Input ; Info     ; Stuck at GND       ;
+; x2[7]    ; Input ; Info     ; Stuck at GND       ;
+; x2[1]    ; Input ; Info     ; Stuck at VCC       ;
+; x2[0]    ; Input ; Info     ; Stuck at GND       ;
+; x3[6..4] ; Input ; Info     ; Stuck at VCC       ;
+; x3[3..2] ; Input ; Info     ; Stuck at GND       ;
+; x3[7]    ; Input ; Info     ; Stuck at GND       ;
+; x3[1]    ; Input ; Info     ; Stuck at VCC       ;
+; x3[0]    ; Input ; Info     ; Stuck at GND       ;
++----------+-------+----------+--------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "debouncer_2:sscsDebouncer|enARdFF_2:second" ;
++----------+-------+----------+------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                  ;
++----------+-------+----------+------------------------------------------+
+; i_enable ; Input ; Info     ; Stuck at VCC                             ;
++----------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "debouncer_2:sscsDebouncer|enARdFF_2:first"                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_q      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTimer:sstTimer"                                                                                ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_targetcount[3..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_targetcount[1]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; i_targetcount[0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_count             ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTimer:mstTimer|nbitcomparator:comparator|oneBitComparator:comparatorMSB" ;
++--------------+-------+----------+-----------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                               ;
++--------------+-------+----------+-----------------------------------------------------------------------+
+; i_gtprevious ; Input ; Info     ; Stuck at GND                                                          ;
+; i_ltprevious ; Input ; Info     ; Stuck at GND                                                          ;
++--------------+-------+----------+-----------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b"                    ;
+; Port Connectivity Checks: "nBitTimer:mstTimer|nbitcomparator:comparator"                                         ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_agtb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_altb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b"                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b" ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                  ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.      ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b"                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b" ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                  ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.      ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b" ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                  ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.      ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b" ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                  ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.      ;
++--------+--------+----------+------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count3|nBitAdderSubtractor:adder"                                            ;
+; Port Connectivity Checks: "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder"                    ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port          ; Type   ; Severity ; Details                                                                             ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
-; i_bi[2..1]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_bi[3..1]    ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; i_bi[0]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
 ; operationflag ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; o_carryout    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count3"                                                                  ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; increment ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; y[1..0]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nBitTimer:mstTimer"                                                                                ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_targetcount[3..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_targetcount[1]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; i_targetcount[0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_count             ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count2" ;
-+-----------+-------+----------+---------------------+
-; Port      ; Type  ; Severity ; Details             ;
-+-----------+-------+----------+---------------------+
-; increment ; Input ; Info     ; Stuck at VCC        ;
-+-----------+-------+----------+---------------------+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "fsmController:fsmController1|nbitmux41:sstl_mux" ;
++----------+-------+----------+-----------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                       ;
++----------+-------+----------+-----------------------------------------------+
+; x0[2..1] ; Input ; Info     ; Stuck at GND                                  ;
+; x0[0]    ; Input ; Info     ; Stuck at VCC                                  ;
+; x1[2..1] ; Input ; Info     ; Stuck at GND                                  ;
+; x1[0]    ; Input ; Info     ; Stuck at VCC                                  ;
+; x2[1..0] ; Input ; Info     ; Stuck at GND                                  ;
+; x2[2]    ; Input ; Info     ; Stuck at VCC                                  ;
+; x3[2]    ; Input ; Info     ; Stuck at GND                                  ;
+; x3[1]    ; Input ; Info     ; Stuck at VCC                                  ;
+; x3[0]    ; Input ; Info     ; Stuck at GND                                  ;
++----------+-------+----------+-----------------------------------------------+
 
 
-+----------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nbitcomparator:comp41|oneBitComparator:comparatorMSB" ;
-+--------------+-------+----------+------------------------------------------------+
-; Port         ; Type  ; Severity ; Details                                        ;
-+--------------+-------+----------+------------------------------------------------+
-; i_gtprevious ; Input ; Info     ; Stuck at GND                                   ;
-; i_ltprevious ; Input ; Info     ; Stuck at GND                                   ;
-+--------------+-------+----------+------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "fsmController:fsmController1|nbitmux41:mstl_mux" ;
++----------+-------+----------+-----------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                       ;
++----------+-------+----------+-----------------------------------------------+
+; x0[1..0] ; Input ; Info     ; Stuck at GND                                  ;
+; x0[2]    ; Input ; Info     ; Stuck at VCC                                  ;
+; x1[2]    ; Input ; Info     ; Stuck at GND                                  ;
+; x1[1]    ; Input ; Info     ; Stuck at VCC                                  ;
+; x1[0]    ; Input ; Info     ; Stuck at GND                                  ;
+; x2[2..1] ; Input ; Info     ; Stuck at GND                                  ;
+; x2[0]    ; Input ; Info     ; Stuck at VCC                                  ;
+; x3[2..1] ; Input ; Info     ; Stuck at GND                                  ;
+; x3[0]    ; Input ; Info     ; Stuck at VCC                                  ;
++----------+-------+----------+-----------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nbitcomparator:comp41"                                                                   ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; i_b[7..6] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; i_b[2..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; i_b[5]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; i_b[4]    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; i_b[3]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; o_altb    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fsmController:fsmController1|enARdFF_2:reset_latch"                                     ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:7:b"                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fsmController:fsmController1|enARdFF_2:enardFF_y1" ;
++----------+-------+----------+-------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                         ;
++----------+-------+----------+-------------------------------------------------+
+; i_enable ; Input ; Info     ; Stuck at VCC                                    ;
++----------+-------+----------+-------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:6:b"                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:5:b"                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:4:b"                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b"                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b"                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b"                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b"                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count1|nBitAdderSubtractor:adder"                                            ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port          ; Type   ; Severity ; Details                                                                             ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
-; i_bi[7..1]    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; i_bi[0]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; operationflag ; Input  ; Info     ; Stuck at GND                                                                        ;
-; o_carryout    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------+
-; Port Connectivity Checks: "nBitIncrementer:count1" ;
-+-----------+-------+----------+---------------------+
-; Port      ; Type  ; Severity ; Details             ;
-+-----------+-------+----------+---------------------+
-; increment ; Input ; Info     ; Stuck at VCC        ;
-+-----------+-------+----------+---------------------+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fsmController:fsmController1|enARdFF_2:enardFF_y0" ;
++----------+-------+----------+-------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                         ;
++----------+-------+----------+-------------------------------------------------+
+; i_enable ; Input ; Info     ; Stuck at VCC                                    ;
++----------+-------+----------+-------------------------------------------------+
 
 
 +-------------------------------+
@@ -587,9 +808,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Dec 04 16:47:29 2024
+    Info: Processing started: Wed Dec 04 18:52:10 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CEG3155_PROJECT -c CEG3155_PROJECT
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file uarttoplevel.vhd
+    Info (12022): Found design unit 1: uartTopLevel-Structural
+    Info (12023): Found entity 1: uartTopLevel
 Info (12021): Found 2 design units, including 1 entities, in source file baudrategenerator.vhd
     Info (12022): Found design unit 1: baudRateGenerator-rtl
     Info (12023): Found entity 1: baudRateGenerator
@@ -675,39 +899,42 @@ Info (12021): Found 2 design units, including 1 entities, in source file debounc
 Info (12021): Found 2 design units, including 1 entities, in source file bcd_7seg.vhd
     Info (12022): Found design unit 1: dec_7seg-rtl
     Info (12023): Found entity 1: dec_7seg
-Info (12127): Elaborating entity "baudRateGenerator" for the top level hierarchy
-Info (12128): Elaborating entity "nBitIncrementer" for hierarchy "nBitIncrementer:count1"
-Info (12128): Elaborating entity "nBitAdderSubtractor" for hierarchy "nBitIncrementer:count1|nBitAdderSubtractor:adder"
-Info (12128): Elaborating entity "oneBitAdderSubtractor" for hierarchy "nBitIncrementer:count1|nBitAdderSubtractor:adder|oneBitAdderSubtractor:add_0"
-Info (12128): Elaborating entity "nBitRegister" for hierarchy "nBitIncrementer:count1|nBitRegister:reg"
+Info (12127): Elaborating entity "fsmTopLevel" for the top level hierarchy
+Info (12128): Elaborating entity "fsmController" for hierarchy "fsmController:fsmController1"
+Info (12128): Elaborating entity "enARdFF_2" for hierarchy "fsmController:fsmController1|enARdFF_2:enardFF_y0"
+Info (12128): Elaborating entity "nbitmux41" for hierarchy "fsmController:fsmController1|nbitmux41:mstl_mux"
+Info (12128): Elaborating entity "mux41" for hierarchy "fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:0:mux_n"
+Info (12128): Elaborating entity "mux21" for hierarchy "fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:0:mux_n|mux21:mux1"
+Info (12128): Elaborating entity "nBitTimer" for hierarchy "nBitTimer:mstTimer"
+Info (12128): Elaborating entity "nBitIncrementer" for hierarchy "nBitTimer:mstTimer|nBitIncrementer:incrementer"
+Info (12128): Elaborating entity "nBitAdderSubtractor" for hierarchy "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder"
+Info (12128): Elaborating entity "oneBitAdderSubtractor" for hierarchy "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:add_0"
+Info (12128): Elaborating entity "nBitRegister" for hierarchy "nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg"
 Warning (10036): Verilog HDL or VHDL warning at nbitregister.vhd(14): object "int_notValue" assigned a value but never read
-Info (12128): Elaborating entity "enARdFF_2" for hierarchy "nBitIncrementer:count1|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b"
-Info (12128): Elaborating entity "nbitcomparator" for hierarchy "nbitcomparator:comp41"
-Info (12128): Elaborating entity "oneBitComparator" for hierarchy "nbitcomparator:comp41|oneBitComparator:comparatorMSB"
-Info (12128): Elaborating entity "mux81" for hierarchy "mux81:baudMux"
-Info (12128): Elaborating entity "mux41" for hierarchy "mux81:baudMux|mux41:mux1"
-Info (12128): Elaborating entity "mux21" for hierarchy "mux81:baudMux|mux41:mux1|mux21:mux1"
-Info (12128): Elaborating entity "nBitIncrementer" for hierarchy "nBitIncrementer:count3"
-Info (12128): Elaborating entity "nBitAdderSubtractor" for hierarchy "nBitIncrementer:count3|nBitAdderSubtractor:adder"
-Info (12128): Elaborating entity "nBitRegister" for hierarchy "nBitIncrementer:count3|nBitRegister:reg"
-Warning (10036): Verilog HDL or VHDL warning at nbitregister.vhd(14): object "int_notValue" assigned a value but never read
-Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer mux81:baudMux|mux21:muxfinal|y~synth
-    Warning (19017): Found clock multiplexer mux81:baudMux|mux41:mux2|mux21:muxfinal|y~synth
-    Warning (19017): Found clock multiplexer mux81:baudMux|mux41:mux1|mux21:muxfinal|y~synth
-Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer nbitcomparator:comp41|oneBitComparator:\comparatorLoop:0:comparator_n|o_GT~synth
+Info (12128): Elaborating entity "nbitcomparator" for hierarchy "nBitTimer:mstTimer|nbitcomparator:comparator"
+Info (12128): Elaborating entity "oneBitComparator" for hierarchy "nBitTimer:mstTimer|nbitcomparator:comparator|oneBitComparator:comparatorMSB"
+Info (12128): Elaborating entity "debouncer_2" for hierarchy "debouncer_2:sscsDebouncer"
+Warning (10036): Verilog HDL or VHDL warning at debouncer_2.vhd(38): object "int_q1Output" assigned a value but never read
+Info (12128): Elaborating entity "dec_7seg" for hierarchy "dec_7seg:mscBcd"
+Info (12128): Elaborating entity "nbitmux41" for hierarchy "nbitmux41:msColorMux"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "o_MS_color[5]" is stuck at VCC
+    Warning (13410): Pin "o_MS_color[6]" is stuck at VCC
+    Warning (13410): Pin "o_MS_color[7]" is stuck at GND
+    Warning (13410): Pin "o_SS_color[5]" is stuck at VCC
+    Warning (13410): Pin "o_SS_color[6]" is stuck at VCC
+    Warning (13410): Pin "o_SS_color[7]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 41 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
+Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 37 output pins
+    Info (21061): Implemented 48 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 11 warnings
     Info: Peak virtual memory: 4631 megabytes
-    Info: Processing ended: Wed Dec 04 16:47:31 2024
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Wed Dec 04 18:52:13 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

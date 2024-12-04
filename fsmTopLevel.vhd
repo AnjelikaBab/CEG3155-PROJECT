@@ -7,8 +7,10 @@ ENTITY fsmTopLevel IS
         i_msc_val, i_ssc_val: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
         i_sscs: IN STD_LOGIC;
         o_mstl, o_sstl: OUT STD_LOGIC_VECTOR (2 DOWNTO 0);
-        o_state: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
-        o_bcd1, o_bcd2: OUT STD_LOGIC_VECTOR (6 DOWNTO 0));    
+        o_bcd1, o_bcd2: OUT STD_LOGIC_VECTOR (6 DOWNTO 0);  
+        o_MS_color, o_SS_color: OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
+        o_state_changed: OUT STD_LOGIC  
+		  );
 END fsmTopLevel;
 
 ARCHITECTURE rtl of fsmTopLevel is
@@ -16,7 +18,8 @@ ARCHITECTURE rtl of fsmTopLevel is
     SIGNAL int_rst_timer, int_fsm_reset: STD_LOGIC;
     SIGNAL gresetbar: STD_LOGIC;
     SIGNAL int_msc_count, int_ssc_count: STD_LOGIC_VECTOR(3 DOWNTO 0);
-
+    SIGNAL r_ascii, g_ascii, y_ascii: STD_LOGIC_VECTOR(7 DOWNTO 0);
+    SIGNAL i_state: STD_LOGIC_VECTOR (1 DOWNTO 0);
 
     COMPONENT fsmController
         PORT(
@@ -60,9 +63,15 @@ ARCHITECTURE rtl of fsmTopLevel is
             o_q, o_qBar: OUT STD_LOGIC);
     END COMPONENT;
 
+    component nbitmux41
+        GENERIC ( n: INTEGER := 8 ) ;
+        PORT ( s0, s1: IN STD_LOGIC ;
+            x0, x1, x2, x3: IN STD_LOGIC_VECTOR(n-1 downto 0) ;
+            y: OUT STD_LOGIC_VECTOR(n-1 downto 0) ) ;
+    END component ;
+
 BEGIN
     gresetbar <= not greset;
-
     int_rst_timer <= int_fsm_reset OR greset;
 
     fsmController1: fsmController
@@ -76,7 +85,7 @@ BEGIN
             ssc => int_ssc,
             mstl => o_mstl,
             sstl => o_sstl,
-            state => o_state,
+            state => i_state,
             reset_timer => int_fsm_reset
             );
 
@@ -152,4 +161,36 @@ BEGIN
             o_segment_g => o_bcd2(6)
             );
 
+    msColorMux: nbitMux41
+        GENERIC MAP (n => 8)
+        PORT MAP(
+            s0 => i_state(0),
+            s1 => i_state(1),
+            x0 => g_ascii,
+            x1 => y_ascii,
+            x2 => r_ascii,
+            x3 => r_ascii,
+            y => o_MS_color
+        );
+    
+    ssColorMux: nbitMux41
+        GENERIC MAP (n => 8)
+        PORT MAP(
+            s0 => i_state(0),
+            s1 => i_state(1),
+            x0 => r_ascii,
+            x1 => r_ascii,
+            x2 => g_ascii,
+            x3 => y_ascii,
+            y => o_SS_color
+        );
+
+    -- ASCII values for colors
+    y_ascii <= "01111001";
+    g_ascii <= "01100111";
+    r_ascii <= "01110010";
+
+    -- Output drivers
+    o_state_changed <= int_fsm_reset;
+    
 end rtl;
