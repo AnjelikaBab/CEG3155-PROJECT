@@ -66,7 +66,7 @@ begin
 
     -- output signals
     clrInc <= A;
-    setRDRF <= endData AND C;
+    setRDRF <= endData AND D;
     Inc <= B OR C OR D;
     rsrShift <= D;
 end rtl;

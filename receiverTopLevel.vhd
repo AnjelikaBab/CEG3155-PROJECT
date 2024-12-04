@@ -59,12 +59,13 @@ architecture rtl of receiverTopLevel is
     SIGNAL int_rsrOut: STD_LOGIC_VECTOR(7 downto 0);
     SIGNAL int_not_RDRF, int_rsrShift, int_sampleCountReached, int_endData: STD_LOGIC;
     SIGNAL int_setRDRF, int_Inc, int_clrInc: STD_LOGIC;
-    SIGNAL not_reset, reset_incrementer: STD_LOGIC;
+    SIGNAL not_reset, reset_incrementer, reset_latch: STD_LOGIC;
 
 begin
 
     not_reset <= not reset;
     reset_incrementer <= reset OR int_clrInc;
+    reset_latch <= reset OR clrRDRF;
 
     RSR: nBitShiftRegister
         GENERIC MAP(n => 8)
@@ -104,12 +105,12 @@ begin
         );
 
     rsrShiftIncrementer: nbitTargetIncrementer
-        GENERIC MAP(n => 3)
+        GENERIC MAP(n => 4)
         PORT MAP(
             i_clk => clk,
             i_reset => reset_incrementer,
             i_increment => int_rsrShift,
-            i_targetCount => "111",
+            i_targetCount => "1000",
             o_done => int_endData,
             o_count => open
         );
@@ -120,14 +121,14 @@ begin
             i_clk => clk,
             i_reset => reset_incrementer,
             i_increment => int_Inc,
-            i_targetCount => "011",
+            i_targetCount => "010", -- it takes one extra clock cycle to start incrementing so targetting 010 accounts for that delay
             o_done => int_sampleCountReached,
             o_count => open
         );
 
     rdrf_latch: rdrfLatch
         PORT MAP(
-            i_clear => clrRDRF,
+            i_clear => reset_latch,
             i_set => int_setRDRF,
             o_rdrf => RDRF,
             o_rdrfBar => int_not_RDRF

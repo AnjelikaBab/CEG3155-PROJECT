@@ -1,0 +1,253 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/04/2024 16:48:03"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    baudRateGenerator
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module baudRateGenerator_vlg_sample_tst(
+	baudSel,
+	clk,
+	reset,
+	sampler_tx
+);
+input [2:0] baudSel;
+input  clk;
+input  reset;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(baudSel or clk or reset)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module baudRateGenerator_vlg_check_tst (
+	bclk,
+	bclkx8,
+	sampler_rx
+);
+input  bclk;
+input  bclkx8;
+input sampler_rx;
+
+reg  bclk_expected;
+reg  bclkx8_expected;
+
+reg  bclk_prev;
+reg  bclkx8_prev;
+
+reg  bclk_expected_prev;
+reg  bclkx8_expected_prev;
+
+reg  last_bclk_exp;
+reg  last_bclkx8_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:2] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 2'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	bclk_prev = bclk;
+	bclkx8_prev = bclkx8;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	bclk_expected_prev = bclk_expected;
+	bclkx8_expected_prev = bclkx8_expected;
+end
+
+
+
+// expected bclk
+initial
+begin
+	bclk_expected = 1'bX;
+end 
+
+// expected bclkx8
+initial
+begin
+	bclkx8_expected = 1'bX;
+end 
+// generate trigger
+always @(bclk_expected or bclk or bclkx8_expected or bclkx8)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected bclk = %b | expected bclkx8 = %b | ",bclk_expected_prev,bclkx8_expected_prev);
+	$display("| real bclk = %b | real bclkx8 = %b | ",bclk_prev,bclkx8_prev);
+`endif
+	if (
+		( bclk_expected_prev !== 1'bx ) && ( bclk_prev !== bclk_expected_prev )
+		&& ((bclk_expected_prev !== last_bclk_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port bclk :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", bclk_expected_prev);
+		$display ("     Real value = %b", bclk_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_bclk_exp = bclk_expected_prev;
+	end
+	if (
+		( bclkx8_expected_prev !== 1'bx ) && ( bclkx8_prev !== bclkx8_expected_prev )
+		&& ((bclkx8_expected_prev !== last_bclkx8_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port bclkx8 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", bclkx8_expected_prev);
+		$display ("     Real value = %b", bclkx8_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_bclkx8_exp = bclkx8_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#100000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module baudRateGenerator_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [2:0] baudSel;
+reg clk;
+reg reset;
+// wires                                               
+wire bclk;
+wire bclkx8;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+baudRateGenerator i1 (
+// port map - connection between master ports and signals/registers   
+	.baudSel(baudSel),
+	.bclk(bclk),
+	.bclkx8(bclkx8),
+	.clk(clk),
+	.reset(reset)
+);
+// baudSel[ 2 ]
+initial
+begin
+	baudSel[2] = 1'b0;
+end 
+// baudSel[ 1 ]
+initial
+begin
+	baudSel[1] = 1'b0;
+end 
+// baudSel[ 0 ]
+initial
+begin
+	baudSel[0] = 1'b0;
+end 
+
+// clk
+initial
+begin
+	repeat(2517)
+	begin
+		clk = 1'b0;
+		clk = #19860 1'b1;
+		# 19860;
+	end
+	clk = 1'b0;
+	clk = #19860 1'b1;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b1;
+	reset = #50000 1'b0;
+end 
+
+baudRateGenerator_vlg_sample_tst tb_sample (
+	.baudSel(baudSel),
+	.clk(clk),
+	.reset(reset),
+	.sampler_tx(sampler)
+);
+
+baudRateGenerator_vlg_check_tst tb_out(
+	.bclk(bclk),
+	.bclkx8(bclkx8),
+	.sampler_rx(sampler)
+);
+endmodule
+
