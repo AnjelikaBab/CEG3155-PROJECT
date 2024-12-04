@@ -49,10 +49,10 @@ architecture rtl of transmitterTopLevel is
          y: OUT STD_LOGIC) ;
     END COMPONENT;
 
-    COMPONENT nBitTimer 
+    COMPONENT nBitTargetIncrementer
         GENERIC(n : INTEGER := 4);
         PORT(
-            i_clk, i_reset: IN STD_LOGIC;
+            i_clk, i_reset, i_increment: IN STD_LOGIC;
             i_targetCount: IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
             o_done: OUT STD_LOGIC;
             o_count: OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
@@ -107,12 +107,13 @@ begin
 			serial_out => int_TSR_output
 		);
 
-    fourBitInc: nBitTimer
-        GENERIC MAP (n => 4)
+    fourBitInc: nBitTargetIncrementer
+        GENERIC MAP (n => 3)
         PORT MAP(
             i_clk => clk,
             i_reset => incrementer_reset,
-            i_targetCount => "1000",
+            i_increment => int_tsrShift,
+            i_targetCount => "111",
             o_done => int_endData,
             o_count => open
         );
@@ -122,7 +123,7 @@ begin
             s0 => int_txSel(0), 
             s1 => int_txSel(1), 
             x0 => '1', 
-            x1 => '0', 
+            x1 => '1', 
             x2 => '0', -- default value, but this should never be taken 
             x3 => int_TSR_output, 
             y => TX_out
