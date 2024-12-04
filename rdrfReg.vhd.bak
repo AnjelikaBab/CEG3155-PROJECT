@@ -1,0 +1,37 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY rdrfReg IS
+	PORT(
+		i_clear, i_set	: IN	STD_LOGIC;
+		i_d		: IN	STD_LOGIC;
+		i_enable	: IN	STD_LOGIC;
+		i_clock		: IN	STD_LOGIC;
+		o_rdrf, o_rdrfBar	: OUT	STD_LOGIC);
+END rdrfReg;
+
+ARCHITECTURE rtl OF rdrfReg IS
+	SIGNAL int_q : STD_LOGIC;
+
+BEGIN
+
+oneBitReg:
+PROCESS(i_clear, i_set, i_clock)
+BEGIN
+	IF (i_reset = '1') THEN
+		int_q	<= '0';
+    ELSIF (i_set = '1') THEN
+        int_q	<= '1';
+	ELSIF (i_clock'EVENT and i_clock = '1') THEN
+		IF (i_enable = '1') THEN
+			int_q	<=	i_d;
+		END IF;
+	END IF;
+END PROCESS oneBitReg;
+
+	--  Output Driver
+
+	o_rdrf		<=	int_q;
+	o_rdrfBar		<=	not(int_q);
+
+END rtl;
