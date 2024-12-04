@@ -107,12 +107,12 @@ begin
 			serial_out => int_TSR_output
 		);
 
-    threeBitInc: nBitTimer
-        GENERIC MAP (n => 3)
+    fourBitInc: nBitTimer
+        GENERIC MAP (n => 4)
         PORT MAP(
             i_clk => clk,
             i_reset => incrementer_reset,
-            i_targetCount => "111",
+            i_targetCount => "1000",
             o_done => int_endData,
             o_count => open
         );

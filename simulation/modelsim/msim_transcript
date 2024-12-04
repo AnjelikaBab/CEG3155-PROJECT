@@ -201,3 +201,243 @@ run
 run
 run
 run
+force -freeze sim:/transmittertoplevel/TX_in 11010001 0
+run
+run
+run
+run
+run
+run
+run
+restart -f
+noforce sim:/transmittertoplevel/TX_in
+force -freeze sim:/transmittertoplevel/TX_in 10010110 0
+force -freeze sim:/transmittertoplevel/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/transmittertoplevel/reset 1 0
+force -freeze sim:/transmittertoplevel/txStart 0 0
+run
+force -freeze sim:/transmittertoplevel/reset 0 0
+run
+run
+force -freeze sim:/transmittertoplevel/txStart 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/transmittertoplevel/txStart 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity transmitterTopLevel
+# -- Compiling architecture rtl of transmitterTopLevel
+restart -f
+# Loading work.transmittertoplevel(rtl)
+force -freeze sim:/transmittertoplevel/TX_in 10010110 0
+force -freeze sim:/transmittertoplevel/reset 1 0
+force -freeze sim:/transmittertoplevel/txStart 0 0
+force -freeze sim:/transmittertoplevel/clk 1 0, 0 {50 ps} -r 100
+run
+force -freeze sim:/transmittertoplevel/reset 0 0
+run
+run
+force -freeze sim:/transmittertoplevel/txStart 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/transmittertoplevel/txStart 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/transmittertoplevel/TX_in 01011001 0
+run
+force -freeze sim:/transmittertoplevel/txStart 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/transmittertoplevel/txStart 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity transmitterTopLevel
+# -- Compiling architecture rtl of transmitterTopLevel
+vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity transmitterTopLevel
+# -- Compiling architecture rtl of transmitterTopLevel
+restart -f
+# Loading work.transmittertoplevel(rtl)
+force -freeze sim:/transmittertoplevel/TX_in 10010110 0
+force -freeze sim:/transmittertoplevel/clk 1 0, 0 {50 ps} -r 100
+noforce sim:/transmittertoplevel/reset
+force -freeze sim:/transmittertoplevel/reset 1 0
+force -freeze sim:/transmittertoplevel/txStart 0 0
+run
+force -freeze sim:/transmittertoplevel/reset 0 0
+run
+force -freeze sim:/transmittertoplevel/txStart 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity transmitterTopLevel
+# -- Compiling architecture rtl of transmitterTopLevel
+restart -f
+# Loading work.transmittertoplevel(rtl)
+force -freeze sim:/transmittertoplevel/TX_in 01011001 0
+force -freeze sim:/transmittertoplevel/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/transmittertoplevel/reset 1 0
+force -freeze sim:/transmittertoplevel/txStart 0 0
+run
+force -freeze sim:/transmittertoplevel/reset 0 0
+run
+run
+force -freeze sim:/transmittertoplevel/txStart 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity transmitterTopLevel
+# -- Compiling architecture rtl of transmitterTopLevel
+vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity transmitterTopLevel
+# -- Compiling architecture rtl of transmitterTopLevel
+restart -f
+# Loading work.transmittertoplevel(rtl)
+force -freeze sim:/transmittertoplevel/TX_in 01010011 0
+force -freeze sim:/transmittertoplevel/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/transmittertoplevel/reset 1 0
+force -freeze sim:/transmittertoplevel/txStart 0 0
+run
+force -freeze sim:/transmittertoplevel/reset 0 0
+run
+run
+force -freeze sim:/transmittertoplevel/txStart 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/transmittertoplevel/txStart 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
