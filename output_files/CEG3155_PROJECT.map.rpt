@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CEG3155_PROJECT
-Wed Dec 04 07:46:37 2024
+Wed Dec 04 08:03:42 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,26 +14,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |nBitShiftRegister
- 11. Port Connectivity Checks: "mux41:\muxloop:6:mux_n"
- 12. Port Connectivity Checks: "mux41:\muxloop:5:mux_n"
- 13. Port Connectivity Checks: "mux41:\muxloop:4:mux_n"
- 14. Port Connectivity Checks: "mux41:\muxloop:3:mux_n"
- 15. Port Connectivity Checks: "mux41:\muxloop:2:mux_n"
- 16. Port Connectivity Checks: "mux41:\muxloop:1:mux_n"
- 17. Port Connectivity Checks: "mux41:mux_msb"
- 18. Port Connectivity Checks: "mux41:mux_0"
- 19. Port Connectivity Checks: "enARdFF_2:\regloop:7:bit_n"
- 20. Port Connectivity Checks: "enARdFF_2:\regloop:6:bit_n"
- 21. Port Connectivity Checks: "enARdFF_2:\regloop:5:bit_n"
- 22. Port Connectivity Checks: "enARdFF_2:\regloop:4:bit_n"
- 23. Port Connectivity Checks: "enARdFF_2:\regloop:3:bit_n"
- 24. Port Connectivity Checks: "enARdFF_2:\regloop:2:bit_n"
- 25. Port Connectivity Checks: "enARdFF_2:\regloop:1:bit_n"
- 26. Port Connectivity Checks: "enARdFF_2:\regloop:0:bit_n"
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "enARdFF_2:y1"
+ 10. Port Connectivity Checks: "enARdFF_2:y0"
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -59,16 +43,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 04 07:46:37 2024           ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 04 08:03:42 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CEG3155_PROJECT                                 ;
-; Top-level Entity Name              ; nBitShiftRegister                               ;
+; Top-level Entity Name              ; transmitterFSM                                  ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 18                                              ;
-;     Total combinational functions  ; 18                                              ;
-;     Dedicated logic registers      ; 8                                               ;
-; Total registers                    ; 8                                               ;
-; Total pins                         ; 23                                              ;
+; Total logic elements               ; 5                                               ;
+;     Total combinational functions  ; 5                                               ;
+;     Dedicated logic registers      ; 2                                               ;
+; Total registers                    ; 2                                               ;
+; Total pins                         ; 11                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -82,7 +66,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; nBitShiftRegister  ; CEG3155_PROJECT    ;
+; Top-level entity name                                                      ; transmitterFSM     ; CEG3155_PROJECT    ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -174,16 +158,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                        ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                 ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------+---------+
-; nBitShiftRegister.vhd            ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd ;         ;
-; mux41.vhd                        ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd             ;         ;
-; mux21.vhd                        ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd             ;         ;
-; enardFF_2.vhd                    ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd         ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; transmitterFSM.vhd               ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd ;         ;
+; enardFF_2.vhd                    ; yes             ; User VHDL File  ; C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd      ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------+
@@ -191,62 +173,40 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------------+
 ; Resource                                    ; Usage              ;
 +---------------------------------------------+--------------------+
-; Estimated Total logic elements              ; 18                 ;
+; Estimated Total logic elements              ; 5                  ;
 ;                                             ;                    ;
-; Total combinational functions               ; 18                 ;
+; Total combinational functions               ; 5                  ;
 ; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 0                  ;
-;     -- 3 input functions                    ; 10                 ;
-;     -- <=2 input functions                  ; 8                  ;
+;     -- 4 input functions                    ; 1                  ;
+;     -- 3 input functions                    ; 1                  ;
+;     -- <=2 input functions                  ; 3                  ;
 ;                                             ;                    ;
 ; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 18                 ;
+;     -- normal mode                          ; 5                  ;
 ;     -- arithmetic mode                      ; 0                  ;
 ;                                             ;                    ;
-; Total registers                             ; 8                  ;
-;     -- Dedicated logic registers            ; 8                  ;
+; Total registers                             ; 2                  ;
+;     -- Dedicated logic registers            ; 2                  ;
 ;     -- I/O registers                        ; 0                  ;
 ;                                             ;                    ;
-; I/O pins                                    ; 23                 ;
+; I/O pins                                    ; 11                 ;
 ; Embedded Multiplier 9-bit elements          ; 0                  ;
-; Maximum fan-out node                        ; i_shift_left~input ;
-; Maximum fan-out                             ; 18                 ;
-; Total fan-out                               ; 126                ;
-; Average fan-out                             ; 1.75               ;
+; Maximum fan-out node                        ; enARdFF_2:y0|int_q ;
+; Maximum fan-out                             ; 6                  ;
+; Total fan-out                               ; 37                 ;
+; Average fan-out                             ; 1.28               ;
 +---------------------------------------------+--------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
-+---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
-; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Library Name ;
-+---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
-; |nBitShiftRegister              ; 18 (2)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |nBitShiftRegister                                   ; work         ;
-;    |enARdFF_2:\regloop:0:bit_n| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|enARdFF_2:\regloop:0:bit_n        ; work         ;
-;    |enARdFF_2:\regloop:1:bit_n| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|enARdFF_2:\regloop:1:bit_n        ; work         ;
-;    |enARdFF_2:\regloop:2:bit_n| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|enARdFF_2:\regloop:2:bit_n        ; work         ;
-;    |enARdFF_2:\regloop:3:bit_n| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|enARdFF_2:\regloop:3:bit_n        ; work         ;
-;    |enARdFF_2:\regloop:4:bit_n| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|enARdFF_2:\regloop:4:bit_n        ; work         ;
-;    |enARdFF_2:\regloop:5:bit_n| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|enARdFF_2:\regloop:5:bit_n        ; work         ;
-;    |enARdFF_2:\regloop:6:bit_n| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|enARdFF_2:\regloop:6:bit_n        ; work         ;
-;    |enARdFF_2:\regloop:7:bit_n| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|enARdFF_2:\regloop:7:bit_n        ; work         ;
-;    |mux41:\muxloop:1:mux_n|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:1:mux_n            ; work         ;
-;       |mux21:mux2|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:1:mux_n|mux21:mux2 ; work         ;
-;    |mux41:\muxloop:2:mux_n|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:2:mux_n            ; work         ;
-;       |mux21:mux2|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:2:mux_n|mux21:mux2 ; work         ;
-;    |mux41:\muxloop:3:mux_n|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:3:mux_n            ; work         ;
-;       |mux21:mux2|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:3:mux_n|mux21:mux2 ; work         ;
-;    |mux41:\muxloop:4:mux_n|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:4:mux_n            ; work         ;
-;       |mux21:mux2|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:4:mux_n|mux21:mux2 ; work         ;
-;    |mux41:\muxloop:5:mux_n|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:5:mux_n            ; work         ;
-;       |mux21:mux2|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:5:mux_n|mux21:mux2 ; work         ;
-;    |mux41:\muxloop:6:mux_n|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:6:mux_n            ; work         ;
-;       |mux21:mux2|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:\muxloop:6:mux_n|mux21:mux2 ; work         ;
-;    |mux41:mux_0|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:mux_0                       ; work         ;
-;       |mux21:mux2|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:mux_0|mux21:mux2            ; work         ;
-;    |mux41:mux_msb|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:mux_msb                     ; work         ;
-;       |mux21:mux2|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |nBitShiftRegister|mux41:mux_msb|mux21:mux2          ; work         ;
-+---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                  ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
+; |transmitterFSM            ; 5 (4)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |transmitterFSM              ; work         ;
+;    |enARdFF_2:y0|          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |transmitterFSM|enARdFF_2:y0 ; work         ;
+;    |enARdFF_2:y1|          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |transmitterFSM|enARdFF_2:y1 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -255,177 +215,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 2     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 2     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |nBitShiftRegister|enARdFF_2:\regloop:0:bit_n|int_q ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
++--------------------------------------------+
+; Port Connectivity Checks: "enARdFF_2:y1"   ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; i_enable ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |nBitShiftRegister ;
-+----------------+-------+----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                     ;
-+----------------+-------+----------------------------------------------------------+
-; n              ; 8     ; Signed Integer                                           ;
-+----------------+-------+----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux41:\muxloop:6:mux_n" ;
-+------+-------+----------+--------------------------+
-; Port ; Type  ; Severity ; Details                  ;
-+------+-------+----------+--------------------------+
-; x3   ; Input ; Info     ; Stuck at GND             ;
-+------+-------+----------+--------------------------+
-
-
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux41:\muxloop:5:mux_n" ;
-+------+-------+----------+--------------------------+
-; Port ; Type  ; Severity ; Details                  ;
-+------+-------+----------+--------------------------+
-; x3   ; Input ; Info     ; Stuck at GND             ;
-+------+-------+----------+--------------------------+
-
-
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux41:\muxloop:4:mux_n" ;
-+------+-------+----------+--------------------------+
-; Port ; Type  ; Severity ; Details                  ;
-+------+-------+----------+--------------------------+
-; x3   ; Input ; Info     ; Stuck at GND             ;
-+------+-------+----------+--------------------------+
-
-
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux41:\muxloop:3:mux_n" ;
-+------+-------+----------+--------------------------+
-; Port ; Type  ; Severity ; Details                  ;
-+------+-------+----------+--------------------------+
-; x3   ; Input ; Info     ; Stuck at GND             ;
-+------+-------+----------+--------------------------+
-
-
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux41:\muxloop:2:mux_n" ;
-+------+-------+----------+--------------------------+
-; Port ; Type  ; Severity ; Details                  ;
-+------+-------+----------+--------------------------+
-; x3   ; Input ; Info     ; Stuck at GND             ;
-+------+-------+----------+--------------------------+
-
-
-+----------------------------------------------------+
-; Port Connectivity Checks: "mux41:\muxloop:1:mux_n" ;
-+------+-------+----------+--------------------------+
-; Port ; Type  ; Severity ; Details                  ;
-+------+-------+----------+--------------------------+
-; x3   ; Input ; Info     ; Stuck at GND             ;
-+------+-------+----------+--------------------------+
-
-
-+-------------------------------------------+
-; Port Connectivity Checks: "mux41:mux_msb" ;
-+------+-------+----------+-----------------+
-; Port ; Type  ; Severity ; Details         ;
-+------+-------+----------+-----------------+
-; x3   ; Input ; Info     ; Stuck at GND    ;
-+------+-------+----------+-----------------+
-
-
-+-----------------------------------------+
-; Port Connectivity Checks: "mux41:mux_0" ;
-+------+-------+----------+---------------+
-; Port ; Type  ; Severity ; Details       ;
-+------+-------+----------+---------------+
-; x3   ; Input ; Info     ; Stuck at GND  ;
-+------+-------+----------+---------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "enARdFF_2:\regloop:7:bit_n"                                                           ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "enARdFF_2:\regloop:6:bit_n"                                                           ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "enARdFF_2:\regloop:5:bit_n"                                                           ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "enARdFF_2:\regloop:4:bit_n"                                                           ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "enARdFF_2:\regloop:3:bit_n"                                                           ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "enARdFF_2:\regloop:2:bit_n"                                                           ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "enARdFF_2:\regloop:1:bit_n"                                                           ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "enARdFF_2:\regloop:0:bit_n"                                                           ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------+
+; Port Connectivity Checks: "enARdFF_2:y0"   ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; i_enable ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
 
 
 +-------------------------------+
@@ -443,9 +258,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Dec 04 07:46:36 2024
+    Info: Processing started: Wed Dec 04 08:03:41 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CEG3155_PROJECT -c CEG3155_PROJECT
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file transmitterfsm.vhd
+    Info (12022): Found design unit 1: transmitterFSM-rtl
+    Info (12023): Found entity 1: transmitterFSM
 Info (12021): Found 2 design units, including 1 entities, in source file onebitcomparator.vhd
     Info (12022): Found design unit 1: oneBitComparator-rtl
     Info (12023): Found entity 1: oneBitComparator
@@ -504,20 +322,19 @@ Info (12021): Found 2 design units, including 1 entities, in source file debounc
 Info (12021): Found 2 design units, including 1 entities, in source file bcd_7seg.vhd
     Info (12022): Found design unit 1: dec_7seg-rtl
     Info (12023): Found entity 1: dec_7seg
-Info (12127): Elaborating entity "nBitShiftRegister" for the top level hierarchy
-Info (12128): Elaborating entity "enARdFF_2" for hierarchy "enARdFF_2:\regloop:0:bit_n"
-Info (12128): Elaborating entity "mux41" for hierarchy "mux41:mux_0"
-Info (12128): Elaborating entity "mux21" for hierarchy "mux41:mux_0|mux21:mux1"
+Info (12127): Elaborating entity "transmitterFSM" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at transmitterFSM.vhd(17): object "int_reset" assigned a value but never read
+Info (12128): Elaborating entity "enARdFF_2" for hierarchy "enARdFF_2:y0"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 41 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 18 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4647 megabytes
-    Info: Processing ended: Wed Dec 04 07:46:37 2024
+Info (21057): Implemented 16 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 5 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4643 megabytes
+    Info: Processing ended: Wed Dec 04 08:03:42 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

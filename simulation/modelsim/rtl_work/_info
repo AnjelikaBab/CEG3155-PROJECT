@@ -13,15 +13,15 @@ Z6 FC:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd
 l0
 L31
 VefK2f?3R7`bZO40Rc84Mm0
-!s100 LM:aJ[Ade62O^TDCQB2jH0
 Z7 OV;C;10.1d;51
 31
-!i10b 1
-Z8 !s108 1733316447.496000
+Z8 !s108 1733317488.151000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd|
 Z10 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd|
 Z11 o-93 -work work -O0
 Z12 tExplicit 1
+!s100 LM:aJ[Ade62O^TDCQB2jH0
+!i10b 1
 Artl
 R2
 R3
@@ -29,117 +29,47 @@ DEx4 work 9 enardff_2 0 22 efK2f?3R7`bZO40Rc84Mm0
 l43
 L40
 VAd]:U5^6W=P5UO^;ST?Bz2
-!s100 n`NKG5gX7V@?eV@4dAU663
 R7
 31
-!i10b 1
 R8
 R9
 R10
 R11
 R12
-Emux21
-R1
+!s100 n`NKG5gX7V@?eV@4dAU663
+!i10b 1
+Etransmitterfsm
+Z13 w1733317770
 R2
 R3
 R4
-Z13 8C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd
-Z14 FC:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd
+Z14 8C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd
+Z15 FC:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd
 l0
 L4
-V1CodOzcnWmcE13?d``V[40
+V@RoM2LGO;>AkhRFS_I_Uk1
+!s100 g_aEzaE8N^l1cg4i;P5Da0
 R7
 31
-Z15 !s108 1733316447.432000
-Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd|
-Z17 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd|
+!i10b 1
+Z16 !s108 1733317780.045000
+Z17 !s90 -reportprogress|300|-93|-work|work|-O0|C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd|
+Z18 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd|
 R11
 R12
-!s100 4@l=NcFaJAdLh9V`Xn?PI2
-!i10b 1
-Astructural
-R2
-R3
-DEx4 work 5 mux21 0 22 1CodOzcnWmcE13?d``V[40
-l12
-L9
-V3AUk2z2RCka2KOY^<>4MD2
-R7
-31
-R15
-R16
-R17
-R11
-R12
-!s100 S9M;8MM_kWnGB]DhWJF4@1
-!i10b 1
-Emux41
-R1
-R2
-R3
-R4
-Z18 8C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd
-Z19 FC:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd
-l0
-L4
-V2_nZOhOBN18jK@ML_0n^X0
-R7
-31
-Z20 !s108 1733316447.360000
-Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd|
-Z22 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd|
-R11
-R12
-!s100 EAocWWKa];V8[AnYG45i22
-!i10b 1
-Astructural
-R2
-R3
-DEx4 work 5 mux41 0 22 2_nZOhOBN18jK@ML_0n^X0
-l17
-L9
-VgmFLOBK5e0^L5Be<`953N0
-R7
-31
-R20
-R21
-R22
-R11
-R12
-!s100 HUek3n8bb:TNdL5T4[gJG3
-!i10b 1
-Enbitshiftregister
-Z23 w1733316432
-R2
-R3
-R4
-Z24 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd
-Z25 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd
-l0
-L4
-VaOdjPVnHFWnTk9kBgGnA32
-R7
-31
-Z26 !s108 1733316447.239000
-Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd|
-Z28 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd|
-R11
-R12
-!s100 h:J>GjPB9R=CKDLCmDe6j0
-!i10b 1
 Artl
 R2
 R3
-DEx4 work 17 nbitshiftregister 0 22 aOdjPVnHFWnTk9kBgGnA32
-l35
-L15
-V01E5TQA<m1oUbZXnNIA=:1
+Z19 DEx4 work 14 transmitterfsm 0 22 @RoM2LGO;>AkhRFS_I_Uk1
+l33
+L14
+V]S3jLCN=BcWI0l0F]RHBV2
+!s100 Mjf4TV5]YmEcl2]P0MgTA3
 R7
 31
-R26
-R27
-R28
+!i10b 1
+R16
+R17
+R18
 R11
 R12
-!s100 _`zcdQ3CQ7lB]ZDH]hXfb1
-!i10b 1

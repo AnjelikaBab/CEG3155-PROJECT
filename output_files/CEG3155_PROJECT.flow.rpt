@@ -1,5 +1,5 @@
 Flow report for CEG3155_PROJECT
-Wed Dec 04 07:46:57 2024
+Wed Dec 04 08:04:01 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Dec 04 07:46:57 2024           ;
+; Flow Status                        ; Successful - Wed Dec 04 08:04:01 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CEG3155_PROJECT                                 ;
-; Top-level Entity Name              ; nBitShiftRegister                               ;
+; Top-level Entity Name              ; transmitterFSM                                  ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE115F29C7                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 18 / 114,480 ( < 1 % )                          ;
-;     Total combinational functions  ; 18 / 114,480 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 8 / 114,480 ( < 1 % )                           ;
-; Total registers                    ; 8                                               ;
-; Total pins                         ; 23 / 529 ( 4 % )                                ;
+; Total logic elements               ; 5 / 114,480 ( < 1 % )                           ;
+;     Total combinational functions  ; 5 / 114,480 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 2 / 114,480 ( < 1 % )                           ;
+; Total registers                    ; 2                                               ;
+; Total pins                         ; 11 / 529 ( 2 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                           ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                 ;
@@ -64,29 +64,31 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/04/2024 07:46:36 ;
+; Start date & time ; 12/04/2024 08:03:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CEG3155_PROJECT     ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                            ;
-+-------------------------------------+--------------------------------+-----------------+-------------------+----------------+
-; Assignment Name                     ; Value                          ; Default Value   ; Entity Name       ; Section Id     ;
-+-------------------------------------+--------------------------------+-----------------+-------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 88798060782629.173331639608824 ; --              ; --                ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                           ; --              ; --                ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)         ; <None>          ; --                ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --              ; --                ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --              ; --                ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                           ; --              ; --                ; --             ;
-; PARTITION_COLOR                     ; 16764057                       ; --              ; nBitShiftRegister ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --              ; nBitShiftRegister ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --              ; nBitShiftRegister ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --              ; --                ; --             ;
-; TOP_LEVEL_ENTITY                    ; nBitShiftRegister              ; CEG3155_PROJECT ; --                ; --             ;
-+-------------------------------------+--------------------------------+-----------------+-------------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                ;
++-------------------------------------+---------------------------------------+-----------------+----------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value   ; Entity Name    ; Section Id     ;
++-------------------------------------+---------------------------------------+-----------------+----------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 88798060782629.173331742108280        ; --              ; --             ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --              ; --             ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>          ; --             ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --              ; --             ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --              ; --             ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --              ; --             ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --              ; transmitterFSM ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --              ; transmitterFSM ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --              ; transmitterFSM ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --              ; --             ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --              ; --             ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --              ; --             ; --             ;
+; TOP_LEVEL_ENTITY                    ; transmitterFSM                        ; CEG3155_PROJECT ; --             ; --             ;
++-------------------------------------+---------------------------------------+-----------------+----------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -94,12 +96,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4637 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:11     ; 1.0                     ; 5063 MB             ; 00:00:11                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4558 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4658 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4636 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 5066 MB             ; 00:00:10                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4550 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4650 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4518 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:16                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:15                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

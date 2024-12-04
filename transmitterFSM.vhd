@@ -7,7 +7,7 @@ entity transmitterFSM is
         clk              : in  STD_LOGIC;
         reset            : in  STD_LOGIC;
         txSel            : out STD_LOGIC_VECTOR(1 downto 0);
-        tsrShift, tdre, tdrLoad, tsrLoad : out STD_LOGIC
+        tsrShift, TDRE, tdrLoad, tsrLoad, clrInc : out STD_LOGIC
     );
 end transmitterFSM;
 
@@ -17,7 +17,7 @@ architecture rtl of transmitterFSM is
     signal int_reset, int_not_reset : STD_LOGIC;
     signal i_y0, i_y1 : STD_LOGIC;
     signal o_y0, o_y1, o_not_y0, o_not_y1 : STD_LOGIC;
-    signal A, D, w, not_w : STD_LOGIC;
+    signal A, C, w, not_w : STD_LOGIC;
 
     COMPONENT enARdFF_2
     PORT (
@@ -58,19 +58,22 @@ begin
 
     -- Combinational Logic
     A <= o_not_y1 AND o_not_y0;  
-    D <= o_y1 AND o_y0;
+    C <= o_y1 AND o_y0;
 
-    w <= (txStart AND A) OR (endData AND D);
+    w <= (txStart AND A) OR (endData AND C);
     not_w <= NOT w;
 
-    i_y0 <= (o_y1 AND not_w) OR (o_not_y0 AND w);
-    i_y1 <= (o_y0 AND not_w) OR (o_not_y1 AND o_y0) OR (o_y1 AND o_not_y0);
+    i_y0 <= (w AND o_not_y1) OR (not_w AND o_y0);
+    i_y1 <= (o_not_y1 AND o_y0) OR (not_w AND o_y0);
 
     -- Output Drivers
-    txSel    <= o_y1 & o_y0;  
-    tsrShift <= o_y1 AND o_y0;
-    tdre     <= o_not_y1 AND o_not_y0;
-    tdrLoad  <= o_not_y1 AND o_y0;
-    tsrLoad  <= o_y1 AND o_not_y0;
+    txSel(0)    <= o_y0;
+    txSel(1)    <= o_y1;
+
+    TDRE     <= A;
+    tdrLoad  <= A;
+    clrInc   <= A;
+    tsrLoad  <= o_not_y1 AND o_y0; -- state B
+    tsrShift <= C;
 
 end rtl;

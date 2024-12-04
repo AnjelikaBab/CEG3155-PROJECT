@@ -11,27 +11,13 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd}
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity nBitShiftRegister
-# -- Compiling architecture rtl of nBitShiftRegister
-# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux41
-# -- Compiling architecture structural of mux41
-# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux21
-# -- Compiling architecture structural of mux21
+# -- Compiling entity transmitterFSM
+# -- Compiling architecture rtl of transmitterFSM
 # vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -40,47 +26,78 @@
 # -- Compiling entity enARdFF_2
 # -- Compiling architecture rtl of enARdFF_2
 # 
-vsim -voptargs=+acc work.nbitshiftregister
-# vsim -voptargs=+acc work.nbitshiftregister 
+vsim -voptargs=+acc work.transmitterfsm
+# vsim -voptargs=+acc work.transmitterfsm 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.nbitshiftregister(rtl)
+# Loading work.transmitterfsm(rtl)
 # Loading work.enardff_2(rtl)
-# Loading work.mux41(structural)
-# Loading work.mux21(structural)
 add wave -position insertpoint  \
-sim:/nbitshiftregister/i_clock \
-sim:/nbitshiftregister/i_load \
-sim:/nbitshiftregister/i_resetBar \
-sim:/nbitshiftregister/i_shift_left \
-sim:/nbitshiftregister/i_shift_right \
-sim:/nbitshiftregister/n \
-sim:/nbitshiftregister/parallel_in \
-sim:/nbitshiftregister/serial_in \
-sim:/nbitshiftregister/parallel_out \
-sim:/nbitshiftregister/serial_out
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-force -freeze sim:/nbitshiftregister/i_clock 1 0, 0 {50 ps} -r 100
-force -freeze sim:/nbitshiftregister/i_load 1 0
-force -freeze sim:/nbitshiftregister/i_resetBar 1 0
-force -freeze sim:/nbitshiftregister/i_shift_left 0 0
-force -freeze sim:/nbitshiftregister/i_shift_right 0 0
-force -freeze sim:/nbitshiftregister/parallel_in 00110111 0
-force -freeze sim:/nbitshiftregister/serial_in 0 0
+sim:/transmitterfsm/clk \
+sim:/transmitterfsm/endData \
+sim:/transmitterfsm/reset \
+sim:/transmitterfsm/txStart \
+sim:/transmitterfsm/TDRE \
+sim:/transmitterfsm/clrInc \
+sim:/transmitterfsm/tdrLoad \
+sim:/transmitterfsm/tsrLoad \
+sim:/transmitterfsm/tsrShift \
+sim:/transmitterfsm/txSel
+add wave -position insertpoint  \
+sim:/transmitterfsm/A \
+sim:/transmitterfsm/C \
+sim:/transmitterfsm/i_y0 \
+sim:/transmitterfsm/i_y1 \
+sim:/transmitterfsm/int_not_reset \
+sim:/transmitterfsm/int_reset \
+sim:/transmitterfsm/not_w \
+sim:/transmitterfsm/o_not_y0 \
+sim:/transmitterfsm/o_not_y1 \
+sim:/transmitterfsm/o_y0 \
+sim:/transmitterfsm/o_y1 \
+sim:/transmitterfsm/w
+force -freeze sim:/transmitterfsm/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/transmitterfsm/reset 1 0
+force -freeze sim:/transmitterfsm/endData 0 0
+force -freeze sim:/transmitterfsm/reset 1 0
+force -freeze sim:/transmitterfsm/txStart 0 0
 run
-force -freeze sim:/nbitshiftregister/i_shift_right 1 0
+force -freeze sim:/transmitterfsm/reset 0 0
+run
+run
+force -freeze sim:/transmitterfsm/endData 1 0
+run
+run
+force -freeze sim:/transmitterfsm/txStart 1 0
+run
+run
+run
+force -freeze sim:/transmitterfsm/endData 0 0
+run
+run
+vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity transmitterFSM
+# -- Compiling architecture rtl of transmitterFSM
+restart -f
+# Loading work.transmitterfsm(rtl)
+force -freeze sim:/transmitterfsm/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/transmitterfsm/endData 0 0
+force -freeze sim:/transmitterfsm/reset 1 0
+force -freeze sim:/transmitterfsm/txStart 0 0
+run
+run
+force -freeze sim:/transmitterfsm/reset 0 0
+force -freeze sim:/transmitterfsm/txStart 1 0
 run
 run
 run
 run
-force -freeze sim:/nbitshiftregister/i_shift_left 1 0
-force -freeze sim:/nbitshiftregister/i_shift_right 0 0
-run
-run
-run
-run
+force -freeze sim:/transmitterfsm/endData 1 0
 run
 run
 run
