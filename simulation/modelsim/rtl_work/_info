@@ -3,32 +3,32 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\arnav\Desktop\CEG3155-PROJECT\simulation\modelsim
-Eenardff_2
-Z1 w1733315361
+Ebaudrategenerator
+Z1 w1733347829
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z4 dC:\Users\arnav\Desktop\CEG3155-PROJECT\simulation\modelsim
-Z5 8C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd
-Z6 FC:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd
+Z5 8C:/Users/arnav/Desktop/CEG3155-PROJECT/baudRateGenerator.vhd
+Z6 FC:/Users/arnav/Desktop/CEG3155-PROJECT/baudRateGenerator.vhd
 l0
-L31
-VefK2f?3R7`bZO40Rc84Mm0
+L4
+VAE^Lb;lhiUDVD>Mh7ZeBk3
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1733332477.106000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd|
-Z10 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd|
+Z8 !s108 1733347875.846000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/baudRateGenerator.vhd|
+Z10 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/baudRateGenerator.vhd|
 Z11 o-93 -work work -O0
 Z12 tExplicit 1
-!s100 LM:aJ[Ade62O^TDCQB2jH0
+!s100 l3W=UZzm4GkSbIE@o^P7;0
 !i10b 1
 Artl
 R2
 R3
-DEx4 work 9 enardff_2 0 22 efK2f?3R7`bZO40Rc84Mm0
-l43
-L40
-VAd]:U5^6W=P5UO^;ST?Bz2
+DEx4 work 17 baudrategenerator 0 22 AE^Lb;lhiUDVD>Mh7ZeBk3
+l38
+L13
+VzVAS;iDgNaODc?<64H^<92
 R7
 31
 R8
@@ -36,35 +36,35 @@ R9
 R10
 R11
 R12
-!s100 n`NKG5gX7V@?eV@4dAU663
+!s100 oZzIG>TldjBLBjU<k12;61
 !i10b 1
-Ereceiverfsm
-Z13 w1733334987
+Eenardff_2
+Z13 w1733315361
 R2
 R3
 R4
-Z14 8C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd
-Z15 FC:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd
+Z14 8C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd
+Z15 FC:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd
 l0
-L4
-V0zdP2DoClhZUVKNBL9@4G2
-!s100 c`h0c<`c@n81^`AXb?z`F1
+L31
+VefK2f?3R7`bZO40Rc84Mm0
+!s100 LM:aJ[Ade62O^TDCQB2jH0
 R7
 31
 !i10b 1
-Z16 !s108 1733335007.685000
-Z17 !s90 -reportprogress|300|-93|-work|work|-O0|C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd|
-Z18 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd|
+Z16 !s108 1733347876.423000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd|
+Z18 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd|
 R11
 R12
 Artl
 R2
 R3
-Z19 DEx4 work 11 receiverfsm 0 22 0zdP2DoClhZUVKNBL9@4G2
-l31
-L12
-V:WT^:L;RgPl4:^g82YQSC0
-!s100 jTcaIP:JeSD00GhJo;SCH0
+DEx4 work 9 enardff_2 0 22 efK2f?3R7`bZO40Rc84Mm0
+l43
+L40
+VAd]:U5^6W=P5UO^;ST?Bz2
+!s100 n`NKG5gX7V@?eV@4dAU663
 R7
 31
 !i10b 1
@@ -73,3 +73,318 @@ R17
 R18
 R11
 R12
+Emux21
+R13
+R2
+R3
+R4
+Z19 8C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd
+Z20 FC:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd
+l0
+L4
+V1CodOzcnWmcE13?d``V[40
+R7
+31
+Z21 !s108 1733347876.366000
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd|
+Z23 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd|
+R11
+R12
+!s100 4@l=NcFaJAdLh9V`Xn?PI2
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 5 mux21 0 22 1CodOzcnWmcE13?d``V[40
+l12
+L9
+V3AUk2z2RCka2KOY^<>4MD2
+R7
+31
+R21
+R22
+R23
+R11
+R12
+!s100 S9M;8MM_kWnGB]DhWJF4@1
+!i10b 1
+Emux41
+R13
+R2
+R3
+R4
+Z24 8C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd
+Z25 FC:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd
+l0
+L4
+V2_nZOhOBN18jK@ML_0n^X0
+R7
+31
+Z26 !s108 1733347876.310000
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd|
+Z28 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd|
+R11
+R12
+!s100 EAocWWKa];V8[AnYG45i22
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 5 mux41 0 22 2_nZOhOBN18jK@ML_0n^X0
+l17
+L9
+VgmFLOBK5e0^L5Be<`953N0
+R7
+31
+R26
+R27
+R28
+R11
+R12
+!s100 HUek3n8bb:TNdL5T4[gJG3
+!i10b 1
+Emux81
+Z29 w1733344519
+R2
+R3
+R4
+Z30 8C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd
+Z31 FC:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd
+l0
+L4
+V^j<;f1eUZ@kAVh0D1FS3a0
+R7
+31
+Z32 !s108 1733347875.903000
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd|
+Z34 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd|
+R11
+R12
+!s100 lk]dzTDoZ_e?18bog>eL21
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 5 mux81 0 22 ^j<;f1eUZ@kAVh0D1FS3a0
+l22
+L9
+V7g1oC:5=Sbho@`l?dF58i0
+R7
+31
+R32
+R33
+R34
+R11
+R12
+!s100 ]l>onlAmo`S3<MBAh^DmC0
+!i10b 1
+Enbitaddersubtractor
+R13
+R2
+R3
+R4
+Z35 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd
+Z36 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd
+l0
+L4
+VBK@g4UmbVIO2F:_QO^>S:3
+R7
+31
+Z37 !s108 1733347876.255000
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd|
+Z39 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd|
+R11
+R12
+!s100 ]XcB[A[205c<zncX5c2H>3
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 19 nbitaddersubtractor 0 22 BK@g4UmbVIO2F:_QO^>S:3
+l24
+L13
+VkWkDh<<n`YGz84_o8CN8b2
+R7
+31
+R37
+R38
+R39
+R11
+R12
+!s100 A374Q0Ki]kLa8bXzRPJH03
+!i10b 1
+Enbitcomparator
+R13
+R2
+R3
+R4
+Z40 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd
+Z41 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd
+l0
+L4
+V:nnUJiHmQ26=L0FAP8Nc@2
+R7
+31
+Z42 !s108 1733347876.197000
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd|
+Z44 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd|
+R11
+R12
+!s100 7@VOZ6?jQ0G?UZn>MD?XM2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 14 nbitcomparator 0 22 :nnUJiHmQ26=L0FAP8Nc@2
+l21
+L11
+VBf>bLm]P^ZmG3ZN;jl9oa3
+R7
+31
+R42
+R43
+R44
+R11
+R12
+!s100 kgKdH`26=BWN3:TA8Clm_3
+!i10b 1
+Enbitincrementer
+R13
+R2
+R3
+R4
+Z45 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd
+Z46 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd
+l0
+L4
+V@6U`_MN33]m]PHC2HflIW0
+R7
+31
+Z47 !s108 1733347876.143000
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd|
+Z49 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd|
+R11
+R12
+!s100 iA8V1jKoZZ[V;?@8bg5Qm0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 15 nbitincrementer 0 22 @6U`_MN33]m]PHC2HflIW0
+l33
+L10
+VL`^:GNfa1lWRXHfQi:O7V1
+R7
+31
+R47
+R48
+R49
+R11
+R12
+!s100 ffJ0HBF`dY?^EhRAXE^882
+!i10b 1
+Enbitregister
+R13
+R2
+R3
+R4
+Z50 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd
+Z51 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd
+l0
+L4
+VkF8FVK2AB2BAUM0<iLAeR2
+R7
+31
+Z52 !s108 1733347876.084000
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd|
+Z54 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd|
+R11
+R12
+!s100 ^13zkOmfoz0TA36ak>iO12
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 12 nbitregister 0 22 kF8FVK2AB2BAUM0<iLAeR2
+l25
+L13
+VJ6LGc<7=UGRX_icea99AU1
+R7
+31
+R52
+R53
+R54
+R11
+R12
+!s100 _B32VC]E46F<Y9aV4gIU]3
+!i10b 1
+Eonebitaddersubtractor
+R13
+R2
+R3
+R4
+Z55 8C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd
+Z56 FC:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd
+l0
+L17
+V4;>2a4D8>JDfE8eVL3Z8m0
+R7
+31
+Z57 !s108 1733347876.024000
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd|
+Z59 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd|
+R11
+R12
+!s100 KYYeBM`YQZz_9[NR]8<7A2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 21 onebitaddersubtractor 0 22 4;>2a4D8>JDfE8eVL3Z8m0
+l29
+L25
+VP6gCAZhYR_P92NR<gmoK83
+R7
+31
+R57
+R58
+R59
+R11
+R12
+!s100 da<zK2RC=nV=hn^5_ASW>1
+!i10b 1
+Eonebitcomparator
+R13
+R2
+R3
+R4
+Z60 8C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd
+Z61 FC:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd
+l0
+L31
+VQZ3H_AB;@zWF[WaFlPKd70
+R7
+31
+Z62 !s108 1733347875.957000
+Z63 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd|
+Z64 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd|
+R11
+R12
+!s100 <jX6<_c^nQ8XW_1O_gY[<1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 onebitcomparator 0 22 QZ3H_AB;@zWF[WaFlPKd70
+l42
+L38
+VHW0[zHAk8Z3KdeaE[Z3E51
+R7
+31
+R62
+R63
+R64
+R11
+R12
+!s100 8fVAI]h6XZcSDo?:0YWH41
+!i10b 1

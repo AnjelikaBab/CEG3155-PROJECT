@@ -11,13 +11,76 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd}
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/baudRateGenerator.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity receiverFSM
-# -- Compiling architecture rtl of receiverFSM
+# -- Compiling entity baudRateGenerator
+# -- Compiling architecture rtl of baudRateGenerator
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux81
+# -- Compiling architecture structural of mux81
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity oneBitComparator
+# -- Compiling architecture rtl of oneBitComparator
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity oneBitAdderSubtractor
+# -- Compiling architecture rtl of oneBitAdderSubtractor
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nBitRegister
+# -- Compiling architecture rtl of nBitRegister
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nBitIncrementer
+# -- Compiling architecture rtl of nBitIncrementer
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nbitcomparator
+# -- Compiling architecture rtl of nbitcomparator
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nBitAdderSubtractor
+# -- Compiling architecture rtl of nBitAdderSubtractor
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux41
+# -- Compiling architecture structural of mux41
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux21
+# -- Compiling architecture structural of mux21
 # vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -26,182 +89,35 @@
 # -- Compiling entity enARdFF_2
 # -- Compiling architecture rtl of enARdFF_2
 # 
-vsim -voptargs=+acc work.receiverfsm
-# vsim -voptargs=+acc work.receiverfsm 
+vsim -voptargs=+acc work.baudrategenerator
+# vsim -voptargs=+acc work.baudrategenerator 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.receiverfsm(rtl)
+# Loading work.baudrategenerator(rtl)
+# Loading work.nbitincrementer(rtl)
+# Loading work.nbitaddersubtractor(rtl)
+# Loading work.onebitaddersubtractor(rtl)
+# Loading work.nbitregister(rtl)
 # Loading work.enardff_2(rtl)
+# Loading work.nbitcomparator(rtl)
+# Loading work.onebitcomparator(rtl)
+# Loading work.mux81(structural)
+# Loading work.mux41(structural)
+# Loading work.mux21(structural)
 add wave -position insertpoint  \
-sim:/receiverfsm/RXD \
-sim:/receiverfsm/clk \
-sim:/receiverfsm/endData \
-sim:/receiverfsm/reset \
-sim:/receiverfsm/sampleCountReached \
-sim:/receiverfsm/Inc \
-sim:/receiverfsm/clrInc \
-sim:/receiverfsm/rsrShift \
-sim:/receiverfsm/setRDRF
-add wave -position insertpoint  \
-sim:/receiverfsm/A \
-sim:/receiverfsm/B \
-sim:/receiverfsm/C \
-sim:/receiverfsm/D \
-sim:/receiverfsm/int_y0 \
-sim:/receiverfsm/int_y1 \
-sim:/receiverfsm/not_o_y0 \
-sim:/receiverfsm/not_o_y1 \
-sim:/receiverfsm/not_reset \
-sim:/receiverfsm/not_w \
-sim:/receiverfsm/o_y0 \
-sim:/receiverfsm/o_y1 \
-sim:/receiverfsm/w
-force -freeze sim:/receiverfsm/RXD 1 0
-force -freeze sim:/receiverfsm/endData 0 0
-force -freeze sim:/receiverfsm/reset 1 0
-force -freeze sim:/receiverfsm/sampleCountReached 0 0
-run
-force -freeze sim:/receiverfsm/RXD 1 0, 0 {50 ps} -r 100
-force -freeze sim:/receiverfsm/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/receiverfsm/RXD 1 0
-force -freeze sim:/receiverfsm/endData 0 0
-force -freeze sim:/receiverfsm/reset 1 0
-force -freeze sim:/receiverfsm/sampleCountReached 0 0
-force -freeze sim:/receiverfsm/clk 1 0, 0 {50 ps} -r 100
-run
-run
-force -freeze sim:/receiverfsm/RXD 1 0
-run
-run
-force -drive sim:/receiverfsm/RXD 1 0
-run
-run
-restart -f
-force -freeze sim:/receiverfsm/RXD 1 0
-force -freeze sim:/receiverfsm/endData 0 0
-force -freeze sim:/receiverfsm/reset 0 0
-force -freeze sim:/receiverfsm/sampleCountReached 0 0
-force -freeze sim:/receiverfsm/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/receiverfsm/reset 1 0
-run
-run
-force -freeze sim:/receiverfsm/reset 0 0
-run
-run
-force -freeze sim:/receiverfsm/RXD 0 0
-run
-run
-run
-force -freeze sim:/receiverfsm/sampleCountReached 1 0
-run
-force -freeze sim:/receiverfsm/sampleCountReached 0 0
-run
-vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity receiverFSM
-# -- Compiling architecture rtl of receiverFSM
-restart -f
-# Loading work.receiverfsm(rtl)
-force -freeze sim:/receiverfsm/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/receiverfsm/RXD 1 0
-force -freeze sim:/receiverfsm/endData 0 0
-force -freeze sim:/receiverfsm/reset 1 0
-force -freeze sim:/receiverfsm/sampleCountReached 0 0
-run
-force -freeze sim:/receiverfsm/reset 0 0
-run
-run
-force -freeze sim:/receiverfsm/RXD 0 0
-run
-run
-run
-force -freeze sim:/receiverfsm/sampleCountReached 1 0
-run
-force -freeze sim:/receiverfsm/sampleCountReached 0 0
-run
-run
-force -freeze sim:/receiverfsm/sampleCountReached 1 0
-run
-run
-run
-run
-force -freeze sim:/receiverfsm/endData 1 0
-run
-run
-run
-vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity receiverFSM
-# -- Compiling architecture rtl of receiverFSM
-restart -f
-# Loading work.receiverfsm(rtl)
-force -freeze sim:/receiverfsm/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/receiverfsm/RXD 1 0
-force -freeze sim:/receiverfsm/endData 0 0
-force -freeze sim:/receiverfsm/reset 1 0
-force -freeze sim:/receiverfsm/sampleCountReached 0 0
-run
-force -freeze sim:/receiverfsm/reset 0 0
-run
-run
-force -freeze sim:/receiverfsm/RXD 0 0
-run
-run
-run
-force -freeze sim:/receiverfsm/sampleCountReached 1 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity receiverFSM
-# -- Compiling architecture rtl of receiverFSM
-restart -f
-# Loading work.receiverfsm(rtl)
-force -freeze sim:/receiverfsm/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/receiverfsm/RXD 1 0
-force -freeze sim:/receiverfsm/endData 0 0
-force -freeze sim:/receiverfsm/reset 1 0
-force -freeze sim:/receiverfsm/sampleCountReached 0 0
-run
-force -freeze sim:/receiverfsm/reset 0 0
-run
-run
-run
-force -freeze sim:/receiverfsm/RXD 0 0
-run
-run
-run
-run
-force -freeze sim:/receiverfsm/sampleCountReached 1 0
-run
-run
-run
-run
-run
-run
-run
-force -freeze sim:/receiverfsm/endData 1 0
-run
-force -freeze sim:/receiverfsm/RXD 1 0
-run
-run
-run
-run
+sim:/baudrategenerator/baudSel \
+sim:/baudrategenerator/clk \
+sim:/baudrategenerator/reset \
+sim:/baudrategenerator/bclk \
+sim:/baudrategenerator/bclkx8
+force -freeze sim:/baudrategenerator/clk 1 0, 0 {19861 ps} -r 39722
+force -freeze sim:/baudrategenerator/reset 1 0
+force -freeze sim:/baudrategenerator/baudSel 000 0
+# Value length (3) does not equal array index length (4).
+# 
+# ** Error: (vsim-4011) Invalid force value: 000 0.
+# 
+run
+force -freeze sim:/baudrategenerator/baudSel 0000 0
 run

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\arnav\Desktop\CEG3155-PROJECT\simulation\qsim
+vbaudRateGenerator
+Z1 IX>gCF5aTMV4FY[Y3PGnIk1
+Z2 V2z27NcllE>@69aQIf_[[k3
+Z3 dC:\Users\arnav\Desktop\CEG3155-PROJECT\simulation\qsim
+Z4 w1733348884
+Z5 8CEG3155_PROJECT.vo
+Z6 FCEG3155_PROJECT.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|CEG3155_PROJECT.vo|
+Z9 o-work work -O0
+Z10 nbaud@rate@generator
+!i10b 1
+Z11 !s100 [lV5QO4`ebV[<R=<6mkUT2
+!s85 0
+Z12 !s108 1733348884.831000
+Z13 !s107 CEG3155_PROJECT.vo|
+!s101 -O0
+vbaudRateGenerator_vlg_check_tst
+!i10b 1
+Z14 !s100 >3boI^OgmzO<h1GdU:2Tg1
+Z15 I6KRUN9[SdoG?W5hOZIK0z1
+Z16 VGfTYB_4?>6_1`=fVLnLT<1
+R3
+Z17 w1733348883
+Z18 8CEG3155_PROJECT.vt
+Z19 FCEG3155_PROJECT.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z20 !s108 1733348884.890000
+Z21 !s107 CEG3155_PROJECT.vt|
+Z22 !s90 -work|work|CEG3155_PROJECT.vt|
+!s101 -O0
+R9
+Z23 nbaud@rate@generator_vlg_check_tst
+vbaudRateGenerator_vlg_sample_tst
+!i10b 1
+Z24 !s100 UAdn8KhF^A:_cCOEzXXe[0
+Z25 IFa53nM^nOo51he^C>ejzP2
+Z26 Vg`7J3f>]><F?1DU:P=C6?1
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 nbaud@rate@generator_vlg_sample_tst
+vbaudRateGenerator_vlg_vec_tst
+!i10b 1
+Z28 !s100 l6MHD84M]4oL]XzoB1FZS0
+Z29 IhG>?PMjm:PaijzV=kj0581
+Z30 VGN4NW_VVD;HIF=PE[noL83
+R3
+R17
+R18
+R19
+Z31 L0 183
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 nbaud@rate@generator_vlg_vec_tst
