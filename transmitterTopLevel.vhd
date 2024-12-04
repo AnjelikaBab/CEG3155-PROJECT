@@ -123,7 +123,7 @@ begin
             s0 => int_txSel(0), 
             s1 => int_txSel(1), 
             x0 => '1', 
-            x1 => '1', 
+            x1 => '0', 
             x2 => '0', -- default value, but this should never be taken 
             x3 => int_TSR_output, 
             y => TX_out
