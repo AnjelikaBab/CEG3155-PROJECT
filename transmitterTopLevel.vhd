@@ -59,7 +59,7 @@ architecture rtl of transmitterTopLevel is
     END COMPONENT;
 
     signal int_endData, int_tsrShift, int_tdrLoad, int_tsrLoad, int_clrInc, int_not_reset : STD_LOGIC;
-	 signal incrementer_reset: STD_LOGIC;
+	signal incrementer_reset: STD_LOGIC;
     signal int_txSel : STD_LOGIC_VECTOR(1 downto 0);
 
     signal int_TSR_output: STD_LOGIC;
@@ -105,7 +105,7 @@ begin
 			parallel_in => int_TDR_output,
             parallel_out => open,
 			serial_out => int_TSR_output
-		  );
+		);
 
     threeBitInc: nBitTimer
         GENERIC MAP (n => 3)
@@ -122,9 +122,10 @@ begin
             s0 => int_txSel(0), 
             s1 => int_txSel(1), 
             x0 => '1', 
-            x1 => '1', 
-            x2 => '0', 
+            x1 => '0', 
+            x2 => '0', -- default value, but this should never be taken 
             x3 => int_TSR_output, 
-            y => TX_out);
+            y => TX_out
+        );
 	
 end rtl;

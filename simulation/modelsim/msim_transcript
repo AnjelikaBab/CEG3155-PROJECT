@@ -11,6 +11,13 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity transmitterTopLevel
+# -- Compiling architecture rtl of transmitterTopLevel
 # vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -18,6 +25,76 @@
 # -- Loading package std_logic_1164
 # -- Compiling entity transmitterFSM
 # -- Compiling architecture rtl of transmitterFSM
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity oneBitComparator
+# -- Compiling architecture rtl of oneBitComparator
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity oneBitAdderSubtractor
+# -- Compiling architecture rtl of oneBitAdderSubtractor
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitTimer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nBitTimer
+# -- Compiling architecture rtl of nBitTimer
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nBitShiftRegister
+# -- Compiling architecture rtl of nBitShiftRegister
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nBitRegister
+# -- Compiling architecture rtl of nBitRegister
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nBitIncrementer
+# -- Compiling architecture rtl of nBitIncrementer
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nbitcomparator
+# -- Compiling architecture rtl of nbitcomparator
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nBitAdderSubtractor
+# -- Compiling architecture rtl of nBitAdderSubtractor
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux41
+# -- Compiling architecture structural of mux41
+# vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux21
+# -- Compiling architecture structural of mux21
 # vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -26,78 +103,99 @@
 # -- Compiling entity enARdFF_2
 # -- Compiling architecture rtl of enARdFF_2
 # 
-vsim -voptargs=+acc work.transmitterfsm
-# vsim -voptargs=+acc work.transmitterfsm 
+vsim -voptargs=+acc work.transmittertoplevel
+# vsim -voptargs=+acc work.transmittertoplevel 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
+# Loading work.transmittertoplevel(rtl)
 # Loading work.transmitterfsm(rtl)
 # Loading work.enardff_2(rtl)
+# Loading work.nbitregister(rtl)
+# Loading work.nbitshiftregister(rtl)
+# Loading work.mux41(structural)
+# Loading work.mux21(structural)
+# Loading work.nbittimer(rtl)
+# Loading work.nbitincrementer(rtl)
+# Loading work.nbitaddersubtractor(rtl)
+# Loading work.onebitaddersubtractor(rtl)
+# Loading work.nbitcomparator(rtl)
+# Loading work.onebitcomparator(rtl)
 add wave -position insertpoint  \
-sim:/transmitterfsm/clk \
-sim:/transmitterfsm/endData \
-sim:/transmitterfsm/reset \
-sim:/transmitterfsm/txStart \
-sim:/transmitterfsm/TDRE \
-sim:/transmitterfsm/clrInc \
-sim:/transmitterfsm/tdrLoad \
-sim:/transmitterfsm/tsrLoad \
-sim:/transmitterfsm/tsrShift \
-sim:/transmitterfsm/txSel
-add wave -position insertpoint  \
-sim:/transmitterfsm/A \
-sim:/transmitterfsm/C \
-sim:/transmitterfsm/i_y0 \
-sim:/transmitterfsm/i_y1 \
-sim:/transmitterfsm/int_not_reset \
-sim:/transmitterfsm/int_reset \
-sim:/transmitterfsm/not_w \
-sim:/transmitterfsm/o_not_y0 \
-sim:/transmitterfsm/o_not_y1 \
-sim:/transmitterfsm/o_y0 \
-sim:/transmitterfsm/o_y1 \
-sim:/transmitterfsm/w
-force -freeze sim:/transmitterfsm/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/transmitterfsm/reset 1 0
-force -freeze sim:/transmitterfsm/endData 0 0
-force -freeze sim:/transmitterfsm/reset 1 0
-force -freeze sim:/transmitterfsm/txStart 0 0
+sim:/transmittertoplevel/TX_in \
+sim:/transmittertoplevel/clk \
+sim:/transmittertoplevel/reset \
+sim:/transmittertoplevel/txStart \
+sim:/transmittertoplevel/TDRE \
+sim:/transmittertoplevel/TX_out \
+sim:/transmittertoplevel/incrementer_reset \
+sim:/transmittertoplevel/int_TDR_output \
+sim:/transmittertoplevel/int_TSR_output \
+sim:/transmittertoplevel/int_clrInc \
+sim:/transmittertoplevel/int_endData \
+sim:/transmittertoplevel/int_not_reset \
+sim:/transmittertoplevel/int_tdrLoad \
+sim:/transmittertoplevel/int_tsrLoad \
+sim:/transmittertoplevel/int_tsrShift \
+sim:/transmittertoplevel/int_txSel
+force -freeze sim:/transmittertoplevel/TX_in 00110001 0
+force -freeze sim:/transmittertoplevel/reset 1 0
+force -freeze sim:/transmittertoplevel/txStart 0 0
+force -freeze sim:/transmittertoplevel/clk 1 0, 0 {50 ps} -r 100
 run
-force -freeze sim:/transmitterfsm/reset 0 0
+force -freeze sim:/transmittertoplevel/reset 0 0
 run
+force -freeze sim:/transmittertoplevel/TX_in 10010110 0
 run
-force -freeze sim:/transmitterfsm/endData 1 0
+force -freeze sim:/transmittertoplevel/reset 0 0
 run
-run
-force -freeze sim:/transmitterfsm/txStart 1 0
+force -freeze sim:/transmittertoplevel/txStart 1 0
 run
 run
 run
-force -freeze sim:/transmitterfsm/endData 0 0
 run
 run
-vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd
+run
+run
+run
+run
+run
+run
+vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity transmitterFSM
-# -- Compiling architecture rtl of transmitterFSM
+# -- Compiling entity transmitterTopLevel
+# -- Compiling architecture rtl of transmitterTopLevel
+# ** Error: C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd(126): (vcom-1035) Formal port "x2" has OPEN or no actual associated with it.
+# 
+# ** Error: C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd(130): VHDL Compiler exiting
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+vcom -93 -work work -O0 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity transmitterTopLevel
+# -- Compiling architecture rtl of transmitterTopLevel
 restart -f
-# Loading work.transmitterfsm(rtl)
-force -freeze sim:/transmitterfsm/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/transmitterfsm/endData 0 0
-force -freeze sim:/transmitterfsm/reset 1 0
-force -freeze sim:/transmitterfsm/txStart 0 0
+# Loading work.transmittertoplevel(rtl)
+force -freeze sim:/transmittertoplevel/TX_in 10010110 0
+force -freeze sim:/transmittertoplevel/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/transmittertoplevel/reset 1 0
+force -freeze sim:/transmittertoplevel/txStart 0 0
 run
 run
-force -freeze sim:/transmitterfsm/reset 0 0
-force -freeze sim:/transmitterfsm/txStart 1 0
+force -freeze sim:/transmittertoplevel/reset 0 0
+run
+run
+force -freeze sim:/transmittertoplevel/txStart 1 0
 run
 run
 run
 run
-force -freeze sim:/transmitterfsm/endData 1 0
+run
 run
 run
 run
