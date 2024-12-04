@@ -8,7 +8,8 @@ ENTITY nBitShiftRegister IS
         i_load, i_shift_right, i_shift_left: IN STD_LOGIC;
         serial_in: IN STD_LOGIC;
         parallel_in: IN	STD_LOGIC_VECTOR(n-1 downto 0);
-        o_Value: OUT STD_LOGIC_VECTOR(n-1 downto 0));
+        parallel_out: OUT STD_LOGIC_VECTOR(n-1 downto 0);
+		  serial_out: OUT STD_LOGIC);
 END nBitShiftRegister;
 
 ARCHITECTURE rtl OF nBitShiftRegister IS
@@ -79,10 +80,11 @@ BEGIN
                 y => int_mux_out(i));
     end generate;
 
-	 -- Enable Signal
-	 int_enable <= i_shift_left OR i_shift_right OR i_load;
+	-- Enable Signal
+	int_enable <= i_shift_left OR i_shift_right OR i_load;
 	 
     -- Output Driver
-    o_value <= int_ff_out;
+    parallel_out<= int_ff_out;
+	serial_out <= int_ff_out(n-1) when i_shift_left ='1' else int_ff_out(0);
 	 
 END rtl;

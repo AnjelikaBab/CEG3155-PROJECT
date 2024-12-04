@@ -1,70 +1,62 @@
-|fsmTopLevel
-gclk => fsmController:fsmController1.clk
-gclk => nBitTimer:mstTimer.i_clk
-gclk => nBitTimer:sstTimer.i_clk
-gclk => nBitTimer:mscTimer.i_clk
-gclk => nBitTimer:sscTimer.i_clk
-gclk => debouncer_2:sscsDebouncer.i_clock
-greset => int_rst_timer.IN1
-greset => fsmController:fsmController1.greset
-greset => debouncer_2:sscsDebouncer.i_resetBar
-i_msc_val[0] => nBitTimer:mscTimer.i_targetCount[0]
-i_msc_val[1] => nBitTimer:mscTimer.i_targetCount[1]
-i_msc_val[2] => nBitTimer:mscTimer.i_targetCount[2]
-i_msc_val[3] => nBitTimer:mscTimer.i_targetCount[3]
-i_ssc_val[0] => nBitTimer:sscTimer.i_targetCount[0]
-i_ssc_val[1] => nBitTimer:sscTimer.i_targetCount[1]
-i_ssc_val[2] => nBitTimer:sscTimer.i_targetCount[2]
-i_ssc_val[3] => nBitTimer:sscTimer.i_targetCount[3]
-i_sscs => debouncer_2:sscsDebouncer.i_raw
-o_mstl[0] << fsmController:fsmController1.mstl[0]
-o_mstl[1] << fsmController:fsmController1.mstl[1]
-o_mstl[2] << fsmController:fsmController1.mstl[2]
-o_sstl[0] << fsmController:fsmController1.sstl[0]
-o_sstl[1] << fsmController:fsmController1.sstl[1]
-o_sstl[2] << fsmController:fsmController1.sstl[2]
-o_state[0] << fsmController:fsmController1.state[0]
-o_state[1] << fsmController:fsmController1.state[1]
-o_bcd1[0] << dec_7seg:mscBcd.o_segment_a
-o_bcd1[1] << dec_7seg:mscBcd.o_segment_b
-o_bcd1[2] << dec_7seg:mscBcd.o_segment_c
-o_bcd1[3] << dec_7seg:mscBcd.o_segment_d
-o_bcd1[4] << dec_7seg:mscBcd.o_segment_e
-o_bcd1[5] << dec_7seg:mscBcd.o_segment_f
-o_bcd1[6] << dec_7seg:mscBcd.o_segment_g
-o_bcd2[0] << dec_7seg:sscBcd.o_segment_a
-o_bcd2[1] << dec_7seg:sscBcd.o_segment_b
-o_bcd2[2] << dec_7seg:sscBcd.o_segment_c
-o_bcd2[3] << dec_7seg:sscBcd.o_segment_d
-o_bcd2[4] << dec_7seg:sscBcd.o_segment_e
-o_bcd2[5] << dec_7seg:sscBcd.o_segment_f
-o_bcd2[6] << dec_7seg:sscBcd.o_segment_g
+|nBitShiftRegister
+i_resetBar => enardFF_2:regloop:0:bit_n.i_resetBar
+i_resetBar => enardFF_2:regloop:1:bit_n.i_resetBar
+i_resetBar => enardFF_2:regloop:2:bit_n.i_resetBar
+i_resetBar => enardFF_2:regloop:3:bit_n.i_resetBar
+i_resetBar => enardFF_2:regloop:4:bit_n.i_resetBar
+i_resetBar => enardFF_2:regloop:5:bit_n.i_resetBar
+i_resetBar => enardFF_2:regloop:6:bit_n.i_resetBar
+i_resetBar => enardFF_2:regloop:7:bit_n.i_resetBar
+i_clock => enardFF_2:regloop:0:bit_n.i_clock
+i_clock => enardFF_2:regloop:1:bit_n.i_clock
+i_clock => enardFF_2:regloop:2:bit_n.i_clock
+i_clock => enardFF_2:regloop:3:bit_n.i_clock
+i_clock => enardFF_2:regloop:4:bit_n.i_clock
+i_clock => enardFF_2:regloop:5:bit_n.i_clock
+i_clock => enardFF_2:regloop:6:bit_n.i_clock
+i_clock => enardFF_2:regloop:7:bit_n.i_clock
+i_load => int_enable.IN1
+i_shift_right => int_enable.IN0
+i_shift_right => mux41:mux_0.s1
+i_shift_right => mux41:mux_msb.s1
+i_shift_right => mux41:muxloop:1:mux_n.s1
+i_shift_right => mux41:muxloop:2:mux_n.s1
+i_shift_right => mux41:muxloop:3:mux_n.s1
+i_shift_right => mux41:muxloop:4:mux_n.s1
+i_shift_right => mux41:muxloop:5:mux_n.s1
+i_shift_right => mux41:muxloop:6:mux_n.s1
+i_shift_left => int_enable.IN1
+i_shift_left => serial_out.OUTPUTSELECT
+i_shift_left => mux41:mux_0.s0
+i_shift_left => mux41:mux_msb.s0
+i_shift_left => mux41:muxloop:1:mux_n.s0
+i_shift_left => mux41:muxloop:2:mux_n.s0
+i_shift_left => mux41:muxloop:3:mux_n.s0
+i_shift_left => mux41:muxloop:4:mux_n.s0
+i_shift_left => mux41:muxloop:5:mux_n.s0
+i_shift_left => mux41:muxloop:6:mux_n.s0
+serial_in => mux41:mux_0.x1
+serial_in => mux41:mux_msb.x2
+parallel_in[0] => mux41:mux_0.x0
+parallel_in[1] => mux41:muxloop:1:mux_n.x0
+parallel_in[2] => mux41:muxloop:2:mux_n.x0
+parallel_in[3] => mux41:muxloop:3:mux_n.x0
+parallel_in[4] => mux41:muxloop:4:mux_n.x0
+parallel_in[5] => mux41:muxloop:5:mux_n.x0
+parallel_in[6] => mux41:muxloop:6:mux_n.x0
+parallel_in[7] => mux41:mux_msb.x0
+parallel_out[0] <= enardFF_2:regloop:0:bit_n.o_q
+parallel_out[1] <= enardFF_2:regloop:1:bit_n.o_q
+parallel_out[2] <= enardFF_2:regloop:2:bit_n.o_q
+parallel_out[3] <= enardFF_2:regloop:3:bit_n.o_q
+parallel_out[4] <= enardFF_2:regloop:4:bit_n.o_q
+parallel_out[5] <= enardFF_2:regloop:5:bit_n.o_q
+parallel_out[6] <= enardFF_2:regloop:6:bit_n.o_q
+parallel_out[7] <= enardFF_2:regloop:7:bit_n.o_q
+serial_out <= serial_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1
-clk => enardFF_2:enardFF_y0.i_clock
-clk => enardFF_2:enardFF_y1.i_clock
-clk => enardFF_2:reset_latch.i_clock
-greset => enardFF_2:enardFF_y0.i_resetBar
-greset => enardFF_2:enardFF_y1.i_resetBar
-greset => enardFF_2:reset_latch.i_resetBar
-mst => w.IN1
-sst => w.IN1
-sscs => w.IN1
-msc => w.IN1
-ssc => w.IN1
-mstl[0] <= nBitMux41:mstl_mux.y[0]
-mstl[1] <= nBitMux41:mstl_mux.y[1]
-mstl[2] <= nBitMux41:mstl_mux.y[2]
-sstl[0] <= nBitMux41:sstl_mux.y[0]
-sstl[1] <= nBitMux41:sstl_mux.y[1]
-sstl[2] <= nBitMux41:sstl_mux.y[2]
-state[0] <= enardFF_2:enardFF_y0.o_q
-state[1] <= enardFF_2:enardFF_y1.o_q
-reset_timer <= enardFF_2:reset_latch.o_q
-
-
-|fsmTopLevel|fsmController:fsmController1|enARdFF_2:enardFF_y0
+|nBitShiftRegister|enARdFF_2:\regloop:0:bit_n
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -73,7 +65,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|enARdFF_2:enardFF_y1
+|nBitShiftRegister|enARdFF_2:\regloop:1:bit_n
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -82,7 +74,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|enARdFF_2:reset_latch
+|nBitShiftRegister|enARdFF_2:\regloop:2:bit_n
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -91,31 +83,52 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux
-s0 => mux41:muxloop:0:mux_n.s0
-s0 => mux41:muxloop:1:mux_n.s0
-s0 => mux41:muxloop:2:mux_n.s0
-s1 => mux41:muxloop:0:mux_n.s1
-s1 => mux41:muxloop:1:mux_n.s1
-s1 => mux41:muxloop:2:mux_n.s1
-x0[0] => mux41:muxloop:0:mux_n.x0
-x0[1] => mux41:muxloop:1:mux_n.x0
-x0[2] => mux41:muxloop:2:mux_n.x0
-x1[0] => mux41:muxloop:0:mux_n.x1
-x1[1] => mux41:muxloop:1:mux_n.x1
-x1[2] => mux41:muxloop:2:mux_n.x1
-x2[0] => mux41:muxloop:0:mux_n.x2
-x2[1] => mux41:muxloop:1:mux_n.x2
-x2[2] => mux41:muxloop:2:mux_n.x2
-x3[0] => mux41:muxloop:0:mux_n.x3
-x3[1] => mux41:muxloop:1:mux_n.x3
-x3[2] => mux41:muxloop:2:mux_n.x3
-y[0] <= mux41:muxloop:0:mux_n.y
-y[1] <= mux41:muxloop:1:mux_n.y
-y[2] <= mux41:muxloop:2:mux_n.y
+|nBitShiftRegister|enARdFF_2:\regloop:3:bit_n
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:0:mux_n
+|nBitShiftRegister|enARdFF_2:\regloop:4:bit_n
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitShiftRegister|enARdFF_2:\regloop:5:bit_n
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitShiftRegister|enARdFF_2:\regloop:6:bit_n
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitShiftRegister|enARdFF_2:\regloop:7:bit_n
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitShiftRegister|mux41:mux_0
 s0 => mux21:mux1.s
 s0 => mux21:mux2.s
 s1 => mux21:muxfinal.s
@@ -126,7 +139,7 @@ x3 => mux21:mux2.x1
 y <= mux21:muxfinal.y
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:0:mux_n|mux21:mux1
+|nBitShiftRegister|mux41:mux_0|mux21:mux1
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -134,7 +147,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:0:mux_n|mux21:mux2
+|nBitShiftRegister|mux41:mux_0|mux21:mux2
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -142,7 +155,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:0:mux_n|mux21:muxfinal
+|nBitShiftRegister|mux41:mux_0|mux21:muxfinal
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -150,7 +163,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:1:mux_n
+|nBitShiftRegister|mux41:mux_msb
 s0 => mux21:mux1.s
 s0 => mux21:mux2.s
 s1 => mux21:muxfinal.s
@@ -161,7 +174,7 @@ x3 => mux21:mux2.x1
 y <= mux21:muxfinal.y
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:1:mux_n|mux21:mux1
+|nBitShiftRegister|mux41:mux_msb|mux21:mux1
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -169,7 +182,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:1:mux_n|mux21:mux2
+|nBitShiftRegister|mux41:mux_msb|mux21:mux2
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -177,7 +190,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:1:mux_n|mux21:muxfinal
+|nBitShiftRegister|mux41:mux_msb|mux21:muxfinal
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -185,7 +198,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:2:mux_n
+|nBitShiftRegister|mux41:\muxloop:1:mux_n
 s0 => mux21:mux1.s
 s0 => mux21:mux2.s
 s1 => mux21:muxfinal.s
@@ -196,7 +209,7 @@ x3 => mux21:mux2.x1
 y <= mux21:muxfinal.y
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:2:mux_n|mux21:mux1
+|nBitShiftRegister|mux41:\muxloop:1:mux_n|mux21:mux1
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -204,7 +217,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:2:mux_n|mux21:mux2
+|nBitShiftRegister|mux41:\muxloop:1:mux_n|mux21:mux2
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -212,7 +225,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:mstl_mux|mux41:\muxloop:2:mux_n|mux21:muxfinal
+|nBitShiftRegister|mux41:\muxloop:1:mux_n|mux21:muxfinal
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -220,31 +233,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux
-s0 => mux41:muxloop:0:mux_n.s0
-s0 => mux41:muxloop:1:mux_n.s0
-s0 => mux41:muxloop:2:mux_n.s0
-s1 => mux41:muxloop:0:mux_n.s1
-s1 => mux41:muxloop:1:mux_n.s1
-s1 => mux41:muxloop:2:mux_n.s1
-x0[0] => mux41:muxloop:0:mux_n.x0
-x0[1] => mux41:muxloop:1:mux_n.x0
-x0[2] => mux41:muxloop:2:mux_n.x0
-x1[0] => mux41:muxloop:0:mux_n.x1
-x1[1] => mux41:muxloop:1:mux_n.x1
-x1[2] => mux41:muxloop:2:mux_n.x1
-x2[0] => mux41:muxloop:0:mux_n.x2
-x2[1] => mux41:muxloop:1:mux_n.x2
-x2[2] => mux41:muxloop:2:mux_n.x2
-x3[0] => mux41:muxloop:0:mux_n.x3
-x3[1] => mux41:muxloop:1:mux_n.x3
-x3[2] => mux41:muxloop:2:mux_n.x3
-y[0] <= mux41:muxloop:0:mux_n.y
-y[1] <= mux41:muxloop:1:mux_n.y
-y[2] <= mux41:muxloop:2:mux_n.y
-
-
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:0:mux_n
+|nBitShiftRegister|mux41:\muxloop:2:mux_n
 s0 => mux21:mux1.s
 s0 => mux21:mux2.s
 s1 => mux21:muxfinal.s
@@ -255,7 +244,7 @@ x3 => mux21:mux2.x1
 y <= mux21:muxfinal.y
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:0:mux_n|mux21:mux1
+|nBitShiftRegister|mux41:\muxloop:2:mux_n|mux21:mux1
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -263,7 +252,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:0:mux_n|mux21:mux2
+|nBitShiftRegister|mux41:\muxloop:2:mux_n|mux21:mux2
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -271,7 +260,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:0:mux_n|mux21:muxfinal
+|nBitShiftRegister|mux41:\muxloop:2:mux_n|mux21:muxfinal
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -279,7 +268,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:1:mux_n
+|nBitShiftRegister|mux41:\muxloop:3:mux_n
 s0 => mux21:mux1.s
 s0 => mux21:mux2.s
 s1 => mux21:muxfinal.s
@@ -290,7 +279,7 @@ x3 => mux21:mux2.x1
 y <= mux21:muxfinal.y
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:1:mux_n|mux21:mux1
+|nBitShiftRegister|mux41:\muxloop:3:mux_n|mux21:mux1
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -298,7 +287,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:1:mux_n|mux21:mux2
+|nBitShiftRegister|mux41:\muxloop:3:mux_n|mux21:mux2
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -306,7 +295,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:1:mux_n|mux21:muxfinal
+|nBitShiftRegister|mux41:\muxloop:3:mux_n|mux21:muxfinal
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -314,7 +303,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:2:mux_n
+|nBitShiftRegister|mux41:\muxloop:4:mux_n
 s0 => mux21:mux1.s
 s0 => mux21:mux2.s
 s1 => mux21:muxfinal.s
@@ -325,7 +314,7 @@ x3 => mux21:mux2.x1
 y <= mux21:muxfinal.y
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:2:mux_n|mux21:mux1
+|nBitShiftRegister|mux41:\muxloop:4:mux_n|mux21:mux1
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -333,7 +322,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:2:mux_n|mux21:mux2
+|nBitShiftRegister|mux41:\muxloop:4:mux_n|mux21:mux2
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -341,7 +330,7 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|fsmController:fsmController1|nbitmux41:sstl_mux|mux41:\muxloop:2:mux_n|mux21:muxfinal
+|nBitShiftRegister|mux41:\muxloop:4:mux_n|mux21:muxfinal
 s => selX1.IN0
 s => selX0.IN0
 x0 => selX0.IN1
@@ -349,995 +338,73 @@ x1 => selX1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fsmTopLevel|nBitTimer:mstTimer
-i_clk => nBitIncrementer:incrementer.clk
-i_reset => nBitIncrementer:incrementer.reset
-i_targetCount[0] => nbitcomparator:comparator.i_B[0]
-i_targetCount[1] => nbitcomparator:comparator.i_B[1]
-i_targetCount[2] => nbitcomparator:comparator.i_B[2]
-i_targetCount[3] => nbitcomparator:comparator.i_B[3]
-o_done <= nbitcomparator:comparator.o_AeqB
-o_count[0] <= nBitIncrementer:incrementer.y[0]
-o_count[1] <= nBitIncrementer:incrementer.y[1]
-o_count[2] <= nBitIncrementer:incrementer.y[2]
-o_count[3] <= nBitIncrementer:incrementer.y[3]
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer
-clk => nBitRegister:reg.i_clock
-reset => nBitRegister:reg.i_resetBar
-increment => nBitRegister:reg.i_load
-y[0] <= nBitRegister:reg.o_Value[0]
-y[1] <= nBitRegister:reg.o_Value[1]
-y[2] <= nBitRegister:reg.o_Value[2]
-y[3] <= nBitRegister:reg.o_Value[3]
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder
-i_Ai[0] => oneBitAdderSubtractor:add_0.i_Ai
-i_Ai[1] => oneBitAdderSubtractor:loop_add:1:addrn.i_Ai
-i_Ai[2] => oneBitAdderSubtractor:loop_add:2:addrn.i_Ai
-i_Ai[3] => oneBitAdderSubtractor:loop_add:3:addrn.i_Ai
-i_Bi[0] => oneBitAdderSubtractor:add_0.i_Bi
-i_Bi[1] => oneBitAdderSubtractor:loop_add:1:addrn.i_Bi
-i_Bi[2] => oneBitAdderSubtractor:loop_add:2:addrn.i_Bi
-i_Bi[3] => oneBitAdderSubtractor:loop_add:3:addrn.i_Bi
-operationFlag => oneBitAdderSubtractor:add_0.i_CarryIn
-operationFlag => oneBitAdderSubtractor:add_0.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:1:addrn.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:2:addrn.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:3:addrn.operationFlag
-o_CarryOut <= oneBitAdderSubtractor:loop_add:3:addrn.o_CarryOut
-o_Sum[0] <= oneBitAdderSubtractor:add_0.o_Sum
-o_Sum[1] <= oneBitAdderSubtractor:loop_add:1:addrn.o_Sum
-o_Sum[2] <= oneBitAdderSubtractor:loop_add:2:addrn.o_Sum
-o_Sum[3] <= oneBitAdderSubtractor:loop_add:3:addrn.o_Sum
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:add_0
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:1:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:2:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:3:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg
-i_resetBar => enARdFF_2:reg_n_bits:0:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:1:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:2:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:3:b.i_resetBar
-i_load => enARdFF_2:reg_n_bits:0:b.i_enable
-i_load => enARdFF_2:reg_n_bits:1:b.i_enable
-i_load => enARdFF_2:reg_n_bits:2:b.i_enable
-i_load => enARdFF_2:reg_n_bits:3:b.i_enable
-i_clock => enARdFF_2:reg_n_bits:0:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:1:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:2:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:3:b.i_clock
-i_Value[0] => enARdFF_2:reg_n_bits:0:b.i_d
-i_Value[1] => enARdFF_2:reg_n_bits:1:b.i_d
-i_Value[2] => enARdFF_2:reg_n_bits:2:b.i_d
-i_Value[3] => enARdFF_2:reg_n_bits:3:b.i_d
-o_Value[0] <= enARdFF_2:reg_n_bits:0:b.o_q
-o_Value[1] <= enARdFF_2:reg_n_bits:1:b.o_q
-o_Value[2] <= enARdFF_2:reg_n_bits:2:b.o_q
-o_Value[3] <= enARdFF_2:reg_n_bits:3:b.o_q
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nbitcomparator:comparator
-i_A[0] => oneBitComparator:comparatorLoop:0:comparator_n.i_Ai
-i_A[1] => oneBitComparator:comparatorLoop:1:comparator_n.i_Ai
-i_A[2] => oneBitComparator:comparatorLoop:2:comparator_n.i_Ai
-i_A[3] => oneBitComparator:comparatorMSB.i_Ai
-i_B[0] => oneBitComparator:comparatorLoop:0:comparator_n.i_Bi
-i_B[1] => oneBitComparator:comparatorLoop:1:comparator_n.i_Bi
-i_B[2] => oneBitComparator:comparatorLoop:2:comparator_n.i_Bi
-i_B[3] => oneBitComparator:comparatorMSB.i_Bi
-o_AeqB <= o_AeqB.DB_MAX_OUTPUT_PORT_TYPE
-o_AgtB <= oneBitComparator:comparatorLoop:0:comparator_n.o_GT
-o_AltB <= oneBitComparator:comparatorLoop:0:comparator_n.o_LT
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nbitcomparator:comparator|oneBitComparator:comparatorMSB
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:2:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:1:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mstTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:0:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer
-i_clk => nBitIncrementer:incrementer.clk
-i_reset => nBitIncrementer:incrementer.reset
-i_targetCount[0] => nbitcomparator:comparator.i_B[0]
-i_targetCount[1] => nbitcomparator:comparator.i_B[1]
-i_targetCount[2] => nbitcomparator:comparator.i_B[2]
-i_targetCount[3] => nbitcomparator:comparator.i_B[3]
-o_done <= nbitcomparator:comparator.o_AeqB
-o_count[0] <= nBitIncrementer:incrementer.y[0]
-o_count[1] <= nBitIncrementer:incrementer.y[1]
-o_count[2] <= nBitIncrementer:incrementer.y[2]
-o_count[3] <= nBitIncrementer:incrementer.y[3]
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nBitIncrementer:incrementer
-clk => nBitRegister:reg.i_clock
-reset => nBitRegister:reg.i_resetBar
-increment => nBitRegister:reg.i_load
-y[0] <= nBitRegister:reg.o_Value[0]
-y[1] <= nBitRegister:reg.o_Value[1]
-y[2] <= nBitRegister:reg.o_Value[2]
-y[3] <= nBitRegister:reg.o_Value[3]
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder
-i_Ai[0] => oneBitAdderSubtractor:add_0.i_Ai
-i_Ai[1] => oneBitAdderSubtractor:loop_add:1:addrn.i_Ai
-i_Ai[2] => oneBitAdderSubtractor:loop_add:2:addrn.i_Ai
-i_Ai[3] => oneBitAdderSubtractor:loop_add:3:addrn.i_Ai
-i_Bi[0] => oneBitAdderSubtractor:add_0.i_Bi
-i_Bi[1] => oneBitAdderSubtractor:loop_add:1:addrn.i_Bi
-i_Bi[2] => oneBitAdderSubtractor:loop_add:2:addrn.i_Bi
-i_Bi[3] => oneBitAdderSubtractor:loop_add:3:addrn.i_Bi
-operationFlag => oneBitAdderSubtractor:add_0.i_CarryIn
-operationFlag => oneBitAdderSubtractor:add_0.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:1:addrn.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:2:addrn.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:3:addrn.operationFlag
-o_CarryOut <= oneBitAdderSubtractor:loop_add:3:addrn.o_CarryOut
-o_Sum[0] <= oneBitAdderSubtractor:add_0.o_Sum
-o_Sum[1] <= oneBitAdderSubtractor:loop_add:1:addrn.o_Sum
-o_Sum[2] <= oneBitAdderSubtractor:loop_add:2:addrn.o_Sum
-o_Sum[3] <= oneBitAdderSubtractor:loop_add:3:addrn.o_Sum
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:add_0
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:1:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:2:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:3:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitRegister:reg
-i_resetBar => enARdFF_2:reg_n_bits:0:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:1:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:2:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:3:b.i_resetBar
-i_load => enARdFF_2:reg_n_bits:0:b.i_enable
-i_load => enARdFF_2:reg_n_bits:1:b.i_enable
-i_load => enARdFF_2:reg_n_bits:2:b.i_enable
-i_load => enARdFF_2:reg_n_bits:3:b.i_enable
-i_clock => enARdFF_2:reg_n_bits:0:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:1:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:2:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:3:b.i_clock
-i_Value[0] => enARdFF_2:reg_n_bits:0:b.i_d
-i_Value[1] => enARdFF_2:reg_n_bits:1:b.i_d
-i_Value[2] => enARdFF_2:reg_n_bits:2:b.i_d
-i_Value[3] => enARdFF_2:reg_n_bits:3:b.i_d
-o_Value[0] <= enARdFF_2:reg_n_bits:0:b.o_q
-o_Value[1] <= enARdFF_2:reg_n_bits:1:b.o_q
-o_Value[2] <= enARdFF_2:reg_n_bits:2:b.o_q
-o_Value[3] <= enARdFF_2:reg_n_bits:3:b.o_q
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nbitcomparator:comparator
-i_A[0] => oneBitComparator:comparatorLoop:0:comparator_n.i_Ai
-i_A[1] => oneBitComparator:comparatorLoop:1:comparator_n.i_Ai
-i_A[2] => oneBitComparator:comparatorLoop:2:comparator_n.i_Ai
-i_A[3] => oneBitComparator:comparatorMSB.i_Ai
-i_B[0] => oneBitComparator:comparatorLoop:0:comparator_n.i_Bi
-i_B[1] => oneBitComparator:comparatorLoop:1:comparator_n.i_Bi
-i_B[2] => oneBitComparator:comparatorLoop:2:comparator_n.i_Bi
-i_B[3] => oneBitComparator:comparatorMSB.i_Bi
-o_AeqB <= o_AeqB.DB_MAX_OUTPUT_PORT_TYPE
-o_AgtB <= oneBitComparator:comparatorLoop:0:comparator_n.o_GT
-o_AltB <= oneBitComparator:comparatorLoop:0:comparator_n.o_LT
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nbitcomparator:comparator|oneBitComparator:comparatorMSB
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:2:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:1:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sstTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:0:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer
-i_clk => nBitIncrementer:incrementer.clk
-i_reset => nBitIncrementer:incrementer.reset
-i_targetCount[0] => nbitcomparator:comparator.i_B[0]
-i_targetCount[1] => nbitcomparator:comparator.i_B[1]
-i_targetCount[2] => nbitcomparator:comparator.i_B[2]
-i_targetCount[3] => nbitcomparator:comparator.i_B[3]
-o_done <= nbitcomparator:comparator.o_AeqB
-o_count[0] <= nBitIncrementer:incrementer.y[0]
-o_count[1] <= nBitIncrementer:incrementer.y[1]
-o_count[2] <= nBitIncrementer:incrementer.y[2]
-o_count[3] <= nBitIncrementer:incrementer.y[3]
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer
-clk => nBitRegister:reg.i_clock
-reset => nBitRegister:reg.i_resetBar
-increment => nBitRegister:reg.i_load
-y[0] <= nBitRegister:reg.o_Value[0]
-y[1] <= nBitRegister:reg.o_Value[1]
-y[2] <= nBitRegister:reg.o_Value[2]
-y[3] <= nBitRegister:reg.o_Value[3]
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder
-i_Ai[0] => oneBitAdderSubtractor:add_0.i_Ai
-i_Ai[1] => oneBitAdderSubtractor:loop_add:1:addrn.i_Ai
-i_Ai[2] => oneBitAdderSubtractor:loop_add:2:addrn.i_Ai
-i_Ai[3] => oneBitAdderSubtractor:loop_add:3:addrn.i_Ai
-i_Bi[0] => oneBitAdderSubtractor:add_0.i_Bi
-i_Bi[1] => oneBitAdderSubtractor:loop_add:1:addrn.i_Bi
-i_Bi[2] => oneBitAdderSubtractor:loop_add:2:addrn.i_Bi
-i_Bi[3] => oneBitAdderSubtractor:loop_add:3:addrn.i_Bi
-operationFlag => oneBitAdderSubtractor:add_0.i_CarryIn
-operationFlag => oneBitAdderSubtractor:add_0.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:1:addrn.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:2:addrn.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:3:addrn.operationFlag
-o_CarryOut <= oneBitAdderSubtractor:loop_add:3:addrn.o_CarryOut
-o_Sum[0] <= oneBitAdderSubtractor:add_0.o_Sum
-o_Sum[1] <= oneBitAdderSubtractor:loop_add:1:addrn.o_Sum
-o_Sum[2] <= oneBitAdderSubtractor:loop_add:2:addrn.o_Sum
-o_Sum[3] <= oneBitAdderSubtractor:loop_add:3:addrn.o_Sum
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:add_0
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:1:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:2:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:3:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg
-i_resetBar => enARdFF_2:reg_n_bits:0:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:1:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:2:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:3:b.i_resetBar
-i_load => enARdFF_2:reg_n_bits:0:b.i_enable
-i_load => enARdFF_2:reg_n_bits:1:b.i_enable
-i_load => enARdFF_2:reg_n_bits:2:b.i_enable
-i_load => enARdFF_2:reg_n_bits:3:b.i_enable
-i_clock => enARdFF_2:reg_n_bits:0:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:1:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:2:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:3:b.i_clock
-i_Value[0] => enARdFF_2:reg_n_bits:0:b.i_d
-i_Value[1] => enARdFF_2:reg_n_bits:1:b.i_d
-i_Value[2] => enARdFF_2:reg_n_bits:2:b.i_d
-i_Value[3] => enARdFF_2:reg_n_bits:3:b.i_d
-o_Value[0] <= enARdFF_2:reg_n_bits:0:b.o_q
-o_Value[1] <= enARdFF_2:reg_n_bits:1:b.o_q
-o_Value[2] <= enARdFF_2:reg_n_bits:2:b.o_q
-o_Value[3] <= enARdFF_2:reg_n_bits:3:b.o_q
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nbitcomparator:comparator
-i_A[0] => oneBitComparator:comparatorLoop:0:comparator_n.i_Ai
-i_A[1] => oneBitComparator:comparatorLoop:1:comparator_n.i_Ai
-i_A[2] => oneBitComparator:comparatorLoop:2:comparator_n.i_Ai
-i_A[3] => oneBitComparator:comparatorMSB.i_Ai
-i_B[0] => oneBitComparator:comparatorLoop:0:comparator_n.i_Bi
-i_B[1] => oneBitComparator:comparatorLoop:1:comparator_n.i_Bi
-i_B[2] => oneBitComparator:comparatorLoop:2:comparator_n.i_Bi
-i_B[3] => oneBitComparator:comparatorMSB.i_Bi
-o_AeqB <= o_AeqB.DB_MAX_OUTPUT_PORT_TYPE
-o_AgtB <= oneBitComparator:comparatorLoop:0:comparator_n.o_GT
-o_AltB <= oneBitComparator:comparatorLoop:0:comparator_n.o_LT
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nbitcomparator:comparator|oneBitComparator:comparatorMSB
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:2:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:1:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:mscTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:0:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer
-i_clk => nBitIncrementer:incrementer.clk
-i_reset => nBitIncrementer:incrementer.reset
-i_targetCount[0] => nbitcomparator:comparator.i_B[0]
-i_targetCount[1] => nbitcomparator:comparator.i_B[1]
-i_targetCount[2] => nbitcomparator:comparator.i_B[2]
-i_targetCount[3] => nbitcomparator:comparator.i_B[3]
-o_done <= nbitcomparator:comparator.o_AeqB
-o_count[0] <= nBitIncrementer:incrementer.y[0]
-o_count[1] <= nBitIncrementer:incrementer.y[1]
-o_count[2] <= nBitIncrementer:incrementer.y[2]
-o_count[3] <= nBitIncrementer:incrementer.y[3]
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer
-clk => nBitRegister:reg.i_clock
-reset => nBitRegister:reg.i_resetBar
-increment => nBitRegister:reg.i_load
-y[0] <= nBitRegister:reg.o_Value[0]
-y[1] <= nBitRegister:reg.o_Value[1]
-y[2] <= nBitRegister:reg.o_Value[2]
-y[3] <= nBitRegister:reg.o_Value[3]
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder
-i_Ai[0] => oneBitAdderSubtractor:add_0.i_Ai
-i_Ai[1] => oneBitAdderSubtractor:loop_add:1:addrn.i_Ai
-i_Ai[2] => oneBitAdderSubtractor:loop_add:2:addrn.i_Ai
-i_Ai[3] => oneBitAdderSubtractor:loop_add:3:addrn.i_Ai
-i_Bi[0] => oneBitAdderSubtractor:add_0.i_Bi
-i_Bi[1] => oneBitAdderSubtractor:loop_add:1:addrn.i_Bi
-i_Bi[2] => oneBitAdderSubtractor:loop_add:2:addrn.i_Bi
-i_Bi[3] => oneBitAdderSubtractor:loop_add:3:addrn.i_Bi
-operationFlag => oneBitAdderSubtractor:add_0.i_CarryIn
-operationFlag => oneBitAdderSubtractor:add_0.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:1:addrn.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:2:addrn.operationFlag
-operationFlag => oneBitAdderSubtractor:loop_add:3:addrn.operationFlag
-o_CarryOut <= oneBitAdderSubtractor:loop_add:3:addrn.o_CarryOut
-o_Sum[0] <= oneBitAdderSubtractor:add_0.o_Sum
-o_Sum[1] <= oneBitAdderSubtractor:loop_add:1:addrn.o_Sum
-o_Sum[2] <= oneBitAdderSubtractor:loop_add:2:addrn.o_Sum
-o_Sum[3] <= oneBitAdderSubtractor:loop_add:3:addrn.o_Sum
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:add_0
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:1:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:2:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitAdderSubtractor:adder|oneBitAdderSubtractor:\loop_add:3:addrn
-i_CarryIn => carryFromBoth.IN0
-i_CarryIn => carryFromAi.IN0
-operationFlag => xor_Bi.IN0
-i_Ai => carryFromBoth.IN1
-i_Ai => carryFromAi.IN1
-i_Bi => xor_Bi.IN1
-o_Sum <= o_Sum.DB_MAX_OUTPUT_PORT_TYPE
-o_CarryOut <= o_CarryOut.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg
-i_resetBar => enARdFF_2:reg_n_bits:0:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:1:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:2:b.i_resetBar
-i_resetBar => enARdFF_2:reg_n_bits:3:b.i_resetBar
-i_load => enARdFF_2:reg_n_bits:0:b.i_enable
-i_load => enARdFF_2:reg_n_bits:1:b.i_enable
-i_load => enARdFF_2:reg_n_bits:2:b.i_enable
-i_load => enARdFF_2:reg_n_bits:3:b.i_enable
-i_clock => enARdFF_2:reg_n_bits:0:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:1:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:2:b.i_clock
-i_clock => enARdFF_2:reg_n_bits:3:b.i_clock
-i_Value[0] => enARdFF_2:reg_n_bits:0:b.i_d
-i_Value[1] => enARdFF_2:reg_n_bits:1:b.i_d
-i_Value[2] => enARdFF_2:reg_n_bits:2:b.i_d
-i_Value[3] => enARdFF_2:reg_n_bits:3:b.i_d
-o_Value[0] <= enARdFF_2:reg_n_bits:0:b.o_q
-o_Value[1] <= enARdFF_2:reg_n_bits:1:b.o_q
-o_Value[2] <= enARdFF_2:reg_n_bits:2:b.o_q
-o_Value[3] <= enARdFF_2:reg_n_bits:3:b.o_q
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:0:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:1:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nBitIncrementer:incrementer|nBitRegister:reg|enARdFF_2:\reg_n_bits:3:b
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nbitcomparator:comparator
-i_A[0] => oneBitComparator:comparatorLoop:0:comparator_n.i_Ai
-i_A[1] => oneBitComparator:comparatorLoop:1:comparator_n.i_Ai
-i_A[2] => oneBitComparator:comparatorLoop:2:comparator_n.i_Ai
-i_A[3] => oneBitComparator:comparatorMSB.i_Ai
-i_B[0] => oneBitComparator:comparatorLoop:0:comparator_n.i_Bi
-i_B[1] => oneBitComparator:comparatorLoop:1:comparator_n.i_Bi
-i_B[2] => oneBitComparator:comparatorLoop:2:comparator_n.i_Bi
-i_B[3] => oneBitComparator:comparatorMSB.i_Bi
-o_AeqB <= o_AeqB.DB_MAX_OUTPUT_PORT_TYPE
-o_AgtB <= oneBitComparator:comparatorLoop:0:comparator_n.o_GT
-o_AltB <= oneBitComparator:comparatorLoop:0:comparator_n.o_LT
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nbitcomparator:comparator|oneBitComparator:comparatorMSB
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:2:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:1:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|nBitTimer:sscTimer|nbitcomparator:comparator|oneBitComparator:\comparatorLoop:0:comparator_n
-i_GTPrevious => int_GT2.IN0
-i_GTPrevious => int_GT1.IN0
-i_GTPrevious => int_LT2.IN0
-i_LTPrevious => int_LT2.IN1
-i_LTPrevious => int_GT1.IN1
-i_LTPrevious => int_GT2.IN1
-i_Ai => int_GT1.IN1
-i_Ai => int_LT1.IN1
-i_Bi => int_LT1.IN1
-i_Bi => int_GT1.IN1
-o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
-o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|debouncer_2:sscsDebouncer
-i_resetBar => enARdFF_2:first.i_resetBar
-i_resetBar => enARdFF_2:second.i_resetBar
-i_clock => enARdFF_2:first.i_clock
-i_clock => enARdFF_2:second.i_clock
-i_raw => int_d1Input.IN1
-i_raw => int_d2Input.IN1
-o_clean <= int_debouncedRaw.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|debouncer_2:sscsDebouncer|enARdFF_2:first
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|debouncer_2:sscsDebouncer|enARdFF_2:second
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|dec_7seg:mscBcd
-i_hexDigit[0] => Mux0.IN19
-i_hexDigit[0] => Mux1.IN19
-i_hexDigit[0] => Mux2.IN19
-i_hexDigit[0] => Mux3.IN19
-i_hexDigit[0] => Mux4.IN19
-i_hexDigit[0] => Mux5.IN19
-i_hexDigit[0] => Mux6.IN19
-i_hexDigit[1] => Mux0.IN18
-i_hexDigit[1] => Mux1.IN18
-i_hexDigit[1] => Mux2.IN18
-i_hexDigit[1] => Mux3.IN18
-i_hexDigit[1] => Mux4.IN18
-i_hexDigit[1] => Mux5.IN18
-i_hexDigit[1] => Mux6.IN18
-i_hexDigit[2] => Mux0.IN17
-i_hexDigit[2] => Mux1.IN17
-i_hexDigit[2] => Mux2.IN17
-i_hexDigit[2] => Mux3.IN17
-i_hexDigit[2] => Mux4.IN17
-i_hexDigit[2] => Mux5.IN17
-i_hexDigit[2] => Mux6.IN17
-i_hexDigit[3] => Mux0.IN16
-i_hexDigit[3] => Mux1.IN16
-i_hexDigit[3] => Mux2.IN16
-i_hexDigit[3] => Mux3.IN16
-i_hexDigit[3] => Mux4.IN16
-i_hexDigit[3] => Mux5.IN16
-i_hexDigit[3] => Mux6.IN16
-o_segment_a <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_b <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_c <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_d <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_e <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_f <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_g <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fsmTopLevel|dec_7seg:sscBcd
-i_hexDigit[0] => Mux0.IN19
-i_hexDigit[0] => Mux1.IN19
-i_hexDigit[0] => Mux2.IN19
-i_hexDigit[0] => Mux3.IN19
-i_hexDigit[0] => Mux4.IN19
-i_hexDigit[0] => Mux5.IN19
-i_hexDigit[0] => Mux6.IN19
-i_hexDigit[1] => Mux0.IN18
-i_hexDigit[1] => Mux1.IN18
-i_hexDigit[1] => Mux2.IN18
-i_hexDigit[1] => Mux3.IN18
-i_hexDigit[1] => Mux4.IN18
-i_hexDigit[1] => Mux5.IN18
-i_hexDigit[1] => Mux6.IN18
-i_hexDigit[2] => Mux0.IN17
-i_hexDigit[2] => Mux1.IN17
-i_hexDigit[2] => Mux2.IN17
-i_hexDigit[2] => Mux3.IN17
-i_hexDigit[2] => Mux4.IN17
-i_hexDigit[2] => Mux5.IN17
-i_hexDigit[2] => Mux6.IN17
-i_hexDigit[3] => Mux0.IN16
-i_hexDigit[3] => Mux1.IN16
-i_hexDigit[3] => Mux2.IN16
-i_hexDigit[3] => Mux3.IN16
-i_hexDigit[3] => Mux4.IN16
-i_hexDigit[3] => Mux5.IN16
-i_hexDigit[3] => Mux6.IN16
-o_segment_a <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_b <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_c <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_d <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_e <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_f <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-o_segment_g <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+|nBitShiftRegister|mux41:\muxloop:5:mux_n
+s0 => mux21:mux1.s
+s0 => mux21:mux2.s
+s1 => mux21:muxfinal.s
+x0 => mux21:mux1.x0
+x1 => mux21:mux1.x1
+x2 => mux21:mux2.x0
+x3 => mux21:mux2.x1
+y <= mux21:muxfinal.y
+
+
+|nBitShiftRegister|mux41:\muxloop:5:mux_n|mux21:mux1
+s => selX1.IN0
+s => selX0.IN0
+x0 => selX0.IN1
+x1 => selX1.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitShiftRegister|mux41:\muxloop:5:mux_n|mux21:mux2
+s => selX1.IN0
+s => selX0.IN0
+x0 => selX0.IN1
+x1 => selX1.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitShiftRegister|mux41:\muxloop:5:mux_n|mux21:muxfinal
+s => selX1.IN0
+s => selX0.IN0
+x0 => selX0.IN1
+x1 => selX1.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitShiftRegister|mux41:\muxloop:6:mux_n
+s0 => mux21:mux1.s
+s0 => mux21:mux2.s
+s1 => mux21:muxfinal.s
+x0 => mux21:mux1.x0
+x1 => mux21:mux1.x1
+x2 => mux21:mux2.x0
+x3 => mux21:mux2.x1
+y <= mux21:muxfinal.y
+
+
+|nBitShiftRegister|mux41:\muxloop:6:mux_n|mux21:mux1
+s => selX1.IN0
+s => selX0.IN0
+x0 => selX0.IN1
+x1 => selX1.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitShiftRegister|mux41:\muxloop:6:mux_n|mux21:mux2
+s => selX1.IN0
+s => selX0.IN0
+x0 => selX0.IN1
+x1 => selX1.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nBitShiftRegister|mux41:\muxloop:6:mux_n|mux21:muxfinal
+s => selX1.IN0
+s => selX0.IN0
+x0 => selX0.IN1
+x1 => selX1.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
