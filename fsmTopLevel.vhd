@@ -8,7 +8,8 @@ ENTITY fsmTopLevel IS
         i_sscs: IN STD_LOGIC;
         o_mstl, o_sstl: OUT STD_LOGIC_VECTOR (2 DOWNTO 0);
         o_state: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
-        o_bcd1, o_bcd2: OUT STD_LOGIC_VECTOR (6 DOWNTO 0));    
+        o_bcd1, o_bcd2: OUT STD_LOGIC_VECTOR (6 DOWNTO 0);
+        o_MScolour, o_SScolour : OUT STD_LOGIC_VECTOR (6 DOWNTO 0));   
 END fsmTopLevel;
 
 ARCHITECTURE rtl of fsmTopLevel is
@@ -16,6 +17,7 @@ ARCHITECTURE rtl of fsmTopLevel is
     SIGNAL int_rst_timer, int_fsm_reset: STD_LOGIC;
     SIGNAL gresetbar: STD_LOGIC;
     SIGNAL int_msc_count, int_ssc_count: STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL int_MScolour, int_SScolour: STD_LOGIC_VECTOR(6 DOWNTO 0);
 
 
     COMPONENT fsmController
@@ -24,8 +26,10 @@ ARCHITECTURE rtl of fsmTopLevel is
             mst, sst, sscs, msc, ssc: IN STD_LOGIC; 
             mstl, sstl: OUT STD_LOGIC_VECTOR(2 downto 0);
             state: OUT STD_LOGIC_VECTOR(1 downto 0);
+            MScolour, SScolour : OUT STD_LOGIC_VECTOR (6 DOWNTO 0);
             reset_timer: OUT STD_LOGIC
             );
+
     END COMPONENT;
 
     COMPONENT nBitTimer
@@ -77,6 +81,8 @@ BEGIN
             mstl => o_mstl,
             sstl => o_sstl,
             state => o_state,
+            MScolour => int_MScolour,  
+            SScolour => int_SScolour,   
             reset_timer => int_fsm_reset
             );
 
@@ -151,5 +157,8 @@ BEGIN
             o_segment_f => o_bcd2(5),
             o_segment_g => o_bcd2(6)
             );
+
+        o_MScolour <= int_MScolour;
+        o_SScolour <= int_SScolour;
 
 end rtl;

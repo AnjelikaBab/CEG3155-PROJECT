@@ -7,6 +7,7 @@ ENTITY fsmController is
         mst, sst, sscs, msc, ssc: IN STD_LOGIC; 
         mstl, sstl: OUT STD_LOGIC_VECTOR(2 downto 0);
         state: OUT STD_LOGIC_VECTOR(1 downto 0);
+        MScolour, SScolour : OUT STD_LOGIC_VECTOR (6 DOWNTO 0);
         reset_timer: OUT STD_LOGIC
         );
 END fsmController;
@@ -101,4 +102,18 @@ BEGIN
     sstl <= output_mux_sstl;
     state(0) <= y0;
     state(1) <= y1;
+
+    g <= "01100111";
+    y <= "01111001";
+    r <= "01110010";
+
+    MScolour <= g when A = '1' else
+                y when C = '1' else
+                r when (D = '1' OR E = '1');
+
+    SScolour <= g when D = '1' else
+                y when E = '1' else
+                r when (A = '1' OR C = '1');
+
+
 END structural;
