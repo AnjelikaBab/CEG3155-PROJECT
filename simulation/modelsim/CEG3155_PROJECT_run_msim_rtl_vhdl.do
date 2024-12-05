@@ -5,11 +5,23 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFFSet.vhd}
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/DivideBy41.vhd}
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/uartTopLevel.vhd}
 vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/baudRateGenerator.vhd}
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitmux81.vhd}
 vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd}
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverTopLevel.vhd}
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd}
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitTargetIncrementer.vhd}
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/rdrfLatch.vhd}
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd}
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd}
 vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd}
 vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd}
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd}
 vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd}
+vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitmux21.vhd}
 vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd}
 vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd}
 vcom -93 -work work {C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd}

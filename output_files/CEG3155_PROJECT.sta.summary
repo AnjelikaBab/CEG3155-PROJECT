@@ -2,64 +2,232 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'gclk'
-Slack : -1.829
-TNS   : -17.859
+Type  : Slow 1200mV 85C Model Setup 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : -4.163
+TNS   : -44.313
 
-Type  : Slow 1200mV 85C Model Hold 'gclk'
-Slack : 0.386
+Type  : Slow 1200mV 85C Model Setup 'baudSelect[0]'
+Slack : -1.676
+TNS   : -33.049
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -1.574
+TNS   : -8.118
+
+Type  : Slow 1200mV 85C Model Setup 'enARdFFSet:incEnFF|int_q'
+Slack : -1.294
+TNS   : -3.326
+
+Type  : Slow 1200mV 85C Model Setup 'baudRateGenerator:baudRateGen|Divideby41:div41|int_clk'
+Slack : -0.624
+TNS   : -2.856
+
+Type  : Slow 1200mV 85C Model Hold 'baudSelect[0]'
+Slack : -1.354
+TNS   : -1.354
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.224
+TNS   : -0.224
+
+Type  : Slow 1200mV 85C Model Hold 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : 0.402
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'gclk'
-Slack : -1.068
-TNS   : -10.528
-
-Type  : Slow 1200mV 85C Model Removal 'gclk'
-Slack : 0.931
+Type  : Slow 1200mV 85C Model Hold 'enARdFFSet:incEnFF|int_q'
+Slack : 0.404
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'gclk'
+Type  : Slow 1200mV 85C Model Hold 'baudRateGenerator:baudRateGen|Divideby41:div41|int_clk'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'baudSelect[0]'
+Slack : -1.644
+TNS   : -11.131
+
+Type  : Slow 1200mV 85C Model Recovery 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : -0.950
+TNS   : -2.850
+
+Type  : Slow 1200mV 85C Model Removal 'baudSelect[0]'
+Slack : 1.164
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : 1.345
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'baudSelect[0]'
 Slack : -3.000
-TNS   : -24.845
+TNS   : -58.549
 
-Type  : Slow 1200mV 0C Model Setup 'gclk'
-Slack : -1.580
-TNS   : -14.674
-
-Type  : Slow 1200mV 0C Model Hold 'gclk'
-Slack : 0.340
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Recovery 'gclk'
-Slack : -0.859
-TNS   : -8.298
-
-Type  : Slow 1200mV 0C Model Removal 'gclk'
-Slack : 0.838
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'gclk'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -24.845
+TNS   : -13.280
 
-Type  : Fast 1200mV 0C Model Setup 'gclk'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : -1.285
+TNS   : -28.270
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'baudRateGenerator:baudRateGen|Divideby41:div41|int_clk'
+Slack : -1.285
+TNS   : -10.280
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'enARdFFSet:incEnFF|int_q'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Slow 1200mV 0C Model Setup 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : -3.732
+TNS   : -38.778
+
+Type  : Slow 1200mV 0C Model Setup 'baudSelect[0]'
+Slack : -1.412
+TNS   : -27.187
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -1.354
+TNS   : -6.547
+
+Type  : Slow 1200mV 0C Model Setup 'enARdFFSet:incEnFF|int_q'
+Slack : -1.176
+TNS   : -2.993
+
+Type  : Slow 1200mV 0C Model Setup 'baudRateGenerator:baudRateGen|Divideby41:div41|int_clk'
+Slack : -0.468
+TNS   : -1.929
+
+Type  : Slow 1200mV 0C Model Hold 'baudSelect[0]'
+Slack : -1.269
+TNS   : -1.269
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.159
+TNS   : -0.159
+
+Type  : Slow 1200mV 0C Model Hold 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'enARdFFSet:incEnFF|int_q'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'baudRateGenerator:baudRateGen|Divideby41:div41|int_clk'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'baudSelect[0]'
+Slack : -1.389
+TNS   : -9.379
+
+Type  : Slow 1200mV 0C Model Recovery 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : -0.764
+TNS   : -2.292
+
+Type  : Slow 1200mV 0C Model Removal 'baudSelect[0]'
+Slack : 1.063
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : 1.217
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'baudSelect[0]'
+Slack : -3.000
+TNS   : -52.004
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -13.280
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : -1.285
+TNS   : -28.270
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'baudRateGenerator:baudRateGen|Divideby41:div41|int_clk'
+Slack : -1.285
+TNS   : -10.280
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'enARdFFSet:incEnFF|int_q'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Fast 1200mV 0C Model Setup 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : -2.106
+TNS   : -17.340
+
+Type  : Fast 1200mV 0C Model Setup 'baudSelect[0]'
+Slack : -0.317
+TNS   : -2.737
+
+Type  : Fast 1200mV 0C Model Setup 'enARdFFSet:incEnFF|int_q'
+Slack : -0.285
+TNS   : -0.648
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.253
+TNS   : -0.553
+
+Type  : Fast 1200mV 0C Model Setup 'baudRateGenerator:baudRateGen|Divideby41:div41|int_clk'
+Slack : 0.244
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'baudSelect[0]'
+Slack : -0.809
+TNS   : -0.809
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
 Slack : -0.348
-TNS   : -1.369
+TNS   : -0.348
 
-Type  : Fast 1200mV 0C Model Hold 'gclk'
-Slack : 0.175
+Type  : Fast 1200mV 0C Model Hold 'enARdFFSet:incEnFF|int_q'
+Slack : 0.178
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'gclk'
-Slack : -0.030
-TNS   : -0.102
-
-Type  : Fast 1200mV 0C Model Removal 'gclk'
-Slack : 0.449
+Type  : Fast 1200mV 0C Model Hold 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : 0.181
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'gclk'
+Type  : Fast 1200mV 0C Model Hold 'baudRateGenerator:baudRateGen|Divideby41:div41|int_clk'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'baudSelect[0]'
+Slack : -0.297
+TNS   : -1.901
+
+Type  : Fast 1200mV 0C Model Recovery 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'baudSelect[0]'
+Slack : 0.553
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : 0.650
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'baudSelect[0]'
 Slack : -3.000
-TNS   : -21.100
+TNS   : -49.344
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -11.495
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'baudRateGenerator:baudRateGen|nBitIncrementer:count3|nBitRegister:reg|enARdFF_2:\reg_n_bits:2:b|int_q'
+Slack : -1.000
+TNS   : -22.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'baudRateGenerator:baudRateGen|Divideby41:div41|int_clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'enARdFFSet:incEnFF|int_q'
+Slack : -1.000
+TNS   : -3.000
 
 ------------------------------------------------------------

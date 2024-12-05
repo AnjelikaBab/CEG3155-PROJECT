@@ -19,10 +19,10 @@
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading altera_ver.dffeas
 # Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_io_obuf
 # Loading work.baudRateGenerator_vlg_sample_tst
 # Loading work.baudRateGenerator_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW

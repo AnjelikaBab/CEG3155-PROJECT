@@ -29,22 +29,20 @@ architecture rtl of baudRateGenerator is
             y: OUT STD_LOGIC) ;
     END component;
 
+    component Divideby41
+        port(i_clk : in std_logic; --assumed to be 25MHz
+             o_clk: out std_logic);
+    end component;
+
     -- Internal signals
-    signal count1_reset: STD_LOGIC;
-    signal div41CLK, int_bclk8, gt41: STD_LOGIC;
-    signal count1_out, count2_out: STD_LOGIC_VECTOR(7 downto 0);
+    signal div41CLK, int_bclk8: STD_LOGIC;
+    signal count2_out: STD_LOGIC_VECTOR(7 downto 0);
     signal bclk_count: STD_LOGIC_VECTOR(2 downto 0);
 
 begin
-    count1_reset <= reset or gt41;
 
-    count1: nBitIncrementer
-        GENERIC MAP (n => 8)
-        PORT MAP (clk => clk, reset => count1_reset, increment => '1', y => count1_out);
-
-    comp41: nbitcomparator
-        GENERIC MAP (n => 8)
-        PORT MAP (i_A => count1_out, i_B => "00101000", o_AeqB => div41CLK, o_AgtB => gt41, o_AltB => open);
+    div41: Divideby41
+        port map(i_clk => clk, o_clk => div41CLK);
 
     count2: nBitIncrementer
         GENERIC MAP (n => 8)

@@ -74,6 +74,15 @@ architecture Structural of uartTopLevel is
             o_q, o_qBar	: OUT	STD_LOGIC);
     END component;
 
+    component enARdFFSet
+	PORT(
+		i_resetBar	: IN	STD_LOGIC;
+		i_d		: IN	STD_LOGIC;
+		i_enable	: IN	STD_LOGIC;
+		i_clock		: IN	STD_LOGIC;
+		o_q, o_qBar	: OUT	STD_LOGIC);
+    END component;
+
     signal not_reset, reset_inc: STD_LOGIC;
     signal inc_eq6, increment, inc_en: STD_LOGIC;
     signal bclk, bclkx8 : STD_LOGIC;
@@ -143,17 +152,17 @@ begin
             i_increment => increment,
             i_targetCount => "110",
             o_done => inc_eq6,
-            o_count => open
+            o_count => int_debugCharSel
         );
 
-    incEnFF : enARdFF_2
+    incEnFF : enARdFFSet
         PORT MAP (
             i_resetBar => not_reset,
             i_d => int_tdre,
             i_enable => '1',
             i_clock => clk,
             o_q => inc_en,
-            o_qBar => int_debugCharSel(0)
+            o_qBar => open 
         );
 
     debugCharMux: nbitmux81

@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dC:\Users\arnav\Desktop\CEG3155-PROJECT\simulation\modelsim
 Ebaudrategenerator
-Z1 w1733347829
+Z1 w1733362270
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z4 dC:\Users\arnav\Desktop\CEG3155-PROJECT\simulation\modelsim
@@ -12,23 +12,23 @@ Z5 8C:/Users/arnav/Desktop/CEG3155-PROJECT/baudRateGenerator.vhd
 Z6 FC:/Users/arnav/Desktop/CEG3155-PROJECT/baudRateGenerator.vhd
 l0
 L4
-VAE^Lb;lhiUDVD>Mh7ZeBk3
+VKUai>aC5VZAZKBz7cMoi?0
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1733347875.846000
+Z8 !s108 1733363637.243000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/baudRateGenerator.vhd|
 Z10 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/baudRateGenerator.vhd|
 Z11 o-93 -work work -O0
 Z12 tExplicit 1
-!s100 l3W=UZzm4GkSbIE@o^P7;0
+!s100 `UCaXRPJ63ihkn;=S>0H`0
 !i10b 1
 Artl
 R2
 R3
-DEx4 work 17 baudrategenerator 0 22 AE^Lb;lhiUDVD>Mh7ZeBk3
-l38
+DEx4 work 17 baudrategenerator 0 22 KUai>aC5VZAZKBz7cMoi?0
+l42
 L13
-VzVAS;iDgNaODc?<64H^<92
+VE[27FUN>n2UmO>=9VeB^]0
 R7
 31
 R8
@@ -36,15 +36,52 @@ R9
 R10
 R11
 R12
-!s100 oZzIG>TldjBLBjU<k12;61
+!s100 bl]K<GRfK8XcXc2Akmf162
 !i10b 1
-Eenardff_2
-Z13 w1733315361
+Edivideby41
+Z13 w1733361628
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R2
 R3
 R4
-Z14 8C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd
-Z15 FC:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd
+Z15 8C:/Users/arnav/Desktop/CEG3155-PROJECT/DivideBy41.vhd
+Z16 FC:/Users/arnav/Desktop/CEG3155-PROJECT/DivideBy41.vhd
+l0
+L5
+VB@I:I2RE8PEH9TPZWPB2Y2
+R7
+31
+Z17 !s108 1733363637.136000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/DivideBy41.vhd|
+Z19 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/DivideBy41.vhd|
+R11
+R12
+!s100 HMaba;15WdjL[Qm2[NgVV2
+!i10b 1
+Abehav
+R14
+R2
+R3
+DEx4 work 10 divideby41 0 22 B@I:I2RE8PEH9TPZWPB2Y2
+l13
+L10
+VJA8AF9zGd8<Ea45U1h``g3
+R7
+31
+R17
+R18
+R19
+R11
+R12
+!s100 =<6RHTUKDWSem@Qk96X[S2
+!i10b 1
+Eenardff_2
+Z20 w1733315361
+R2
+R3
+R4
+Z21 8C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd
+Z22 FC:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd
 l0
 L31
 VefK2f?3R7`bZO40Rc84Mm0
@@ -52,9 +89,9 @@ VefK2f?3R7`bZO40Rc84Mm0
 R7
 31
 !i10b 1
-Z16 !s108 1733347876.423000
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd|
-Z18 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd|
+Z23 !s108 1733363638.449000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd|
+Z25 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFF_2.vhd|
 R11
 R12
 Artl
@@ -68,26 +105,61 @@ VAd]:U5^6W=P5UO^;ST?Bz2
 R7
 31
 !i10b 1
-R16
-R17
-R18
+R23
+R24
+R25
 R11
 R12
-Emux21
-R13
+Eenardffset
+Z26 w1733363464
 R2
 R3
 R4
-Z19 8C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd
-Z20 FC:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd
+Z27 8C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFFSet.vhd
+Z28 FC:/Users/arnav/Desktop/CEG3155-PROJECT/enardFFSet.vhd
+l0
+L31
+VQ=QaH@eh;WA]MJ=BD]:hA3
+R7
+31
+Z29 !s108 1733363637.078000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFFSet.vhd|
+Z31 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/enardFFSet.vhd|
+R11
+R12
+!s100 47;[FaIeTDGX71FEBG:z42
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 10 enardffset 0 22 Q=QaH@eh;WA]MJ=BD]:hA3
+l43
+L40
+Ve`NW^XoVF;1f=QTELjQYf1
+R7
+31
+R29
+R30
+R31
+R11
+R12
+!s100 >IbJfEGLXf?jDhDkLMa>31
+!i10b 1
+Emux21
+R20
+R2
+R3
+R4
+Z32 8C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd
+Z33 FC:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd
 l0
 L4
 V1CodOzcnWmcE13?d``V[40
 R7
 31
-Z21 !s108 1733347876.366000
-Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd|
-Z23 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd|
+Z34 !s108 1733363638.372000
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd|
+Z36 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/mux21.vhd|
 R11
 R12
 !s100 4@l=NcFaJAdLh9V`Xn?PI2
@@ -101,28 +173,28 @@ L9
 V3AUk2z2RCka2KOY^<>4MD2
 R7
 31
-R21
-R22
-R23
+R34
+R35
+R36
 R11
 R12
 !s100 S9M;8MM_kWnGB]DhWJF4@1
 !i10b 1
 Emux41
-R13
+R20
 R2
 R3
 R4
-Z24 8C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd
-Z25 FC:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd
+Z37 8C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd
+Z38 FC:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd
 l0
 L4
 V2_nZOhOBN18jK@ML_0n^X0
 R7
 31
-Z26 !s108 1733347876.310000
-Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd|
-Z28 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd|
+Z39 !s108 1733363638.300000
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd|
+Z41 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/mux41.vhd|
 R11
 R12
 !s100 EAocWWKa];V8[AnYG45i22
@@ -136,28 +208,28 @@ L9
 VgmFLOBK5e0^L5Be<`953N0
 R7
 31
-R26
-R27
-R28
+R39
+R40
+R41
 R11
 R12
 !s100 HUek3n8bb:TNdL5T4[gJG3
 !i10b 1
 Emux81
-Z29 w1733344519
+Z42 w1733344519
 R2
 R3
 R4
-Z30 8C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd
-Z31 FC:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd
+Z43 8C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd
+Z44 FC:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd
 l0
 L4
 V^j<;f1eUZ@kAVh0D1FS3a0
 R7
 31
-Z32 !s108 1733347875.903000
-Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd|
-Z34 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd|
+Z45 !s108 1733363637.350000
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd|
+Z47 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/mux81.vhd|
 R11
 R12
 !s100 lk]dzTDoZ_e?18bog>eL21
@@ -171,28 +243,28 @@ L9
 V7g1oC:5=Sbho@`l?dF58i0
 R7
 31
-R32
-R33
-R34
+R45
+R46
+R47
 R11
 R12
 !s100 ]l>onlAmo`S3<MBAh^DmC0
 !i10b 1
 Enbitaddersubtractor
-R13
+R20
 R2
 R3
 R4
-Z35 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd
-Z36 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd
+Z48 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd
+Z49 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd
 l0
 L4
 VBK@g4UmbVIO2F:_QO^>S:3
 R7
 31
-Z37 !s108 1733347876.255000
-Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd|
-Z39 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd|
+Z50 !s108 1733363638.243000
+Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd|
+Z52 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitAdderSubtractor.vhd|
 R11
 R12
 !s100 ]XcB[A[205c<zncX5c2H>3
@@ -206,28 +278,28 @@ L13
 VkWkDh<<n`YGz84_o8CN8b2
 R7
 31
-R37
-R38
-R39
+R50
+R51
+R52
 R11
 R12
 !s100 A374Q0Ki]kLa8bXzRPJH03
 !i10b 1
 Enbitcomparator
-R13
+R20
 R2
 R3
 R4
-Z40 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd
-Z41 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd
+Z53 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd
+Z54 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd
 l0
 L4
 V:nnUJiHmQ26=L0FAP8Nc@2
 R7
 31
-Z42 !s108 1733347876.197000
-Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd|
-Z44 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd|
+Z55 !s108 1733363638.182000
+Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd|
+Z57 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitcomparator.vhd|
 R11
 R12
 !s100 7@VOZ6?jQ0G?UZn>MD?XM2
@@ -241,28 +313,28 @@ L11
 VBf>bLm]P^ZmG3ZN;jl9oa3
 R7
 31
-R42
-R43
-R44
+R55
+R56
+R57
 R11
 R12
 !s100 kgKdH`26=BWN3:TA8Clm_3
 !i10b 1
 Enbitincrementer
-R13
+R20
 R2
 R3
 R4
-Z45 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd
-Z46 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd
+Z58 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd
+Z59 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd
 l0
 L4
 V@6U`_MN33]m]PHC2HflIW0
 R7
 31
-Z47 !s108 1733347876.143000
-Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd|
-Z49 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd|
+Z60 !s108 1733363638.116000
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd|
+Z62 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitIncrementer.vhd|
 R11
 R12
 !s100 iA8V1jKoZZ[V;?@8bg5Qm0
@@ -276,28 +348,98 @@ L10
 VL`^:GNfa1lWRXHfQi:O7V1
 R7
 31
-R47
-R48
-R49
+R60
+R61
+R62
 R11
 R12
 !s100 ffJ0HBF`dY?^EhRAXE^882
 !i10b 1
-Enbitregister
-R13
+Enbitmux21
+R20
 R2
 R3
 R4
-Z50 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd
-Z51 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd
+Z63 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitmux21.vhd
+Z64 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nbitmux21.vhd
+l0
+L4
+V;?fFMOWQoMzmhXimRV1^d1
+R7
+31
+Z65 !s108 1733363638.046000
+Z66 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitmux21.vhd|
+Z67 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitmux21.vhd|
+R11
+R12
+!s100 MPi]U97SFdjAJQm`Dnl=H2
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 9 nbitmux21 0 22 ;?fFMOWQoMzmhXimRV1^d1
+l17
+L11
+VR=03`k[I8Y`e45iHM>0Md0
+R7
+31
+R65
+R66
+R67
+R11
+R12
+!s100 WE6=]DbQI<3l;<jnFo:SZ0
+!i10b 1
+Enbitmux81
+Z68 w1733344878
+R2
+R3
+R4
+Z69 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitmux81.vhd
+Z70 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nbitmux81.vhd
+l0
+L4
+VaN7PmGUz>5?n=eG]PlWkW3
+R7
+31
+Z71 !s108 1733363637.296000
+Z72 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitmux81.vhd|
+Z73 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitmux81.vhd|
+R11
+R12
+!s100 Do_AQ@Q>X[jFneEfk_BUO3
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 9 nbitmux81 0 22 aN7PmGUz>5?n=eG]PlWkW3
+l17
+L11
+V2l><bMOa8CQ9l1V2AIcI00
+R7
+31
+R71
+R72
+R73
+R11
+R12
+!s100 c<fTO?5IdjOPlQKiM4J183
+!i10b 1
+Enbitregister
+R20
+R2
+R3
+R4
+Z74 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd
+Z75 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd
 l0
 L4
 VkF8FVK2AB2BAUM0<iLAeR2
 R7
 31
-Z52 !s108 1733347876.084000
-Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd|
-Z54 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd|
+Z76 !s108 1733363637.971000
+Z77 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd|
+Z78 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nbitregister.vhd|
 R11
 R12
 !s100 ^13zkOmfoz0TA36ak>iO12
@@ -311,28 +453,98 @@ L13
 VJ6LGc<7=UGRX_icea99AU1
 R7
 31
-R52
-R53
-R54
+R76
+R77
+R78
 R11
 R12
 !s100 _B32VC]E46F<Y9aV4gIU]3
 !i10b 1
-Eonebitaddersubtractor
-R13
+Enbitshiftregister
+Z79 w1733319719
 R2
 R3
 R4
-Z55 8C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd
-Z56 FC:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd
+Z80 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd
+Z81 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd
+l0
+L4
+VaOdjPVnHFWnTk9kBgGnA32
+R7
+31
+Z82 !s108 1733363637.901000
+Z83 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd|
+Z84 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitShiftRegister.vhd|
+R11
+R12
+!s100 h:J>GjPB9R=CKDLCmDe6j0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 17 nbitshiftregister 0 22 aOdjPVnHFWnTk9kBgGnA32
+l35
+L15
+V01E5TQA<m1oUbZXnNIA=:1
+R7
+31
+R82
+R83
+R84
+R11
+R12
+!s100 _`zcdQ3CQ7lB]ZDH]hXfb1
+!i10b 1
+Enbittargetincrementer
+Z85 w1733329673
+R2
+R3
+R4
+Z86 8C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitTargetIncrementer.vhd
+Z87 FC:/Users/arnav/Desktop/CEG3155-PROJECT/nBitTargetIncrementer.vhd
+l0
+L4
+VAb`dW49MiJJWATTbnUTSm3
+R7
+31
+Z88 !s108 1733363637.510000
+Z89 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitTargetIncrementer.vhd|
+Z90 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/nBitTargetIncrementer.vhd|
+R11
+R12
+!s100 _0Mk]W@USbS5>SBbmdTf72
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 21 nbittargetincrementer 0 22 Ab`dW49MiJJWATTbnUTSm3
+l39
+L13
+VbSf=nAW3W@SLS[c;zVW:51
+R7
+31
+R88
+R89
+R90
+R11
+R12
+!s100 >5ch;9F6UM[=c[RIbHl=X3
+!i10b 1
+Eonebitaddersubtractor
+R20
+R2
+R3
+R4
+Z91 8C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd
+Z92 FC:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd
 l0
 L17
 V4;>2a4D8>JDfE8eVL3Z8m0
 R7
 31
-Z57 !s108 1733347876.024000
-Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd|
-Z59 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd|
+Z93 !s108 1733363637.828000
+Z94 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd|
+Z95 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitAdderSubtractor.vhd|
 R11
 R12
 !s100 KYYeBM`YQZz_9[NR]8<7A2
@@ -346,28 +558,28 @@ L25
 VP6gCAZhYR_P92NR<gmoK83
 R7
 31
-R57
-R58
-R59
+R93
+R94
+R95
 R11
 R12
 !s100 da<zK2RC=nV=hn^5_ASW>1
 !i10b 1
 Eonebitcomparator
-R13
+R20
 R2
 R3
 R4
-Z60 8C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd
-Z61 FC:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd
+Z96 8C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd
+Z97 FC:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd
 l0
 L31
 VQZ3H_AB;@zWF[WaFlPKd70
 R7
 31
-Z62 !s108 1733347875.957000
-Z63 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd|
-Z64 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd|
+Z98 !s108 1733363637.761000
+Z99 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd|
+Z100 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/oneBitComparator.vhd|
 R11
 R12
 !s100 <jX6<_c^nQ8XW_1O_gY[<1
@@ -381,10 +593,220 @@ L38
 VHW0[zHAk8Z3KdeaE[Z3E51
 R7
 31
-R62
-R63
-R64
+R98
+R99
+R100
 R11
 R12
 !s100 8fVAI]h6XZcSDo?:0YWH41
+!i10b 1
+Erdrflatch
+Z101 w1733324851
+R2
+R3
+R4
+Z102 8C:/Users/arnav/Desktop/CEG3155-PROJECT/rdrfLatch.vhd
+Z103 FC:/Users/arnav/Desktop/CEG3155-PROJECT/rdrfLatch.vhd
+l0
+L4
+VMlcRR6DGHz>QFZA4O<?6D0
+R7
+31
+Z104 !s108 1733363637.562000
+Z105 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/rdrfLatch.vhd|
+Z106 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/rdrfLatch.vhd|
+R11
+R12
+!s100 e1fk3EO]Nzn3h1BDGFhzD1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 9 rdrflatch 0 22 MlcRR6DGHz>QFZA4O<?6D0
+l13
+L10
+V<@4VfNQGcKWiQLjbkOK:K0
+R7
+31
+R104
+R105
+R106
+R11
+R12
+!s100 AO]e0:X;l>JX8JSnR^2?d1
+!i10b 1
+Ereceiverfsm
+Z107 w1733340051
+R2
+R3
+R4
+Z108 8C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd
+Z109 FC:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd
+l0
+L4
+V0zdP2DoClhZUVKNBL9@4G2
+R7
+31
+Z110 !s108 1733363637.455000
+Z111 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd|
+Z112 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverFSM.vhd|
+R11
+R12
+!s100 c`h0c<`c@n81^`AXb?z`F1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 11 receiverfsm 0 22 0zdP2DoClhZUVKNBL9@4G2
+l31
+L12
+V3TU5=Q[kf=N?=R>cRU[950
+R7
+31
+R110
+R111
+R112
+R11
+R12
+!s100 ?i@4G[R]kIFQLOXgl^11j2
+!i10b 1
+Ereceivertoplevel
+Z113 w1733339006
+R2
+R3
+R4
+Z114 8C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverTopLevel.vhd
+Z115 FC:/Users/arnav/Desktop/CEG3155-PROJECT/receiverTopLevel.vhd
+l0
+L4
+VAh_n09WQf<l^oPZWVSjK<3
+R7
+31
+Z116 !s108 1733363637.403000
+Z117 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverTopLevel.vhd|
+Z118 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/receiverTopLevel.vhd|
+R11
+R12
+!s100 gLaS8hFPP;Yd2khab[hE40
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 receivertoplevel 0 22 Ah_n09WQf<l^oPZWVSjK<3
+l64
+L13
+VfGS2FNhhZlE_C<f]kU@G02
+R7
+31
+R116
+R117
+R118
+R11
+R12
+!s100 m:`SoUOE;of5b`<MFA]W=1
+!i10b 1
+Etransmitterfsm
+Z119 w1733332338
+R2
+R3
+R4
+Z120 8C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd
+Z121 FC:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd
+l0
+L4
+V@RoM2LGO;>AkhRFS_I_Uk1
+R7
+31
+Z122 !s108 1733363637.697000
+Z123 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd|
+Z124 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterFSM.vhd|
+R11
+R12
+!s100 g_aEzaE8N^l1cg4i;P5Da0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 14 transmitterfsm 0 22 @RoM2LGO;>AkhRFS_I_Uk1
+l33
+L14
+VM1=ZogZ0Dc_D:AKBomDfS0
+R7
+31
+R122
+R123
+R124
+R11
+R12
+!s100 YjJYE]9gzddA?HlH`i6bJ3
+!i10b 1
+Etransmittertoplevel
+Z125 w1733331220
+R2
+R3
+R4
+Z126 8C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd
+Z127 FC:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd
+l0
+L4
+Ve:XW?I7?=dbGCML@O@CnS3
+R7
+31
+Z128 !s108 1733363637.626000
+Z129 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd|
+Z130 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/transmitterTopLevel.vhd|
+R11
+R12
+!s100 <^8UhRWPJRoFhL;8bklHT1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 19 transmittertoplevel 0 22 e:XW?I7?=dbGCML@O@CnS3
+l68
+L15
+VhoiY>PjGi9A<TA;`YR]bG2
+R7
+31
+R128
+R129
+R130
+R11
+R12
+!s100 R8oK^R=86`bJYkXfPh4h]0
+!i10b 1
+Euarttoplevel
+Z131 w1733363569
+R2
+R3
+R4
+Z132 8C:/Users/arnav/Desktop/CEG3155-PROJECT/uartTopLevel.vhd
+Z133 FC:/Users/arnav/Desktop/CEG3155-PROJECT/uartTopLevel.vhd
+l0
+L4
+Vg6I^6zeASfY<U72I2:23C1
+R7
+31
+Z134 !s108 1733363637.190000
+Z135 !s90 -reportprogress|300|-93|-work|work|C:/Users/arnav/Desktop/CEG3155-PROJECT/uartTopLevel.vhd|
+Z136 !s107 C:/Users/arnav/Desktop/CEG3155-PROJECT/uartTopLevel.vhd|
+R11
+R12
+!s100 F:I4zDilS@OQ[^hdn1Cle1
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 12 uarttoplevel 0 22 g6I^6zeASfY<U72I2:23C1
+l95
+L14
+VKWoE;S;82CD78jhH2S_5[1
+R7
+31
+R134
+R135
+R136
+R11
+R12
+!s100 eeO4=<6Lb10zFz]6N`o1:1
 !i10b 1
