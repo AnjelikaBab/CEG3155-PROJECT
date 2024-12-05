@@ -27,7 +27,6 @@ ARCHITECTURE rtl of fsmTopLevel is
             mst, sst, sscs, msc, ssc: IN STD_LOGIC; 
             mstl, sstl: OUT STD_LOGIC_VECTOR(2 downto 0);
             state: OUT STD_LOGIC_VECTOR(1 downto 0);
-            MScolour, SScolour : OUT STD_LOGIC_VECTOR (6 DOWNTO 0);
             reset_timer: OUT STD_LOGIC
             );
 
